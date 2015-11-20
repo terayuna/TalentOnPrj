@@ -11,8 +11,5 @@ public class ExportSNS {
 	public void setName(String name) {
 		this.name = name;
 	}
-	
-	
-	
 
 }
