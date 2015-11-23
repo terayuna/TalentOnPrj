@@ -7,7 +7,7 @@ import kr.talenton.web.vo.Comment;
 
 public interface CommentDao {
 	public List<Comment> getComments() throws SQLException;
-	public List<Comment> getComments(int more_count) throws SQLException;
+	public List<Comment> getComments(int page) throws SQLException;
 	public List<Comment> getComments(int page,String field, String query) throws SQLException;
 
 	
