@@ -8,11 +8,26 @@
 		SELECT * FROM(
 		 SELECT 
 		  ROW_NUMBER() OVER(ORDER BY REGDATE DESC) NUM, 
-		  Administrator.* FROM Administrator
+		  ADMINISTRATOR.* FROM ADMINISTRATOR
 		 WHERE ${param2} LIKE '%${param3}%'
 		)A 
         WHERE NUM BETWEEN 1+(#{param1}-1)*10  AND  #{param1}*10
 	</select>
+	
+	<update id="update" >
+		UPDATE ADMINISTRATOR SET NAME = #{name}, EMAIL = #{email}, PASSWORD = #{password}, IMAGE = #{image},
+		ADDRESS = #{address}, PHONE = #{phone}, MOBILE = #{mobile}, BIRTHDAY = #{birthday}, DATE = #{date}, ROLE = #{role} 
+		WHERE ID = #{id} 
+	</update>
+	
+	<delete id="delete">
+		DELETE ADMINISTRATOR WHERE ID = #{id}
+	</delete>
+	
+	<insert id = "insert">
+		INSERT INTO ADMINISTRATOR (ID, NAME, EMAIL, PASSWORD, IMAGE, ADDRESS, PHONE, MOBILE, BIRTHDAY, DATE, ROLE) Values(#{id},
+		#{name},#{email},#{password},#{image},#{address},#{phone},#{mobile},#{birthday},#{date},#{role})
+	</insert>
 
 	
 </mapper>

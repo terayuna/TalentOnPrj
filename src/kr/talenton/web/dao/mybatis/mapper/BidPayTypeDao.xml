@@ -8,11 +8,24 @@
 		SELECT * FROM(
 		 SELECT 
 		  ROW_NUMBER() OVER(ORDER BY REGDATE DESC) NUM, 
-		  Bid_Pay_Type.* FROM Bid_Pay_Type
+		  BID_PAY_TYPE.* FROM BID_PAY_TYPE
 		 WHERE ${param2} LIKE '%${param3}%'
 		)A 
         WHERE NUM BETWEEN 1+(#{param1}-1)*10  AND  #{param1}*10
 	</select>
+	
+	<update id="update" >
+		UPDATE BID_PAY_TYPE SET NAME = #{name}
+		WHERE NAME = #{name} 
+	</update>
+	
+	<delete id="delete">
+		DELETE BID_PAY_TYPE WHERE NAME = #{name}
+	</delete>
+	
+	<insert id = "insert">
+		INSERT INTO BID_PAY_TYPE (NAME) Values(#{name})
+	</insert>
 
 	
 </mapper>

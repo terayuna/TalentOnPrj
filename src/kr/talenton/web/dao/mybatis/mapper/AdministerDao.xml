@@ -8,11 +8,25 @@
 		SELECT * FROM(
 		 SELECT 
 		  ROW_NUMBER() OVER(ORDER BY REGDATE DESC) NUM, 
-		  Administer.* FROM Administer
+		  ADMINISTER.* FROM ADMINISTER
 		 WHERE ${param2} LIKE '%${param3}%'
 		)A 
         WHERE NUM BETWEEN 1+(#{param1}-1)*10  AND  #{param1}*10
 	</select>
+	
+	<update id="update" >
+		UPDATE ADMINISTER SET CONTENT = #{content} WHERE MEMBER_ID = #{member_id} AND ADMINISTRATOR_ID = #{administrator_id} AND DATE = #{date}
+	
+	</update>
+	
+	<delete id="delete">
+		DELETE ADMINISTER WHERE MEMBER_ID = #{member_id} AND ADMINISTRATOR_ID = #{administrator_id} AND DATE = #{date}
+	</delete>
+	
+	<insert id = "insert">
+		INSERT INTO ADMINISTER (MEMBER_ID, ADMINISTRATOR_ID, DATE, CONTENT) Values(#{member_id},
+		#{administrator_id},#{date},#{content})
+	</insert>
 
 	
 </mapper>

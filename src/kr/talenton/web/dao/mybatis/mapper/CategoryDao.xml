@@ -8,11 +8,24 @@
 		SELECT * FROM(
 		 SELECT 
 		  ROW_NUMBER() OVER(ORDER BY REGDATE DESC) NUM, 
-		  Category.* FROM Category
+		  CATEGORY.* FROM CATEGORY
 		 WHERE ${param2} LIKE '%${param3}%'
 		)A 
         WHERE NUM BETWEEN 1+(#{param1}-1)*10  AND  #{param1}*10
 	</select>
+	
+	<update id="update" >
+		UPDATE CATEGORY SET NAME = #{name}
+		WHERE NAME = #{name} 
+	</update>
+	
+	<delete id="delete">
+		DELETE CATEGORY WHERE NAME = #{name}
+	</delete>
+	
+	<insert id = "insert">
+		INSERT INTO CATEGORY (NAME) Values(#{name})
+	</insert>
 
 	
 </mapper>

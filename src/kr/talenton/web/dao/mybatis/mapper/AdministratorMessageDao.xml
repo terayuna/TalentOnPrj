@@ -8,11 +8,25 @@
 		SELECT * FROM(
 		 SELECT 
 		  ROW_NUMBER() OVER(ORDER BY REGDATE DESC) NUM, 
-		  Administrator_Message.* FROM Administrator_Message
+		  ADMINISTRATOR_MESSAGE.* FROM ADMINISTRATOR_MESSAGE
 		 WHERE ${param2} LIKE '%${param3}%'
 		)A 
         WHERE NUM BETWEEN 1+(#{param1}-1)*10  AND  #{param1}*10
 	</select>
+	
+	<update id="update" >
+		UPDATE ADMINISTRATOR_MESSAGE SET TITLE = #{title}, CONTENT = #{content}
+		WHERE ADMINISTRATOR_ID = #{administrator_id} AND MEMBER_ID = #{member_id} AND CODE = #{code};
+	</update>
+	
+	<delete id="delete">
+		DELETE ADMINISTRATOR_MESSAGE WHERE ADMINISTRATOR_ID = #{administrator_id} AND MEMBER_ID = #{member_id} AND CODE = #{code};
+	</delete>
+	
+	<insert id = "insert">
+		INSERT INTO ADMINISTRATOR_MESSAGE (ADMINISTRATOR_ID, MEMBER_ID, CODE, TITLE, CONTENT,SEND_DATE, RECEIVE_DATE) Values(#{administrator_id},
+		#{member_id},#{code},#{title},#{content},#{send_date},#{receive_date})
+	</insert>
 
 	
 </mapper>

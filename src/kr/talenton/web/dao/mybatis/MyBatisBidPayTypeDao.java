@@ -74,4 +74,5 @@ public class MyBatisBidPayTypeDao implements BidPayTypeDao{
 		return aft;
 	}
 
+
 }

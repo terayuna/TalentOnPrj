@@ -7,43 +7,42 @@ import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
 
 import kr.talenton.web.dao.CommentDao;
-import kr.talenton.web.dao.MemberDao;
 import kr.talenton.web.vo.Comment;
 
-public class MyBatisCommentDao {
+public class MyBatisCommentDao implements CommentDao{
 	SqlSessionFactory ssf = TalentOnSqlSessionFactoryBuilder.getSqlSessionFactory();
 	//멤버 다오를 공장에서 꺼내와야함
-	
+
 	@Override
-	public List<Member> getMembers() throws SQLException {
+	public List<Comment> getComments() throws SQLException {
 		// TODO Auto-generated method stub
-		return getMembers(1,"MID","");
+		return getComments(1,"MEMBER_ID","");
 	}
 
 	@Override
-	public List<Member> getMembers(int page) throws SQLException {
+	public List<Comment> getComments(int page) throws SQLException {
 		// TODO Auto-generated method stub
-		return getMembers(page,"MID","");
+		return getComments(page,"MEMBER_ID","");
 	}
 
 	@Override
-	public List<Member> getMembers(int page, String field, String query) throws SQLException {
+	public List<Comment> getComments(int page, String field, String query) throws SQLException {
 		// TODO Auto-generated method stub
 		SqlSession session = ssf.openSession();
-		MemberDao dao = session.getMapper(MemberDao.class);
+		CommentDao dao = session.getMapper(CommentDao.class);
 		
-		List<Member> list = dao.getMembers(page, field, query);
+		List<Comment> list = dao.getComments(page, field, query);
 		session.close();
 		
 		return list;
 	}
 
 	@Override
-	public int update(Member member) throws SQLException {
+	public int update(Comment comment) throws SQLException {
 		// TODO Auto-generated method stub
 		SqlSession session = ssf.openSession();
-		MemberDao dao = session.getMapper(MemberDao.class);
-		int aft = dao.update(member);
+		CommentDao dao = session.getMapper(CommentDao.class);
+		int aft = dao.update(comment);
 		
 		session.commit();		
 		session.close();
@@ -52,11 +51,11 @@ public class MyBatisCommentDao {
 	}
 
 	@Override
-	public int delete(String mid) throws SQLException {
+	public int delete(String member_id, int product_code) throws SQLException {
 		// TODO Auto-generated method stub
 		SqlSession session = ssf.openSession();
-		MemberDao dao = session.getMapper(MemberDao.class);
-		int aft = dao.delete(mid);
+		CommentDao dao = session.getMapper(CommentDao.class);
+		int aft = dao.delete(member_id,product_code);
 		
 		session.commit();
 		session.close();
@@ -65,15 +64,16 @@ public class MyBatisCommentDao {
 	}
 
 	@Override
-	public int insert(Member member) throws SQLException {
+	public int insert(Comment comment) throws SQLException {
 		// TODO Auto-generated method stub
 		SqlSession session = ssf.openSession();
-		MemberDao dao = session.getMapper(MemberDao.class);
-		int aft = dao.insert(member);
+		CommentDao dao = session.getMapper(CommentDao.class);
+		int aft = dao.insert(comment);
 		
-		session.commit();		
+		session.commit();
 		session.close();
 		
 		return aft;
 	}
+
 }

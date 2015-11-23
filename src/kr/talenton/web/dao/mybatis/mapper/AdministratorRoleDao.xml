@@ -8,11 +8,24 @@
 		SELECT * FROM(
 		 SELECT 
 		  ROW_NUMBER() OVER(ORDER BY REGDATE DESC) NUM, 
-		   Administrator_Role.* FROM  Administrator_Role
+		   ADMINISTRATOR_ROLE.* FROM  ADMINISTRATOR_ROLE
 		 WHERE ${param2} LIKE '%${param3}%'
 		)A 
         WHERE NUM BETWEEN 1+(#{param1}-1)*10  AND  #{param1}*10
 	</select>
+	
+	<update id="update" >
+		UPDATE ADMINISTRATOR_ROLE SET NAME = #{name}
+		WHERE NAME = #{name} 
+	</update>
+	
+	<delete id="delete">
+		DELETE ADMINISTRATOR_ROLE WHERE NAME = #{name}
+	</delete>
+	
+	<insert id = "insert">
+		INSERT INTO ADMINISTRATOR_ROLE (NAME) Values(#{name})
+	</insert>
 
 	
 </mapper>
