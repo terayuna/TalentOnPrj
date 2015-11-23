@@ -1,4 +1,4 @@
-package kr.talenton.web.dao;
+package kr.talenton.web.dao.mybatis;
 
 import java.sql.SQLException;
 import java.util.List;
@@ -6,12 +6,11 @@ import java.util.List;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
 
-
-import kr.talenton.web.dao.mybatis.TalentOnSqlSessionFactoryBuilder;
+import kr.talenton.web.dao.AdministerDao;
 import kr.talenton.web.vo.Administer;
 
 
-public class MyBatisAdministerDao {
+public class MyBatisAdministerDao implements AdministerDao{
 	
 	SqlSessionFactory ssf = TalentOnSqlSessionFactoryBuilder.getSqlSessionFactory();
 

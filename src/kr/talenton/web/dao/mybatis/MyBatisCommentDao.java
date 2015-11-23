@@ -1,4 +1,4 @@
-package kr.talenton.web.dao;
+package kr.talenton.web.dao.mybatis;
 
 import java.sql.SQLException;
 import java.util.List;
@@ -7,7 +7,7 @@ import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
 
 import kr.talenton.web.dao.CommentDao;
-import kr.talenton.web.dao.mybatis.TalentOnSqlSessionFactoryBuilder;
+import kr.talenton.web.dao.MemberDao;
 import kr.talenton.web.vo.Comment;
 
 public class MyBatisCommentDao {

@@ -5,7 +5,6 @@ import java.util.List;
 
 import kr.talenton.web.vo.Administer;
 
-
 public interface AdministerDao {
 	
 	public List<Administer> getAdministers() throws SQLException;
