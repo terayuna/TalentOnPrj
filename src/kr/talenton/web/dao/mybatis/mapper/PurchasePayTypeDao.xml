@@ -1,1 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="kr.talenton.web.dao.PurchasePayTypeDao">
+	<select id="getPurchasePayTypes" resultType="kr.talenton.web.vo.PurchasePayType">
+		SELECT * FROM (
+		SELECT ROW_NUMBER() OVER (ORDER BY DATE DESC) NUM,
+		PURCHASEPAYTYPEDAO.* FROM PURCHASEPAYTYPEDAO WHERE ${param2} LIKE '%${param3}%')A 
+		WHERE NUM BETWEEN
+		1+(#{param1}-1)*10  AND #{param1}*10
+	
+	</select>
+	
+	<update id="update" >
+		UPDATE PURCHASEPAYTYPEDAO SET NAME = #{name} WHERE NAME = #{name};
+	
+	</update>
+	
+	<delete id="delete">
+		DELETE PURCHASEPAYTYPEDAO WHERE NAME = #{name};
+	</delete>
+	
+	<insert id = "insert">
+		INSERT INTO PURCHASEPAYTYPEDAO (NAME) Values(#{name})
+	</insert>
+		
+</mapper>

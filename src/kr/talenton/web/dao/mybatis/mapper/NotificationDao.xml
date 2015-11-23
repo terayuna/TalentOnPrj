@@ -1,1 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="kr.talenton.web.dao.NotificationDao">
+	<select id="getNotifications" resultType="kr.talenton.web.vo.Notification">
+		SELECT * FROM (
+		SELECT ROW_NUMBER() OVER (ORDER BY DATE DESC) NUM,
+		NOTIFICATION.* FROM NOTIFICATION WHERE ${param2} LIKE '%${param3}%')A 
+		WHERE NUM BETWEEN
+		1+(#{param1}-1)*10  AND #{param1}*10
+	
+	</select>
+	
+	<update id="update" >
+		UPDATE NOTIFICATION STATUS  = #{status} WHERE STATUS = #{status};
+	</update>
+	
+	<delete id="delete">
+		DELETE NOTIFICATION WHERE STATUS = #{status};
+	</delete>
+	
+	<insert id = "insert">
+		INSERT INTO NOTIFICATION (STATUS) Values(#{status})
+	</insert>
+		
+</mapper>

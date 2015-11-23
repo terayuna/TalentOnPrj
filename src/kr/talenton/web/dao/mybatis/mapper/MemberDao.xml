@@ -1,2 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="kr.talenton.web.dao.MemberDao">
+	<select id="getMembers" resultType="kr.talenton.web.vo.Member">
+		SELECT * FROM (
+		SELECT ROW_NUMBER() OVER (ORDER BY DATE DESC) NUM,
+		MEMBER.* FROM MEMBER WHERE ${param2} LIKE '%${param3}%')A 
+		WHERE NUM BETWEEN
+		1+(#{param1}-1)*10  AND #{param1}*10
+	
+	</select>
+	
+	<update id="update" >
+		UPDATE MEMBER SET NAME = #{name}, EMAIL = #{email}, PASSWORD = #{password},
+		IMAGE = #{image}, ADDRESS = #{address}, PHONE = #{phone}, MOBILE = #{mobile}
+		BIRTHDAY = #{birthday}, SELF_INTRODUCTION = #{self_introduction}, DATE = #{date},
+		NOTIFICATION_STATUS = #{notification_status} WHERE MEMBER_ID = #{member_id} AND PRODUCT_CODE = #{product_code};
+	
+	</update>
+	
+	<delete id="delete">
+		DELETE MEMBER WHERE ID = #{id};
+	</delete>
+	
+	<insert id = "insert">
+		INSERT INTO MEMBER (ID, NAME,EMAIL,PASSWORD, IMAGE, ADDRESS, PHONE, MOBILE, BIRTHDAY, SELF_INTRODUCTION, 
+		DATE, NOTIFICATION_STATUS) Values(#{id},#{name},#{email},#{password},#{image},#{address},#{phone},
+		#{mobile},#{birthday},#{self_introduction},#{date},#{notification_status})
+	</insert>
+		
+</mapper>
