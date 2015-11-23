@@ -7,14 +7,14 @@
 	<select id="getExports" resultType="kr.talenton.web.vo.Export">
 		SELECT * FROM (
 		SELECT ROW_NUMBER() OVER (ORDER BY DATE DESC) NUM,
-		EXPORTS.* FROM COMMENTS WHERE ${param2} LIKE '%${param3}%')A 
+		EXPORT.* FROM EXPORT WHERE ${param2} LIKE '%${param3}%')A 
 		WHERE NUM BETWEEN
 		1+(#{param1}-1)*10  AND #{param1}*10
 	
 	</select>
 	
 	<update id="update" >
-		UPDATE EXPORT SET SNS = #{sns} WHERE MEMBER_ID = #{member_id} AND PRODUCT_CODE = #{product_code};
+		UPDATE EXPORT SET SNS = #{sns}, DATE = #{date} WHERE MEMBER_ID = #{member_id} AND PRODUCT_CODE = #{product_code};
 	
 	</update>
 	

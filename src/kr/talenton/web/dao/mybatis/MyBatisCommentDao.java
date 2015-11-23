@@ -55,9 +55,9 @@ public class MyBatisCommentDao implements CommentDao{
 		// TODO Auto-generated method stub
 		SqlSession session = ssf.openSession();
 		CommentDao dao = session.getMapper(CommentDao.class);
-		int aft = dao.delete(member_id,product_code);
+		int aft = dao.delete(member_id, product_code);
 		
-		session.commit();
+		session.commit();		
 		session.close();
 		
 		return aft;

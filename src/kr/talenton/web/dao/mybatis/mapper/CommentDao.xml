@@ -7,14 +7,14 @@
 	<select id="getComments" resultType="kr.talenton.web.vo.Comment">
 		SELECT * FROM (
 		SELECT ROW_NUMBER() OVER (ORDER BY DATE DESC) NUM,
-		COMMENTS.* FROM COMMENTS WHERE ${param2} LIKE '%${param3}%')A 
+		COMMENT.* FROM COMMENT WHERE ${param2} LIKE '%${param3}%')A 
 		WHERE NUM BETWEEN
 		1+(#{param1}-1)*10  AND #{param1}*10
 	
 	</select>
 	
 	<update id="update" >
-		UPDATE COMMENT SET CONTENT = #{content} WHERE MEMBER_ID = #{member_id} AND PRODUCT_CODE = #{product_code};
+		UPDATE COMMENT SET CONTENT = #{content}, DATE = #{date} WHERE MEMBER_ID = #{member_id} AND PRODUCT_CODE = #{product_code};
 	
 	</update>
 	
