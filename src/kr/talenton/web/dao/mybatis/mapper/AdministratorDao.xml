@@ -1,1 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="kr.talenton.web.dao.AdministratorDao">
+	<select id="getAdministrators" resultType="kr.talenton.web.vo.Administrator">
+		SELECT * FROM(
+		 SELECT 
+		  ROW_NUMBER() OVER(ORDER BY REGDATE DESC) NUM, 
+		  ADMINISTRATOR.* FROM ADMINISTRATOR
+		 WHERE ${param2} LIKE '%${param3}%'
+		)A 
+        WHERE NUM BETWEEN 1+(#{param1}-1)*10  AND  #{param1}*10
+	</select>
+	
+	<update id="update" >
+		UPDATE ADMINISTRATOR SET NAME = #{name}, EMAIL = #{email}, PASSWORD = #{password}, IMAGE = #{image},
+		ADDRESS = #{address}, PHONE = #{phone}, MOBILE = #{mobile}, BIRTHDAY = #{birthday}, DATE = #{date}, ROLE = #{role} 
+		WHERE ID = #{id} 
+	</update>
+	
+	<delete id="delete">
+		DELETE ADMINISTRATOR WHERE ID = #{id}
+	</delete>
+	
+	<insert id = "insert">
+		INSERT INTO ADMINISTRATOR (ID, NAME, EMAIL, PASSWORD, IMAGE, ADDRESS, PHONE, MOBILE, BIRTHDAY, DATE, ROLE) Values(#{id},
+		#{name},#{email},#{password},#{image},#{address},#{phone},#{mobile},#{birthday},#{date},#{role})
+	</insert>
+
+	
+</mapper>

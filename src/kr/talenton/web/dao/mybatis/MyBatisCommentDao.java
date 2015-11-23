@@ -75,6 +75,5 @@ public class MyBatisCommentDao implements CommentDao{
 		
 		return aft;
 	}
-	
-	
+
 }

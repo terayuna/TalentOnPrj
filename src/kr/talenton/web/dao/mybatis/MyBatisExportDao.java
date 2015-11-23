@@ -15,19 +15,19 @@ public class MyBatisExportDao implements ExportDao{
 	SqlSessionFactory ssf = TalentOnSqlSessionFactoryBuilder.getSqlSessionFactory();
 	@Override
 	public List<Export> getExports() throws SQLException {
-		// TODO Auto-generated method stub
+
 		return getExports(1,"MEMBER_ID","");
 	}
 
 	@Override
 	public List<Export> getExports(int page) throws SQLException {
-		// TODO Auto-generated method stub
+		
 		return getExports(page,"MEMBER_ID","");
 	}
 
 	@Override
 	public List<Export> getExports(int page, String field, String query) throws SQLException {
-		// TODO Auto-generated method stub
+	
 		SqlSession session = ssf.openSession();
 		ExportDao dao = session.getMapper(ExportDao.class);
 		
@@ -39,7 +39,7 @@ public class MyBatisExportDao implements ExportDao{
 
 	@Override
 	public int update(Export export) throws SQLException {
-		// TODO Auto-generated method stub
+	
 		SqlSession session = ssf.openSession();
 		ExportDao dao = session.getMapper(ExportDao.class);
 		int aft = dao.update(export);
@@ -52,7 +52,7 @@ public class MyBatisExportDao implements ExportDao{
 
 	@Override
 	public int delete(String member_id, int product_code) throws SQLException {
-		// TODO Auto-generated method stub
+	
 		SqlSession session = ssf.openSession();
 		ExportDao dao = session.getMapper(ExportDao.class);
 		int aft = dao.delete(member_id,product_code);
@@ -65,7 +65,7 @@ public class MyBatisExportDao implements ExportDao{
 
 	@Override
 	public int insert(Export export) throws SQLException {
-		// TODO Auto-generated method stub
+
 		SqlSession session = ssf.openSession();
 		ExportDao dao = session.getMapper(ExportDao.class);
 		int aft = dao.insert(export);
@@ -75,6 +75,5 @@ public class MyBatisExportDao implements ExportDao{
 		
 		return aft;
 	}
-
 
 }

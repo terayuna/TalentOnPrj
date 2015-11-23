@@ -1,1 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="kr.talenton.web.dao.BidPayTypeDao">
+	<select id="getBidPayTypes" resultType="kr.talenton.web.vo.BidPayType">
+		SELECT * FROM(
+		 SELECT 
+		  ROW_NUMBER() OVER(ORDER BY REGDATE DESC) NUM, 
+		  BID_PAY_TYPE.* FROM BID_PAY_TYPE
+		 WHERE ${param2} LIKE '%${param3}%'
+		)A 
+        WHERE NUM BETWEEN 1+(#{param1}-1)*10  AND  #{param1}*10
+	</select>
+	
+	<update id="update" >
+		UPDATE BID_PAY_TYPE SET NAME = #{name}
+		WHERE NAME = #{name} 
+	</update>
+	
+	<delete id="delete">
+		DELETE BID_PAY_TYPE WHERE NAME = #{name}
+	</delete>
+	
+	<insert id = "insert">
+		INSERT INTO BID_PAY_TYPE (NAME) Values(#{name})
+	</insert>
+
+	
+</mapper>
