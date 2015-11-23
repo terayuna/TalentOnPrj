@@ -16,13 +16,13 @@ public class MyBatisUploadTypeDao implements UploadTypeDao{
 	@Override
 	public List<UploadType> getUploadTypes() throws SQLException {
 		
-		return getUploadTypes(1,"title","");
+		return getUploadTypes(1,"name","");
 	}
 
 	@Override
 	public List<UploadType> getUploadTypes(int page) throws SQLException {
 		
-		return getUploadTypes(page,"title","");
+		return getUploadTypes(page,"name","");
 	}
 
 	@Override
@@ -30,7 +30,7 @@ public class MyBatisUploadTypeDao implements UploadTypeDao{
 		
         SqlSession session = ssf.openSession();
         UploadTypeDao dao = session.getMapper(UploadTypeDao.class);
-		List<UploadType> list = dao.getUploadTypes(page,"title","");
+		List<UploadType> list = dao.getUploadTypes(page,field,query);
 		
 		session.commit();
 		session.close();
@@ -38,11 +38,11 @@ public class MyBatisUploadTypeDao implements UploadTypeDao{
 	}
 
 	@Override
-	public int update(UploadType uploadtype) {
+	public int update(UploadType uploadType) {
 		
 		 SqlSession session = ssf.openSession();
 		 UploadTypeDao dao = session.getMapper(UploadTypeDao.class);
-			int aft = dao.update(uploadtype);
+			int aft = dao.update(uploadType);
 			
 			session.commit();
 			session.close();
@@ -51,10 +51,10 @@ public class MyBatisUploadTypeDao implements UploadTypeDao{
 	}
 	
 	@Override
-	public int insert(UploadType uploadtype) {
+	public int insert(UploadType uploadType) {
 		SqlSession session = ssf.openSession();
 		UploadTypeDao dao = session.getMapper(UploadTypeDao.class);
-		int aft = dao.insert(uploadtype);
+		int aft = dao.insert(uploadType);
 		
 		session.commit();
 		session.close();
@@ -63,11 +63,11 @@ public class MyBatisUploadTypeDao implements UploadTypeDao{
 	}
 
 	@Override
-	public int delete(String mid) {
+	public int delete(String name) {
 		
 		SqlSession session = ssf.openSession();
 		UploadTypeDao dao = session.getMapper(UploadTypeDao.class);
-		int aft = dao.delete(mid);
+		int aft = dao.delete(name);
 		
 		session.commit();
 		session.close();

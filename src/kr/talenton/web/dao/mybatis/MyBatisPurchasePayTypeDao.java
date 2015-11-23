@@ -17,13 +17,13 @@ public class MyBatisPurchasePayTypeDao implements PurchasePayTypeDao{
 	@Override
 	public List<PurchasePayType> getPurchasePayTypes() throws SQLException {
 		
-		return getPurchasePayTypes(1,"title","");
+		return getPurchasePayTypes(1,"name","");
 	}
 
 	@Override
 	public List<PurchasePayType> getPurchasePayTypes(int page) throws SQLException {
 		
-		return getPurchasePayTypes(page,"title","");
+		return getPurchasePayTypes(page,"name","");
 	}
 
 	@Override
@@ -31,7 +31,7 @@ public class MyBatisPurchasePayTypeDao implements PurchasePayTypeDao{
 		
         SqlSession session = ssf.openSession();
         PurchasePayTypeDao dao = session.getMapper(PurchasePayTypeDao.class);
-		List<PurchasePayType> list = dao.getPurchasePayTypes(page,"title","");
+		List<PurchasePayType> list = dao.getPurchasePayTypes(page,field,query);
 		
 		session.commit();
 		session.close();
@@ -39,11 +39,11 @@ public class MyBatisPurchasePayTypeDao implements PurchasePayTypeDao{
 	}
 
 	@Override
-	public int update(PurchasePayType purchasepaytype) {
+	public int update(PurchasePayType purchasePayType) {
 		
 		 SqlSession session = ssf.openSession();
 		 PurchasePayTypeDao dao = session.getMapper(PurchasePayTypeDao.class);
-			int aft = dao.update(purchasepaytype);
+			int aft = dao.update(purchasePayType);
 			
 			session.commit();
 			session.close();
@@ -52,10 +52,10 @@ public class MyBatisPurchasePayTypeDao implements PurchasePayTypeDao{
 	}
 	
 	@Override
-	public int insert(PurchasePayType purchasepaytype) {
+	public int insert(PurchasePayType purchasePayType) {
 		SqlSession session = ssf.openSession();
 		PurchasePayTypeDao dao = session.getMapper(PurchasePayTypeDao.class);
-		int aft = dao.insert(purchasepaytype);
+		int aft = dao.insert(purchasePayType);
 		
 		session.commit();
 		session.close();
@@ -64,11 +64,11 @@ public class MyBatisPurchasePayTypeDao implements PurchasePayTypeDao{
 	}
 
 	@Override
-	public int delete(String mid) {
+	public int delete(String name) {
 		
 		SqlSession session = ssf.openSession();
 		PurchasePayTypeDao dao = session.getMapper(PurchasePayTypeDao.class);
-		int aft = dao.delete(mid);
+		int aft = dao.delete(name);
 		
 		session.commit();
 		session.close();

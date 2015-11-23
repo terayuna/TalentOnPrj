@@ -13,50 +13,35 @@ import kr.talenton.web.vo.MemberSNS;
 
 public class MyBatisMemberSNSDao implements MemberSNSDao {
 	SqlSessionFactory ssf = TalentOnSqlSessionFactoryBuilder.getSqlSessionFactory();
-	
-	@Override
-	public List<MemberSNS> getMemberSNSs(String member_id, String name) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-
-	@Override
-	public int delete(String member_id, String name) {
-		// TODO Auto-generated method stub
-		return 0;
-	}
-
-
+		
 	@Override
 	public List<MemberSNS> getMemberSNSs() throws SQLException {
 		
-		return getMemberSNSs(1,"MID","");
+		return getMemberSNSs(1,"member_id","");
 	}
 
 	@Override
 	public List<MemberSNS> getMemberSNSs(int page) throws SQLException {
 		
-		return getMemberSNSs(page,"MID","");
+		return getMemberSNSs(page,"member_id","");
 	}
 
 	@Override
 	public List<MemberSNS> getMemberSNSs(int page, String field, String query) throws SQLException {
 		
         SqlSession session = ssf.openSession();
-        MemberSNSDao dao = session.getMapper(MemberSNSDao.class);
-		List<MemberSNS> list = dao.getMemberSNSs(page,"MID","jwk");
+		MemberSNSDao dao = session.getMapper(MemberSNSDao.class);
+		List<MemberSNS> list = dao.getMemberSNSs(page,field,query);
 		
 		session.close();
 		return list;
 	}
-
 	@Override
-	public int update(MemberSNS membersns) {
+	public int update(MemberSNS memberSNS) {
 		
 		 SqlSession session = ssf.openSession();
 		 MemberSNSDao dao = session.getMapper(MemberSNSDao.class);
-			int aft = dao.update(membersns);
+			int aft = dao.update(memberSNS);
 			
 			session.commit();
 			session.close();
@@ -77,11 +62,11 @@ public class MyBatisMemberSNSDao implements MemberSNSDao {
 	}
 
 	@Override
-	public int delete(String mid) {
+	public int delete(String member_id, String name) {
 		
 		SqlSession session = ssf.openSession();
 		MemberSNSDao dao = session.getMapper(MemberSNSDao.class);
-		int aft = dao.delete(mid);
+		int aft = dao.delete(member_id,name);
 		
 		session.commit();
 		session.close();
@@ -89,5 +74,6 @@ public class MyBatisMemberSNSDao implements MemberSNSDao {
 		return aft;
 	}
 
+	
 
 }

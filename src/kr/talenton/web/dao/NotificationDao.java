@@ -12,7 +12,7 @@ public interface NotificationDao {
 	public List<Notification> getNotifications(int page) throws SQLException;
 	public List<Notification> getNotifications(int page,String field, String query) throws SQLException;
 	public int update(Notification notification);
-	public int delete(String mid);
+	public int delete(String status);
 	public int insert(Notification notification);
 
 }

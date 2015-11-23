@@ -3,8 +3,8 @@
 <!DOCTYPE mapper
   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="kr.talenton.web.dao.Member_SNSDao">
-	<select id="getMember_SNSs" resultType="kr.talenton.web.vo.Member_SNS">
+<mapper namespace="kr.talenton.web.dao.MemberSNSDao">
+	<select id="getMemberSNSs" resultType="kr.talenton.web.vo.MemberSNS">
 		SELECT * FROM (
 		SELECT ROW_NUMBER() OVER (ORDER BY DATE DESC) NUM,
 		Member_SNS.* FROM Member_SNS WHERE ${param2} LIKE '%${param3}%')A 
@@ -14,16 +14,16 @@
 	</select>
 	
 	<update id="update" >
-		UPDATE MEMBER_SNS SET URL = #{url} WHERE MEMBER_ID = #{member_id} AND NAME = #{name};
+		UPDATE MEMBER_SNS SET URL = #{url} WHERE MEMBER_ID = #{member_id} AND NAME = #{name}
 	
 	</update>
 	
 	<delete id="delete">
-		DELETE MEMBER_SNS WHERE MEMBER_ID = #{member_id} AND NAME = #{name};
+		DELETE MEMBER_SNS WHERE MEMBER_ID = #{member_id} AND NAME = #{name}
 	</delete>
 	
 	<insert id = "insert">
-		INSERT INTO COMMENT (MEMBER_ID, NAME, URL) Values(#{member_id},	#{name},#{url})
+		INSERT INTO MEMBER_SNS (MEMBER_ID, NAME, URL) Values(#{member_id},#{name},#{url})
 	</insert>
 		
 </mapper>

@@ -12,7 +12,7 @@ public interface ReportDao {
 	public List<Report> getReports(int page) throws SQLException;
 	public List<Report> getReports(int page,String field, String query) throws SQLException;
 	public int update(Report report);
-	public int delete(String mid);
+	public int delete(String member_id, int product_code);
 	public int insert(Report report);
 
 }

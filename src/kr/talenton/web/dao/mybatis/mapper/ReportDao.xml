@@ -14,7 +14,8 @@
 	</select>
 	
 	<update id="update" >
-		UPDATE REPORT SET CONTENT = #{content} WHERE MEMBER_ID = #{member_id} AND PRODUCT_CODE = #{product_code};
+		UPDATE REPORT SET DATE = #{date} RESPOND_DATE = #{respond_date} RESPOND_CONTENT = #{respond_content}
+		RESPOND_ID = #{respond_id} WHERE MEMBER_ID = #{member_id} AND PRODUCT_CODE = #{product_code};
 	
 	</update>
 	
@@ -23,8 +24,8 @@
 	</delete>
 	
 	<insert id = "insert">
-		INSERT INTO REPORT (MEMBER_ID, PRODUCT_CODE,DATE,CONTENT) Values(#{member_id},
-		#{product_code},#{date},#{content})
+		INSERT INTO REPORT (MEMBER_ID, PRODUCT_CODE,DATE, RESPOND_DATE, RESPOND_CONTENT, RESPOND_ID)
+		 Values(#{member_id},#{product_code},#{date},#{respond_date},#{respond_content},#{respond_id})
 	</insert>
 		
 </mapper>
