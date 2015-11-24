@@ -16,13 +16,13 @@ public class MyBatisInquiryDao implements InquiryDao{
 	@Override
 	public List<Inquiry> getInquirys() throws SQLException {
 		// TODO Auto-generated method stub
-		return getInquirys(1,"MEMBER_ID","");
+		return getInquirys(1,"CODE","");
 	}
 
 	@Override
 	public List<Inquiry> getInquirys(int page) throws SQLException {
 		// TODO Auto-generated method stub
-		return getInquirys(1,"MEMBER_ID","");
+		return getInquirys(1,"CODE","");
 	}
 
 	@Override

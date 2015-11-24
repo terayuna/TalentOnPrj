@@ -10,7 +10,7 @@ public interface AdministratorMessageDao {
 	public List<AdministratorMessage> getAdministratorMessages(int page) throws SQLException;
 	public List<AdministratorMessage> getAdministratorMessages(int page, String field, String query) throws SQLException;
 	public int update(AdministratorMessage administratorMessage) throws SQLException;
-	public int delete(String mid) throws SQLException;
+	public int delete(String administrator_id, String member_id, int code) throws SQLException;
 	public int insert(AdministratorMessage administratorMessage) throws SQLException;
 
 

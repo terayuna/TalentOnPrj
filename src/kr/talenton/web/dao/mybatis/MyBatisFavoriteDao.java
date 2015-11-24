@@ -17,13 +17,13 @@ public class MyBatisFavoriteDao implements FavoriteDao{
 	@Override
 	public List<Favorite> getFavorites() throws SQLException {
 		// TODO Auto-generated method stub
-		return getFavorites(1,"add_id","");
+		return getFavorites(1,"ADD_ID","");
 	}
 
 	@Override
 	public List<Favorite> getFavorites(int page) throws SQLException {
 		// TODO Auto-generated method stub
-		return getFavorites(page,"MEMBER_ID","");
+		return getFavorites(page,"ADD_ID","");
 	}
 
 	@Override
@@ -52,7 +52,7 @@ public class MyBatisFavoriteDao implements FavoriteDao{
 	}
 
 	@Override
-	public int delete(String add_id, int added_id) throws SQLException {
+	public int delete(String add_id, String added_id) throws SQLException {
 		// TODO Auto-generated method stub
 		SqlSession session = ssf.openSession();
 		FavoriteDao dao = session.getMapper(FavoriteDao.class);

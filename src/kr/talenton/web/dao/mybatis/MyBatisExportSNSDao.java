@@ -38,11 +38,11 @@ public class MyBatisExportSNSDao implements ExportSNSDao{
 	}
 
 	@Override
-	public int update(ExportSNS exportsns) throws SQLException {
+	public int update(ExportSNS exportSNS) throws SQLException {
 		// TODO Auto-generated method stub
 		SqlSession session = ssf.openSession();
 		ExportSNSDao dao = session.getMapper(ExportSNSDao.class);
-		int aft = dao.update(exportsns);
+		int aft = dao.update(exportSNS);
 		
 		session.commit();		
 		session.close();
@@ -64,11 +64,11 @@ public class MyBatisExportSNSDao implements ExportSNSDao{
 	}
 
 	@Override
-	public int insert(ExportSNS exportsns) throws SQLException {
+	public int insert(ExportSNS exportSNS) throws SQLException {
 		// TODO Auto-generated method stub
 		SqlSession session = ssf.openSession();
 		ExportSNSDao dao = session.getMapper(ExportSNSDao.class);
-		int aft = dao.insert(exportsns);
+		int aft = dao.insert(exportSNS);
 		
 		session.commit();
 		session.close();

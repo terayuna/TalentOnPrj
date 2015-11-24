@@ -17,13 +17,13 @@ public class MyBatisPurchasePayTypeDao implements PurchasePayTypeDao{
 	@Override
 	public List<PurchasePayType> getPurchasePayTypes() throws SQLException {
 		
-		return getPurchasePayTypes(1,"name","");
+		return getPurchasePayTypes(1,"NAME","");
 	}
 
 	@Override
 	public List<PurchasePayType> getPurchasePayTypes(int page) throws SQLException {
 		
-		return getPurchasePayTypes(page,"name","");
+		return getPurchasePayTypes(page,"NAME","");
 	}
 
 	@Override

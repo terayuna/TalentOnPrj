@@ -1,6 +1,7 @@
 package kr.talenton.web.dao.mybatis;
 
 import java.sql.SQLException;
+import java.util.Date;
 import java.util.List;
 
 import org.apache.ibatis.session.SqlSession;
@@ -16,13 +17,13 @@ public class MyBatisBidDao implements BidDao{
 	@Override
 	public List<Bid> getBids() throws SQLException {
 	
-		return getBids(1, "MID", "");
+		return getBids(1, "MEMBER_ID", "");
 	}
 
 	@Override
 	public List<Bid> getBids(int page) throws SQLException {
 	
-		return getBids(page, "MID", "");
+		return getBids(page, "MEMBER_ID", "");
 	}
 
 	@Override
@@ -51,12 +52,12 @@ public class MyBatisBidDao implements BidDao{
 	}
 
 	@Override
-	public int delete(String mid) throws SQLException {
+	public int delete(String member_id, int product_code, Date date) throws SQLException {
 		
 		SqlSession session = ssf.openSession();
 		BidDao dao = session.getMapper(BidDao.class);
 		
-		int aft = dao.delete(mid);
+		int aft = dao.delete(member_id, product_code, date);
 		session.commit();
 		session.close();
 		return aft;

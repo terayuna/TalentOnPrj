@@ -17,13 +17,13 @@ public class MyBatisCategoryDao implements CategoryDao {
 	@Override
 	public List<Category> getCategorys() throws SQLException {
 	
-		return getCategorys(1, "MID", "");
+		return getCategorys(1, "NAME", "");
 	}
 
 	@Override
 	public List<Category> getCategorys(int page) throws SQLException {
 	
-		return getCategorys(page, "MID", "");
+		return getCategorys(page, "NAME", "");
 	}
 
 	@Override
@@ -52,12 +52,12 @@ public class MyBatisCategoryDao implements CategoryDao {
 	}
 
 	@Override
-	public int delete(String mid) throws SQLException {
+	public int delete(String name) throws SQLException {
 		
 		SqlSession session = ssf.openSession();
 		CategoryDao dao = session.getMapper(CategoryDao.class);
 		
-		int aft = dao.delete(mid);
+		int aft = dao.delete(name);
 		session.commit();
 		session.close();
 		return aft;

@@ -16,13 +16,13 @@ public class MyBatisUploadTypeDao implements UploadTypeDao{
 	@Override
 	public List<UploadType> getUploadTypes() throws SQLException {
 		
-		return getUploadTypes(1,"name","");
+		return getUploadTypes(1,"NAME","");
 	}
 
 	@Override
 	public List<UploadType> getUploadTypes(int page) throws SQLException {
 		
-		return getUploadTypes(page,"name","");
+		return getUploadTypes(page,"NAME","");
 	}
 
 	@Override

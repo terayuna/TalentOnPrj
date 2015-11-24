@@ -16,13 +16,13 @@ public class MyBatisAdministratorDao implements AdministratorDao{
 	@Override
 	public List<Administrator> getAdministrators() throws SQLException {
 	
-		return getAdministrators(1, "MID", "");
+		return getAdministrators(1, "ID", "");
 	}
 
 	@Override
 	public List<Administrator> getAdministrators(int page) throws SQLException {
 	
-		return getAdministrators(page, "MID", "");
+		return getAdministrators(page, "ID", "");
 	}
 
 	@Override
@@ -51,12 +51,12 @@ public class MyBatisAdministratorDao implements AdministratorDao{
 	}
 
 	@Override
-	public int delete(String mid) throws SQLException {
+	public int delete(String id) throws SQLException {
 		
 		SqlSession session = ssf.openSession();
 		AdministratorDao dao = session.getMapper(AdministratorDao.class);
 		
-		int aft = dao.delete(mid);
+		int aft = dao.delete(id);
 		session.commit();
 		session.close();
 		return aft;

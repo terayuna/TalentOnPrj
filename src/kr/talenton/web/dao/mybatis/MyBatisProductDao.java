@@ -16,13 +16,13 @@ public class MyBatisProductDao implements ProductDao{
 	@Override
 	public List<Product> getProducts() throws SQLException {
 		
-		return getProducts(1,"code","");
+		return getProducts(1,"CODE","");
 	}
 
 	@Override
 	public List<Product> getProducts(int page) throws SQLException {
 		
-		return getProducts(page,"code","");
+		return getProducts(page,"CODE","");
 	}
 
 	@Override

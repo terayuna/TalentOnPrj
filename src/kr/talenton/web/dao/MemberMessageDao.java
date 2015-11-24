@@ -12,7 +12,7 @@ public interface MemberMessageDao {
 
 	
 	public int update(MemberMessage memberMessage) throws SQLException;
-	public int delete(String administrator,String member_id, int code) throws SQLException;
+	public int delete(String send_id,String receive_id, int code) throws SQLException;
 	public int insert(MemberMessage memberMessage) throws SQLException;
 	
 }

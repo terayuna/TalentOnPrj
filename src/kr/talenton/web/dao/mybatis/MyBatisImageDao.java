@@ -15,13 +15,13 @@ public class MyBatisImageDao implements ImageDao{
 	@Override
 	public List<Image> getImages() throws SQLException {
 		// TODO Auto-generated method stub
-		return getImages(1,"MEMBER_ID","");
+		return getImages(1,"CODE","");
 	}
 
 	@Override
 	public List<Image> getImages(int page) throws SQLException {
 		// TODO Auto-generated method stub
-		return getImages(page,"MEMBER_ID","");
+		return getImages(page,"CODE","");
 	}
 
 	@Override
@@ -50,7 +50,7 @@ public class MyBatisImageDao implements ImageDao{
 	}
 
 	@Override
-	public int delete(String code) throws SQLException {
+	public int delete(int code) throws SQLException {
 		// TODO Auto-generated method stub
 		SqlSession session = ssf.openSession();
 		ImageDao dao = session.getMapper(ImageDao.class);

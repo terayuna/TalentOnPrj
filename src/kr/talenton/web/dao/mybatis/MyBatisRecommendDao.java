@@ -16,13 +16,13 @@ public class MyBatisRecommendDao implements RecommendDao {
 	@Override
 	public List<Recommend> getRecommends() throws SQLException {
 	
-		return getRecommends(1, "member_id", "");
+		return getRecommends(1, "MEMBER_ID", "");
 	}
 
 	@Override
 	public List<Recommend> getRecommends(int page) throws SQLException {
 	
-		return getRecommends(page, "member_id", "");
+		return getRecommends(page, "MEMBER_ID", "");
 	}
 
 	@Override
