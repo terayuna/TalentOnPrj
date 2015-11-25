@@ -17,13 +17,13 @@ public class MyBatisAdministratorRoleDao implements AdministratorRoleDao {
 	@Override
 	public List<AdministratorRole> getAdministratorRoles() throws SQLException {
 	
-		return getAdministratorRoles(1, "MEMBER_ID", "");
+		return getAdministratorRoles(1, "NAME", "");
 	}
 
 	@Override
 	public List<AdministratorRole> getAdministratorRoles(int page) throws SQLException {
 	
-		return getAdministratorRoles(page, "MEMBER_ID", "");
+		return getAdministratorRoles(page, "NAME", "");
 	}
 
 	@Override

@@ -11,7 +11,7 @@ public interface ProductDao {
 	public List<Product> getProducts(int page) throws SQLException;
 	public List<Product> getProducts(int page,String field, String query) throws SQLException;
 	public int update(Product product);
-	public int delete(String mid);
+	public int delete(int code);
 	public int insert(Product product);
 
 }

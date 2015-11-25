@@ -11,8 +11,8 @@ public interface PurchasePayTypeDao {
 	public List<PurchasePayType> getPurchasePayTypes() throws SQLException;
 	public List<PurchasePayType> getPurchasePayTypes(int page) throws SQLException;
 	public List<PurchasePayType> getPurchasePayTypes(int page,String field, String query) throws SQLException;
-	public int update(PurchasePayType purchasepaytype);
-	public int delete(String mid);
-	public int insert(PurchasePayType purchasepaytype);
+	public int update(PurchasePayType purchasePayType);
+	public int delete(String name);
+	public int insert(PurchasePayType purchasePayType);
 
 }

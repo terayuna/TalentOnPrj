@@ -17,13 +17,13 @@ public class MyBatisReportDao implements ReportDao{
 	@Override
 	public List<Report> getReports() throws SQLException {
 		
-		return getReports(1,"title","");
+		return getReports(1,"MEMBER_ID","");
 	}
 
 	@Override
 	public List<Report> getReports(int page) throws SQLException {
 		
-		return getReports(page,"title","");
+		return getReports(page,"MEMBER_ID","");
 	}
 
 	@Override
@@ -31,7 +31,7 @@ public class MyBatisReportDao implements ReportDao{
 		
         SqlSession session = ssf.openSession();
         ReportDao dao = session.getMapper(ReportDao.class);
-		List<Report> list = dao.getReports(page,"title","");
+		List<Report> list = dao.getReports(page,field,query);
 		
 		session.commit();
 		session.close();
@@ -64,11 +64,11 @@ public class MyBatisReportDao implements ReportDao{
 	}
 
 	@Override
-	public int delete(String mid) {
+	public int delete(String member_id, int product_code) {
 		
 		SqlSession session = ssf.openSession();
 		ReportDao dao = session.getMapper(ReportDao.class);
-		int aft = dao.delete(mid);
+		int aft = dao.delete(member_id, product_code);
 		
 		session.commit();
 		session.close();

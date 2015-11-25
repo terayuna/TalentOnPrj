@@ -23,6 +23,7 @@ public class MyBatisAdministratorDao implements AdministratorDao{
 	public List<Administrator> getAdministrators(int page) throws SQLException {
 	
 		return getAdministrators(page, "MEMBER_ID", "");
+
 	}
 
 	@Override

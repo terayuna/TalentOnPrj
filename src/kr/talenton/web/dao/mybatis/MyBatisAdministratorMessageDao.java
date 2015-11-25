@@ -18,13 +18,13 @@ public class MyBatisAdministratorMessageDao implements AdministratorMessageDao{
 	@Override
 	public List<AdministratorMessage> getAdministratorMessages() throws SQLException {
 	
-		return getAdministratorMessages(1, "MEMBER_ID", "");
+		return getAdministratorMessages(1, "ADMINISTRATOR_ID", "");
 	}
 
 	@Override
 	public List<AdministratorMessage> getAdministratorMessages(int page) throws SQLException {
-	
-		return getAdministratorMessages(page, "MEMBER_ID", "");
+
+		return getAdministratorMessages(page, "ADMINISTRATOR_ID", "");
 	}
 
 	@Override

@@ -11,8 +11,8 @@ public interface UploadTypeDao {
 	public List<UploadType> getUploadTypes() throws SQLException;
 	public List<UploadType> getUploadTypes(int page) throws SQLException;
 	public List<UploadType> getUploadTypes(int page,String field, String query) throws SQLException;
-	public int update(UploadType uploadtype);
-	public int delete(String mid);
-	public int insert(UploadType uploadtype);
+	public int update(UploadType uploadType);
+	public int delete(String name);
+	public int insert(UploadType uploadType);
 
 }

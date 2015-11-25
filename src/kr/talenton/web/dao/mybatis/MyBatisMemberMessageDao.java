@@ -16,13 +16,13 @@ public class MyBatisMemberMessageDao implements MemberMessageDao{
 	@Override
 	public List<MemberMessage> getMemberMessages() throws SQLException {
 		// TODO Auto-generated method stub
-		return getMemberMessages(1,"ADMINISTRATOR_ID","");
+		return getMemberMessages(1,"SEND_ID","");
 	}
 
 	@Override
 	public List<MemberMessage> getMemberMessages(int page) throws SQLException {
 		// TODO Auto-generated method stub
-		return getMemberMessages(page,"ADMINISTRATOR_ID","");
+		return getMemberMessages(page,"SEND_ID","");
 	}
 
 	@Override
@@ -51,11 +51,11 @@ public class MyBatisMemberMessageDao implements MemberMessageDao{
 	}
 
 	@Override
-	public int delete(String administrator, String member_id, int code) throws SQLException {
+	public int delete(String send_id, String receive_id, int code) throws SQLException {
 		// TODO Auto-generated method stub
 		SqlSession session = ssf.openSession();
 		MemberMessageDao dao = session.getMapper(MemberMessageDao.class);
-		int aft = dao.delete(administrator, member_id, code);
+		int aft = dao.delete(send_id, receive_id, code);
 		
 		session.commit();		
 		session.close();

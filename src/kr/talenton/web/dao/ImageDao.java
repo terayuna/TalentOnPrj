@@ -12,7 +12,7 @@ public interface ImageDao {
 
 	
 	public int update(Image image) throws SQLException;
-	public int delete(String code) throws SQLException;
+	public int delete(int code) throws SQLException;
 	public int insert(Image image) throws SQLException;
 	
 }

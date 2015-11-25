@@ -17,13 +17,13 @@ public class MyBatisNotificationDao implements NotificationDao{
 	@Override
 	public List<Notification> getNotifications() throws SQLException {
 		
-		return getNotifications(1,"MID","");
+		return getNotifications(1,"STATUS","");
 	}
 
 	@Override
 	public List<Notification> getNotifications(int page) throws SQLException {
 		
-		return getNotifications(page,"MID","");
+		return getNotifications(page,"STATUS","");
 	}
 
 	@Override
@@ -31,7 +31,7 @@ public class MyBatisNotificationDao implements NotificationDao{
 		
         SqlSession session = ssf.openSession();
         NotificationDao dao = session.getMapper(NotificationDao.class);
-		List<Notification> list = dao.getNotifications(page,"MID","jwk");
+		List<Notification> list = dao.getNotifications(page,field,query);
 		
 		session.close();
 		return list;
@@ -63,11 +63,11 @@ public class MyBatisNotificationDao implements NotificationDao{
 	}
 
 	@Override
-	public int delete(String mid) {
+	public int delete(String status) {
 		
 		SqlSession session = ssf.openSession();
 		NotificationDao dao = session.getMapper(NotificationDao.class);
-		int aft = dao.delete(mid);
+		int aft = dao.delete(status);
 		
 		session.commit();
 		session.close();

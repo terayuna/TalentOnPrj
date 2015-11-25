@@ -14,7 +14,7 @@
 	</select>
 	
 	<update id="update" >
-		UPDATE NOTIFICATION STATUS  = #{status} WHERE STATUS = #{status};
+		UPDATE NOTIFICATION SET STATUS  = #{status} WHERE STATUS = #{status};
 	</update>
 	
 	<delete id="delete">
@@ -22,7 +22,7 @@
 	</delete>
 	
 	<insert id = "insert">
-		INSERT INTO NOTIFICATION (STATUS) Values(#{status})
+		INSERT INTO NOTIFICATION (STATUS) Values(#{status});
 	</insert>
 		
 </mapper>

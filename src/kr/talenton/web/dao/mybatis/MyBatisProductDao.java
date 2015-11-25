@@ -16,13 +16,13 @@ public class MyBatisProductDao implements ProductDao{
 	@Override
 	public List<Product> getProducts() throws SQLException {
 		
-		return getProducts(1,"title","");
+		return getProducts(1,"CODE","");
 	}
 
 	@Override
 	public List<Product> getProducts(int page) throws SQLException {
 		
-		return getProducts(page,"title","");
+		return getProducts(page,"CODE","");
 	}
 
 	@Override
@@ -30,7 +30,7 @@ public class MyBatisProductDao implements ProductDao{
 		
         SqlSession session = ssf.openSession();
         ProductDao dao = session.getMapper(ProductDao.class);
-		List<Product> list = dao.getProducts(page,"title","");
+		List<Product> list = dao.getProducts(page,field,query);
 		
 		session.commit();
 		session.close();
@@ -63,11 +63,11 @@ public class MyBatisProductDao implements ProductDao{
 	}
 
 	@Override
-	public int delete(String mid) {
+	public int delete(int code) {
 		
 		SqlSession session = ssf.openSession();
 		ProductDao dao = session.getMapper(ProductDao.class);
-		int aft = dao.delete(mid);
+		int aft = dao.delete(code);
 		
 		session.commit();
 		session.close();

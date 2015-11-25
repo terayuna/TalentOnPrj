@@ -16,13 +16,13 @@ public class MyBatisBidPayTypeDao implements BidPayTypeDao{
 	@Override
 	public List<BidPayType> getBidPayTypes() throws SQLException {
 	
-		return getBidPayTypes(1, "MEMBER_ID", "");
+		return getBidPayTypes(1, "NAME", "");
 	}
 
 	@Override
 	public List<BidPayType> getBidPayTypes(int page) throws SQLException {
 	
-		return getBidPayTypes(page, "MEMBER_ID", "");
+		return getBidPayTypes(page, "NAME", "");
 	}
 
 	@Override

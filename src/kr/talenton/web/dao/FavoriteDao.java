@@ -12,7 +12,7 @@ public interface FavoriteDao {
 
 	
 	public int update(Favorite favorite) throws SQLException;
-	public int delete(String add_id, int added_id) throws SQLException;
+	public int delete(String add_id, String added_id) throws SQLException;
 	public int insert(Favorite favorite) throws SQLException;
 	
 }

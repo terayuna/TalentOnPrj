@@ -17,13 +17,13 @@ public class MyBatisCategoryDao implements CategoryDao {
 	@Override
 	public List<Category> getCategorys() throws SQLException {
 	
-		return getCategorys(1, "MEMBER_ID", "");
+		return getCategorys(1, "NAME", "");
 	}
 
 	@Override
 	public List<Category> getCategorys(int page) throws SQLException {
-	
-		return getCategorys(page, "MEMBER_ID", "");
+
+		return getCategorys(page, "NAME", "");
 	}
 
 	@Override

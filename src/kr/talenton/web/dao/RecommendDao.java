@@ -11,7 +11,7 @@ public interface RecommendDao {
 	public List<Recommend> getRecommends(int page) throws SQLException;
 	public List<Recommend> getRecommends(int page, String field, String query) throws SQLException;
 	public int update(Recommend recommend) throws SQLException;
-	public int delete(String mid) throws SQLException;
+	public int delete(String member_id, int product_code) throws SQLException;
 	public int insert(Recommend recommend) throws SQLException;
 	
 

@@ -16,13 +16,13 @@ public class MyBatisRecommendDao implements RecommendDao {
 	@Override
 	public List<Recommend> getRecommends() throws SQLException {
 	
-		return getRecommends(1, "MID", "");
+		return getRecommends(1, "MEMBER_ID", "");
 	}
 
 	@Override
 	public List<Recommend> getRecommends(int page) throws SQLException {
 	
-		return getRecommends(page, "MID", "");
+		return getRecommends(page, "MEMBER_ID", "");
 	}
 
 	@Override
@@ -51,12 +51,12 @@ public class MyBatisRecommendDao implements RecommendDao {
 	}
 
 	@Override
-	public int delete(String mid) throws SQLException {
+	public int delete(String member_id, int product_code) throws SQLException {
 		
 		SqlSession session = ssf.openSession();
 		RecommendDao dao = session.getMapper(RecommendDao.class);
 		
-		int aft = dao.delete(mid);
+		int aft = dao.delete(member_id, product_code);
 		session.commit();
 		session.close();
 		return aft;
@@ -71,6 +71,7 @@ public class MyBatisRecommendDao implements RecommendDao {
 		int aft = dao.insert(recommend);
 		session.commit();
 		session.close();
+		
 		return aft;
 	}
 	
