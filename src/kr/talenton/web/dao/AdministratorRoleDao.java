@@ -11,7 +11,7 @@ public interface AdministratorRoleDao {
 	public List<AdministratorRole> getAdministratorRoles(int page) throws SQLException;
 	public List<AdministratorRole> getAdministratorRoles(int page, String field, String query) throws SQLException;
 	public int update(AdministratorRole administratorRole) throws SQLException;
-	public int delete(String mid) throws SQLException;
+	public int delete(String name) throws SQLException;
 	public int insert(AdministratorRole administratorRole) throws SQLException;
 
 }

@@ -2,7 +2,7 @@ package kr.talenton.web.vo;
 
 import java.util.Date;
 
-public class Bid {
+public class Bid {  
 	
 	private String member_id; //기본키, 외래키
 	private int product_code; //기본키, 외래키
