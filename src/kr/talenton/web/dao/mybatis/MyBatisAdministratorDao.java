@@ -16,13 +16,14 @@ public class MyBatisAdministratorDao implements AdministratorDao{
 	@Override
 	public List<Administrator> getAdministrators() throws SQLException {
 	
-		return getAdministrators(1, "ID", "");
+		return getAdministrators(1, "MEMBER_ID", "");
 	}
 
 	@Override
 	public List<Administrator> getAdministrators(int page) throws SQLException {
 	
-		return getAdministrators(page, "ID", "");
+		return getAdministrators(page, "MEMBER_ID", "");
+
 	}
 
 	@Override

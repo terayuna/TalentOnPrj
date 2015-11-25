@@ -22,7 +22,7 @@ public class MyBatisCategoryDao implements CategoryDao {
 
 	@Override
 	public List<Category> getCategorys(int page) throws SQLException {
-	
+
 		return getCategorys(page, "NAME", "");
 	}
 

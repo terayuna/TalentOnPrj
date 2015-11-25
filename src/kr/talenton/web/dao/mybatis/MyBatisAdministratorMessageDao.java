@@ -23,7 +23,7 @@ public class MyBatisAdministratorMessageDao implements AdministratorMessageDao{
 
 	@Override
 	public List<AdministratorMessage> getAdministratorMessages(int page) throws SQLException {
-	
+
 		return getAdministratorMessages(page, "ADMINISTRATOR_ID", "");
 	}
 

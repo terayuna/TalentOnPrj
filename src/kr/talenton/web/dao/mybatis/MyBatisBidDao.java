@@ -57,7 +57,7 @@ public class MyBatisBidDao implements BidDao{
 		SqlSession session = ssf.openSession();
 		BidDao dao = session.getMapper(BidDao.class);
 		
-		int aft = dao.delete(member_id, product_code, date);
+		int aft = dao.delete(member_id,  product_code, date);
 		session.commit();
 		session.close();
 		return aft;
