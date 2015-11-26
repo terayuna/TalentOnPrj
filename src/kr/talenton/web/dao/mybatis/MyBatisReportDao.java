@@ -17,13 +17,13 @@ public class MyBatisReportDao implements ReportDao{
 	@Override
 	public List<Report> getReports() throws SQLException {
 		
-		return getReports(1,"member_id","");
+		return getReports(1,"MEMBER_ID","");
 	}
 
 	@Override
 	public List<Report> getReports(int page) throws SQLException {
 		
-		return getReports(page,"member_id","");
+		return getReports(page,"MEMBER_ID","");
 	}
 
 	@Override

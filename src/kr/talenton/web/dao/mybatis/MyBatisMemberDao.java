@@ -15,13 +15,13 @@ public class MyBatisMemberDao implements MemberDao{
 	@Override
 	public List<Member> getMembers() throws SQLException {
 		// TODO Auto-generated method stub
-		return getMembers(1,"MEMBER_ID","");
+		return getMembers(1,"ID","");
 	}
 
 	@Override
 	public List<Member> getMembers(int page) throws SQLException {
 		// TODO Auto-generated method stub
-		return getMembers(page,"MEMBER_ID","");
+		return getMembers(page,"ID","");
 	}
 
 	@Override

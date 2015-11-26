@@ -18,13 +18,13 @@ public class MyBatisAdministratorMessageDao implements AdministratorMessageDao{
 	@Override
 	public List<AdministratorMessage> getAdministratorMessages() throws SQLException {
 	
-		return getAdministratorMessages(1, "MID", "");
+		return getAdministratorMessages(1, "ADMINISTRATOR_ID", "");
 	}
 
 	@Override
 	public List<AdministratorMessage> getAdministratorMessages(int page) throws SQLException {
-	
-		return getAdministratorMessages(page, "MID", "");
+
+		return getAdministratorMessages(page, "ADMINISTRATOR_ID", "");
 	}
 
 	@Override
@@ -53,12 +53,12 @@ public class MyBatisAdministratorMessageDao implements AdministratorMessageDao{
 	}
 
 	@Override
-	public int delete(String mid) throws SQLException {
+	public int delete(String administrator_id, String member_id, int code) throws SQLException {
 		
 		SqlSession session = ssf.openSession();
 		AdministratorMessageDao dao = session.getMapper(AdministratorMessageDao.class);
 		
-		int aft = dao.delete(mid);
+		int aft = dao.delete(administrator_id, member_id, code);
 		session.commit();
 		session.close();
 		return aft;

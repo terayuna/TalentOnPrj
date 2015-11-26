@@ -1,0 +1,50 @@
+@CHARSET "UTF-8";
+
+.clearfix:after{
+			content:".";
+			clear : both;
+			display:block;
+			height:0px;
+			visibility:hidden; /*눈에 보이는 것만 안보이도록 그 부분은 있음  */
+		}
+.hidden{
+		   display: none; /* 아예 그부분이 삭제되도록함 */
+}
+		
+#header{
+			height: 350px;
+			background: #c19b84;
+}
+
+#join-menu{
+	
+}
+	#join-menu > ul >li{
+		float:right;
+		padding-left: 15px;
+	}
+	
+	#join-menu > ul > li a{
+		
+		font-family: "맑은 고딕", sans-serit;
+		font-size: 10px;
+		font-weight: bold;
+		text-decoration:overline;
+		color: #646464;
+	}
+		#join-menu > ul > li a:HOVER{
+		
+			text-decoration: underline;
+			color : red;
+		}
+
+#body .content-container{ /*body가 min-height로 지정되어있기때문  */
+	
+	 
+	 display: flex;
+	 min-height:inherit;
+	/*  flex-flow : row wrap; */
+	
+	background: url("../images/bg-body.png" ) repeat-y center;
+	
+}

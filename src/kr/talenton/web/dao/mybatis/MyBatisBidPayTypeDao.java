@@ -16,13 +16,13 @@ public class MyBatisBidPayTypeDao implements BidPayTypeDao{
 	@Override
 	public List<BidPayType> getBidPayTypes() throws SQLException {
 	
-		return getBidPayTypes(1, "MID", "");
+		return getBidPayTypes(1, "NAME", "");
 	}
 
 	@Override
 	public List<BidPayType> getBidPayTypes(int page) throws SQLException {
 	
-		return getBidPayTypes(page, "MID", "");
+		return getBidPayTypes(page, "NAME", "");
 	}
 
 	@Override
@@ -51,12 +51,12 @@ public class MyBatisBidPayTypeDao implements BidPayTypeDao{
 	}
 
 	@Override
-	public int delete(String mid) throws SQLException {
+	public int delete(String name) throws SQLException {
 		
 		SqlSession session = ssf.openSession();
 		BidPayTypeDao dao = session.getMapper(BidPayTypeDao.class);
 		
-		int aft = dao.delete(mid);
+		int aft = dao.delete(name);
 		session.commit();
 		session.close();
 		return aft;

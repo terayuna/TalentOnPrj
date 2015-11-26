@@ -17,13 +17,13 @@ public class MyBatisNotificationDao implements NotificationDao{
 	@Override
 	public List<Notification> getNotifications() throws SQLException {
 		
-		return getNotifications(1,"status","");
+		return getNotifications(1,"STATUS","");
 	}
 
 	@Override
 	public List<Notification> getNotifications(int page) throws SQLException {
 		
-		return getNotifications(page,"status","");
+		return getNotifications(page,"STATUS","");
 	}
 
 	@Override

@@ -17,13 +17,13 @@ public class MyBatisMemberSNSDao implements MemberSNSDao {
 	@Override
 	public List<MemberSNS> getMemberSNSs() throws SQLException {
 		
-		return getMemberSNSs(1,"member_id","");
+		return getMemberSNSs(1,"MEMBER_ID","");
 	}
 
 	@Override
 	public List<MemberSNS> getMemberSNSs(int page) throws SQLException {
 		
-		return getMemberSNSs(page,"member_id","");
+		return getMemberSNSs(page,"MEMBER_ID","");
 	}
 
 	@Override
@@ -50,10 +50,10 @@ public class MyBatisMemberSNSDao implements MemberSNSDao {
 	}
 	
 	@Override
-	public int insert(MemberSNS membersns) {
+	public int insert(MemberSNS memberSNS) {
 		SqlSession session = ssf.openSession();
 		MemberSNSDao dao = session.getMapper(MemberSNSDao.class);
-		int aft = dao.insert(membersns);
+		int aft = dao.insert(memberSNS);
 		
 		session.commit();
 		session.close();

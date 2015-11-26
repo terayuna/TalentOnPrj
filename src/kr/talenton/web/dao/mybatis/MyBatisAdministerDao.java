@@ -1,6 +1,7 @@
 package kr.talenton.web.dao.mybatis;
 
 import java.sql.SQLException;
+import java.util.Date;
 import java.util.List;
 
 import org.apache.ibatis.session.SqlSession;
@@ -17,13 +18,13 @@ public class MyBatisAdministerDao implements AdministerDao{
 	@Override
 	public List<Administer> getAdministers() throws SQLException {
 	
-		return getAdministers(1, "MID", "");
+		return getAdministers(1, "MEMBER_ID", "");
 	}
 
 	@Override
 	public List<Administer> getAdministers(int page) throws SQLException {
 	
-		return getAdministers(page, "MID", "");
+		return getAdministers(page, "MEMBER_ID", "");
 	}
 
 	@Override
@@ -52,12 +53,12 @@ public class MyBatisAdministerDao implements AdministerDao{
 	}
 
 	@Override
-	public int delete(String mid) throws SQLException {
+	public int delete(String member_id, String administrator_id, Date date) throws SQLException {
 		
 		SqlSession session = ssf.openSession();
 		AdministerDao dao = session.getMapper(AdministerDao.class);
 		
-		int aft = dao.delete(mid);
+		int aft = dao.delete(member_id, administrator_id, date);
 		session.commit();
 		session.close();
 		return aft;
