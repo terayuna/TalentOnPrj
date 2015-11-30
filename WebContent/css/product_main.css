@@ -1,1 +1,46 @@
 @CHARSET "UTF-8";
+
+/* --------------전체-------------------------------------------------------------------- */
+
+.clearfix:after{
+	content:".";
+	clear : both;
+	display:block;
+	height:0px;
+	visibility:hidden;
+}
+
+.hidden{
+	display:none;
+	/* visibility: hidden; */ /* 보여지지 않을 뿐 여전히 존재 */
+}
+
+body{		
+	font-family: 돋움, Arial, sans-serif;
+	font-size:11px;
+	color: #979797;
+}
+
+.content-container{
+	position: relative;
+	width:990px;
+	margin-left:auto;
+	margin-right:auto;
+	height:inherit;
+	/* background: black; */
+	/* opacity:0.2; */ /* 배경 이미지들 뚜렷하게 보이게 하기 위해 주석처리 */
+}
+
+/* ----------------상단---------------------------------------------------------------- */
+
+#header{
+height: 200px;
+	
+}
+
+/* -----------------본문------------------------------------------------------------------ */
+
+/* -----------------하단----------------------------------------------------------------- */
+#footer{
+	height:100px;
+}
