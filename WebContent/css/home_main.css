@@ -10,17 +10,26 @@
 .hidden{
 		   display: none; /* 아예 그부분이 삭제되도록함 */
 }
-		
+/* ------------------------- #header ------------------------------------------------------ */
 #header{
 			height: 350px;
 			background: #c19b84;
 }
 
+#logo{
+	position:absolute;
+	left:270px;
+	top: 100px;
+}	
+
 #join-menu{
+	
+	position:absolute;
+	right:40px;
 	
 }
 	#join-menu > ul >li{
-		float:right;
+		float:left;
 		padding-left: 15px;
 	}
 	
@@ -35,16 +44,186 @@
 		#join-menu > ul > li a:HOVER{
 		
 			text-decoration: underline;
-			color : red;
+			color : white;
 		}
+		
+#main-search{
+	
+	width: 308px;
+	height:25px;
+	border: 1px solid brown;
+	position:absolute;
+	left:350px;
+	top: 300px;
+}
+	#main-search > input{
+		display : block;
+		float: left;
+	}
+	
+		#main-search input[type ="text"]{
+			/* display: block; */
+			width: calc(100% - 31px);/* 222px; */
+			height: 25px;
+			border : 5px; 
+			float: left;
+		}
+		#main-search input[type ="submit"] {
+			
+			cursor:pointer;
+			border : 0px; 
+			width: 31px;
+			height :25px;
+			border-left: 1px  solid #8CBA34;
+			float: left;
+		
+		} 
+		
+/* ------------------------- #body ------------------------------------------------------		 */
+#body{
+	min-height:1550px;
+	border-top:10px solid #c19b84;
+	margin-top:3px;/* 1픽셀 떨어트려놈 */	
+}
 
 #body .content-container{ /*body가 min-height로 지정되어있기때문  */
 	
-	 
 	 display: flex;
 	 min-height:inherit;
 	/*  flex-flow : row wrap; */
+}
+
+#main{
 	
-	background: url("../images/bg-body.png" ) repeat-y center;
+	width: 993px;
+	padding-left : 135px;
+	padding-top : 400px;
+	/* background : red; */
+}
+
+#main-menu{
+	
+	border-bottom: 1px  solid #c0c0c0;
+	position:absolute;
+	top: 400px;
+	left: 170px;	
+
+}
+	#main-menu> ul >li{
+		float:left;
+		padding-left: 75px;
+		padding-right: 75px;
+	}
+		
+	#main-menu > ul > li a{
+		
+		font-family: "맑은 고딕", sans-serit;
+		font-size: 20px;
+		font-weight: bold;
+		color: #646464;
+		text-decoration:none;
+	}
+		#main-menu > ul > li a:HOVER{
+		
+			color : #ebac56;;
+		}
+
+		#category-menu > ul > li:nth-child(1){
+			position:absolute;
+			top: 500px;
+			left: 135px;
+		}
+		
+		#category-menu > ul > li:nth-child(2){
+			position:absolute;
+			top: 500px;
+			right: 135px;
+		}
+		
+		#category-menu > ul > li:nth-child(3){
+			position:absolute;
+			top: 845px;
+			left: 135px;
+		}
+		
+		#category-menu > ul > li:nth-child(4){
+			position:absolute;
+			top: 845px;
+			left: 470px;
+		}
+		
+		#category-menu > ul > li:nth-child(5){
+			position:absolute;
+			top: 845px;
+			right: 135px;
+		}
+		
+		#category-menu > ul > li:nth-child(6){
+			position:absolute;
+			top: 1190px;
+			left: 135px;
+		}
+		
+		#category-menu > ul > li:nth-child(7){
+			position:absolute;
+			top: 1190px;
+			right: 135px;
+		}
+		
+		#category-menu > ul > li:nth-child(8){
+			position:absolute;
+			top: 1535px;
+			left: 135px;
+		}
+		
+		#category-menu > ul > li:nth-child(9){
+			position:absolute;
+			top: 1535px;
+			left: 470px;
+		}
+		
+		#category-menu > ul > li:nth-child(10){
+			position:absolute;
+			top: 1535px;
+			right: 135px;
+		}
+
+/* ----------------footer------------------------------- */
+#footer{
+	height:100px;
+	background: #c19b84;
+}
+
+.content-container{
+	position: relative;
+	width:993px;
+	margin-left:auto;
+	margin-right:auto;
+	height:inherit;
+	/* background: black; */
+}
+	
+#company-menu{
+	padding-top:20px;
+	padding-left : 55px;
+	position:absolute;
 	
 }
+	#company-menu > ul >li{
+		float:left;
+		padding-left: 30px;
+		padding-right: 30px;
+		background:url('../images/bg-main-menu-vsp.png') no-repeat 4px center;
+	}
+	
+	#company-menu > ul >li:FIRST-CHILD{
+		background:none;
+	}
+	
+	#company-menu > ul > li a{
+		font-family: "맑은 고딕", sans-serit;
+		font-size: 15px;
+		color: #646464;
+		text-decoration:none;
+	}
+
