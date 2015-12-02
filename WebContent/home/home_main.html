@@ -31,7 +31,7 @@
 				<fieldset>
 					<legend class = "hidden">전체검색필드</legend>
 					<input type = "text"/>
-					<input type = "submit" value = "▼"/>
+					<input type = "submit" value = "검색"/>
 				</fieldset>
 			</form>
 		</section>
@@ -40,20 +40,21 @@
 	
 	
     <div id = "body"> 
-    	<!-- <div class = "content-container clearfix"> -->  
- 	   <main id = "main">
- 	   		<div id = "main-menu">
+    	<div class = "content-container">   
+ 	    <main id = "main">  
+ 	   		
+ 	   		<nav id = "main-menu">
  	   		<h1  class = "hidden">메인메뉴</h1>
  	   		<!-- <ul class="clearfix"> -->
  	   		<ul>
-				<li><a href = "">브랜드</a></li>
+				<li><a href = "../company/company_main.html">브랜드</a></li>
 			   	<li><a href = "">작품보기</a></li>
 			    <li><a href = "">작품올리기</a></li>
 			    <li><a href = "">전체보기</a></li>
 			</ul>
-			</div>
+			</nav>
 			
-			<div id = "category-menu">
+			<nav id = "category-menu">
 			<h1 class = "hidden">카테고리메뉴</h1>
 			<ul class="clearfix">
 				<li><a href = ""><img src ="../images/candle.png" alt ="공예"></a></li>
@@ -67,9 +68,9 @@
 			    <li><a href = ""><img src ="../images/case.png" alt ="케이스"></a></li>
 			    <li><a href = ""><img src ="../images/art3.png" alt ="공예"></a></li>
 			</ul>
-			</div>
+			</nav>
  	   </main>
- 	  <!--  </div> -->
+ 	  </div> 
  	</div>
  	
  	<footer id ="footer">
