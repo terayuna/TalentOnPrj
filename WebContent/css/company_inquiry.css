@@ -31,6 +31,7 @@
 	height:inherit;
 	/* background: yellow; */
 }
+
 /* ------------------------- #header ------------------------------------------------------ */
 #header{
 			height: 100px;
@@ -112,13 +113,17 @@
 			opacity:0.7;
 		
 		} 
+		
 /* ------------------------- #body ------------------------------------------------------		 */
 #body{
 	
 	/* display:inline-block; */
-	min-height:100px;
+	
+	/* min-height:1550px; */
+	min-height:500px;
 	border-top:10px solid #c19b84;
 	margin-top:3px;/* 1픽셀 떨어트려놈 */	
+	/* background: red; */
 	
 }
 
@@ -129,68 +134,108 @@
 	-ms-grid-column: 205px 755px;
 	 */
 	 
-	 /* display: flex; */
+	 display: flex;
 	 min-height:inherit;
 	/*  flex-flow : row wrap; */
-	
+	/* background: red; */
 	/* background: black; */
 	
 }
 
 #main{
-	/* position: relative; absolute로 오는 자식이 relative가 된다는 의미  (main자기자신이 relative라는게 아님) */
-	 /* height: inherit; */
-	  /* float: left;   */
-	/* flex-rows: 1;
-	flex-column: 2; */
-	width: 993px;
+	/* float: left; */
+	width: 950;
+	left:140px;
+	padding-top:45px;
+	padding-bottom:50px;
+	position:relative;
+/* 	background: black; */
+
+}
+
+
+#notice-search > fieldset > select{
+	border: 1px solid #8CBA34;
+	height: 20px;
+}
+
+#notice-search input[type ="text"]{
+			
+	border: 1px solid #8CBA34;
+	height: 20px;
+} 
+#notice-search input[type=submit]{
+	/*a태그라던지 인라인태그로되있는 것은 너비,높이가 안먹을수도  */
+	text-indent : -999px;
+	cursor:pointer;
+	border : 0px; 
+	width: 49px;
+	height :23px;
+	background : url('../images/btn-search.png') no-repeat center;
+	overflow:hidden; /*영역밖에있는것 안보이게! 위에 -999로 해뒀지만 나중엔 보일 경우도 있음   */	
+}
+.align-container{
 	/* background: yellow; */
-	text-align:left;
-	
+	text-align:right;
 }
 
-#main-menu{
-	display: inline-block;
-	border:1px solid black;
+.align-container1{
+	/* background: yellow; */
+	text-align:center;
 }
 
-#main-menu > ul{
-	
-	position:absolute;
-	top: 130px;
-	left: 180px;	
+#notices{
+	margin-top:10px;
+	width: 720px;
+	table-layout : fixed; /*넘어간내용때문에 그 부분의 컬럼 크기를 늘어나도록 하지않고 옆 컬럼과 겹치게해줌  */
 }
 
-	#main-menu > ul > li{
-		float : left;
-		padding-left: 30px;
-		padding-right: 30px;
-		/* border-bottom: 1px  solid #c0c0c0; */
+	#notices > thead > tr > th{
+		
+		height:30px;
+		line-height: 30px;  /*수직가운데 정렬 하기위해 줄간격 지정  */
+		width: 100px;
+		background:#f5f5f5 url('../images/bg-title-sp.png') no-repeat  left center;
+		text-align: center;
+		border-top: 2px solid #8cba35;
+		/* border-top-color: #8cba35; */
 	}
 	
-	#main-menu > ul > li a{
+	#notices > thead > tr > th:FIRST-CHILD{
 		
-		font-family: "맑은 고딕", sans-serit;
-		font-size: 15px;
-		/* font-weight: bold; */
-		color: #646464;
-		text-decoration:none;
-		
+			background: #f5f5f5;
 	}
-		#main-menu > ul > li a:HOVER{
-			
-				color : #ebac56;;
-			}
-			
-
-.content-container{
-	/* position: relative; */
-	width:993px;
-	margin-left:auto;
-	margin-right:auto;
-	height:inherit;
-	/* background: yellow; */
-}
+	/* #notices > thead > tr > th, */
+	#notices > tbody > tr > td
+	{
+		height:30px;
+		line-height: 30px;  /*수직가운데 정렬 하기위해 줄간격 지정  */
+		width: 100px;
+		/* border: 1px solid #e9e9e9; */
+		border-bottom:1px solid #e9e9e9;
+		text-align: center;
+	}
+	
+	#notices > thead > tr > th:nth-child(4n+1),
+	#notices > tbody > tr > td:nth-child(4n+1)
+	{
+		width:60px;
+	}
+	
+	#notices > thead > tr > th:nth-child(2),
+	#notices > tbody > tr > td:nth-child(2)
+	{
+		width:400px;
+	}
+	
+	#notices > tbody > tr > td:nth-child(2)
+	{
+		text-align:left;
+		text-indent : 10px;
+		white-space: nowrap; /* 넘어간 내용이 아래로 내려가지않고 옆으로 계속 쓰이게 함 */
+		overflow : hidden;
+		text-overflow: ellipsis;
+	}
 
 /* ----------------footer------------------------------- */
 #footer{

@@ -114,6 +114,7 @@
 	position:absolute;
 	top: 400px;
 	left: 170px;	
+	/* background: red; */
 }
 	#main-menu> ul >li{
 		float:left;
@@ -214,6 +215,9 @@
 	padding-top:20px;
 	padding-left : 55px;
 	position:absolute;
+	/* top:20px;
+	left:55px; */
+	/* background: red; */
 	
 }
 	#company-menu > ul >li{
