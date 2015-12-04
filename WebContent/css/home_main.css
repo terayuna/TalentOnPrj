@@ -10,6 +10,16 @@
 .hidden{
 		   display: none; /* 아예 그부분이 삭제되도록함 */
 }
+
+.content-container{
+	position: relative; 
+	width:993px;
+	margin-left:auto;  /*내용부분의 오른쪽왼쪽이 알아서 자동적으로 설정되서 가운데 정렬되게끔 출력시킴  */
+	margin-right:auto;
+	height:inherit;
+	/* background: black; */
+}
+	
 /* ------------------------- #header ------------------------------------------------------ */
 #header{
 			height: 350px;
@@ -18,14 +28,14 @@
 
 #logo{
 	position:absolute;
-	left:440px;
+	left: 310px;
 	top: 100px;
 }	
 
 #join-menu{
 	
 	position:absolute;
-	right:40px;
+	right:0px;
 	
 }
 	#join-menu > ul >li{
@@ -202,15 +212,7 @@
 	background: #c19b84;
 }
 
-.content-container{
-	/* position: relative; */
-	width:993px;
-	margin-left:auto;  /*내용부분의 오른쪽왼쪽이 알아서 자동적으로 설정되서 가운데 정렬되게끔 출력시킴  */
-	margin-right:auto;
-	height:inherit;
-	/* background: black; */
-}
-	
+
 #company-menu{
 	padding-top:20px;
 	padding-left : 55px;
