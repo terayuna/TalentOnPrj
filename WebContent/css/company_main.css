@@ -7,72 +7,88 @@
 			height:0px;
 			visibility:hidden; /*눈에 보이는 것만 안보이도록 그 부분은 있음  */
 		}
+		
 .hidden{
 		   display: none; /* 아예 그부분이 삭제되도록함 */
 }
+
+.content-container{
+	position: relative;
+	width:993px;
+	margin-left:auto;
+	margin-right:auto;
+	height:inherit;
+	/* background: yellow; */
+}
+
 /* ------------------------- #header ------------------------------------------------------ */
 #header{
 			height: 100px;
 			background: #c19b84;
 }
 
+#header > .content-container > *
+{
+	position: absolute;
+}
+
 #logo{
-	position:absolute;
-	left:160px;
+	
+	left:0px;
 	top: 10px;
 }	
 
 #join-menu{
-	
-	position:absolute;
-	right: 160px;
-	top: 46px;
-	
+	right:0px;
+	top:55px;
 }
-	#join-menu > ul >li{
-		float:left;
-		padding-left: 24px;
-		background:url('../images/bg-main-menu-vsp.png') no-repeat  13px  center;
-	}
-	#join-menu > ul >li:FIRST-CHILD{
+
+#join-menu li{
+	display:block;
+	float: left;
+	font-size: 15px;
+	font-weight: bold;
+	padding-left: 24px;
+	background:url('../images/bg-main-menu-vsp.png') no-repeat  13px  center;
+}
+	#join-menu > li:FIRST-CHILD{
 		padding-left: 0px;
 		background:none;
 	}
 	
-	#join-menu > ul > li a{
-		
-		font-family: "맑은 고딕", sans-serit;
-		font-size: 25px;
-		/* font-weight: bold; */
+	#join-menu  li a{
 		text-decoration:none;
 		color: #646464;
 	}
-		#join-menu > ul > li a:HOVER{
-		
-			/* text-decoration: underline; */
+		#join-menu  li a:HOVER{
 			color : white;
 		}
 		
 #main-search{
 	
+	left:368px;
+	top:50px;
 	width: 320px;
 	height:25px;
 	border: 1px solid #845f4a;
-	position:absolute;
-	left:460px;
-	top: 50px;
+	
 }
-	#main-search > input{
+	#main-search  input{
 		display : block;
 		float: left;
+		height: 25px;
+		line-height: 25px;
+		text-align: center;
 	}
 	
 		#main-search input[type ="text"]{
 			/* display: block; */
 			width: calc(100% - 40px);/* 222px; */
-			height: 25px;
+			/* height: 25px; */
 			border : 5px; 
-			float: left;
+			text-align: left;
+			font-weight: bold;
+			/* float: left; */
 			opacity:0.2;
 			
 		}
@@ -81,123 +97,55 @@
 			cursor:pointer;
 			border : 0px; 
 			width: 40px;
-			height :25px;
 			border-left: 1px solid #845f4a;
-			float: left;
+			float: right;
 			font-family: 돋움;
 			font-size: 15px;
 			opacity:0.7;
 		
 		} 
-/* ------------------------- #body ------------------------------------------------------		 */
+		
+/* ---------------- #body -------------------------------- */
+
 #body{
-	
-	/* display:inline-block; */
-	
-	min-height:1550px;
+
+	min-height:500px;
 	border-top:10px solid #c19b84;
 	margin-top:3px;/* 1픽셀 떨어트려놈 */	
-	
+	/* background: red; */	
 }
 
-#body .content-container{ /*body가 min-height로 지정되어있기때문  */
-	
-	/* display: -ms-grid;
-	-ms-grid-rows:300px;
-	-ms-grid-column: 205px 755px;
-	 */
-	 
-	 /* display: flex; */
-	 min-height:inherit;
-	/*  flex-flow : row wrap; */
-	
-	/* background: black; */
-	
-}
-
-#main{
-	/* position: relative; absolute로 오는 자식이 relative가 된다는 의미  (main자기자신이 relative라는게 아님) */
-	 /* height: inherit; */
-	  /* float: left;   */
-	/* flex-rows: 1;
-	flex-column: 2; */
-	width: 993px;
-	/* background: yellow; */
-	text-align:left;
-	
-}
-
-#main-menu{
-	display: inline-block;
-	border:1px solid black;
-}
-
-#main-menu > ul{
+#company-main-menu{
 	
 	position:absolute;
-	top: 400px;
-	left: 180px;	
+	/* background: red; */
+	top:20px;
+	left:0px;
+	
 }
 
-	#main-menu > ul > li{
-		float : left;
-		padding-left: 30px;
-		padding-right: 30px;
-		/* border-bottom: 1px  solid #c0c0c0; */
-	}
-	
-	#main-menu > ul > li a{
+#company-main-menu  li{
+		display:block;
+		float: left;
+		padding-left: 40px;
+		padding-right: 40px;
+		border-bottom: 1px  solid #c0c0c0;
 		
+}
+
+#company-main-menu > li:first-child
+{
+	/* padding-left: 0px; */
+	background: none;
+}
+
+#company-main-menu > li > a{
 		font-family: "맑은 고딕", sans-serit;
 		font-size: 15px;
-		/* font-weight: bold; */
 		color: #646464;
 		text-decoration:none;
-		
 	}
-		#main-menu > ul > li a:HOVER{
-			
-				color : #ebac56;;
-			}
-			
-/* .align-container{
-	background: yellow;
-	text-align:left;
-	border:1px solid pink;
-	display:inline-block;
-} */
 
-
-/* #category-menu{
-	display:inline;
-}			
-
-#category-menu > ul{
-	
-	position:absolute;
-	margin-top: 45px;
-	left: 0px;	 
-	background: blue;
-	
-}
-#category-menu > ul > li{
-	
-	display:inline-block;
-	position:absolute;
-	margin-top: 45px;
-	left: 0px;	 
-	background: blue;
-	
-} */
-	
-.content-container{
-	/* position: relative; */
-	width:993px;
-	margin-left:auto;
-	margin-right:auto;
-	height:inherit;
-	/* background: yellow; */
-}
 
 /* ----------------footer------------------------------- */
 #footer{
@@ -205,26 +153,7 @@
 	background: #c19b84;
 }
 
-#company-menu{
-	padding-top:20px;
-	padding-left : 55px;
-	position:absolute;
-	
-}
-	#company-menu > ul >li{
-		float:left;
-		padding-left: 30px;
-		padding-right: 30px;
-		background:url('../images/bg-main-menu-vsp.png') no-repeat 4px center;
-	}
-	
-	#company-menu > ul >li:FIRST-CHILD{
-		background:none;
-	}
-	
-	#company-menu > ul > li a{
-		font-family: "맑은 고딕", sans-serit;
-		font-size: 15px;
-		color: #646464;
-		text-decoration:none;
-	}
+
+
+		
+		
