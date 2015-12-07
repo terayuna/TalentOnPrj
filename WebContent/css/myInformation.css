@@ -40,7 +40,7 @@
 	margin-left:auto;
 	margin-right:auto;
 	height:inherit;
-   /* background: yellow; */
+
 }
 
 /* ------------------------- #header ------------------------------------------------------ */
@@ -125,7 +125,7 @@
       
       } 
       
-
+/* -------------------------body-------------------------- */
 #body
 {
 	min-height:500px;
@@ -138,31 +138,10 @@
 	top:110px;
 	left:10px;
 	display:inline-block;
-	background:red;
 	width:200px;
 	min-height : inherit;
 }
 
-#main{
-	width:720px;
-	padding-left: 25px;
-	padding-top: 35px;
-	
-	min-height : inherit;
-	padding-left: 1px;
-	padding-top: 1px;
-	background:yellow;
-	display:inline-block;
-	/* -ms-grid-row:1;
-	-ms-grid-column:2; */
-	
-	/* position : relative;
-	float : left;
-	margin-left : auto; 
-	height: inherit;
-	width : 755px; */
-	
-}
 
 #aside > nav > ul > li > a
 {
@@ -179,6 +158,49 @@
 	/* HOVER : 마우스 올렸을 때 */
 	text-decoration: underline;
 	color:#800000;
+}
+
+#main{
+	width:720px;
+	padding-left: 25px;
+	padding-top: 35px;
+	
+	min-height : inherit;
+	padding-left: 1px;
+	padding-top: 1px;
+	display:inline-block;
+	/* -ms-grid-row:1;
+	-ms-grid-column:2; */
+	
+	/* position : relative;
+	float : left;
+	margin-left : auto; 
+	height: inherit;
+	width : 755px; */
+	
+}
+
+#simple-information{
+	align:center;
+	border-top:3px solid #8CBA34;
+}
+#information{
+	border-top:3px solid #8CBA34;
+}
+
+
+#information fieldset > label{
+	/* #lecture-search fieldset > * : hidden내용도 출력되므로 특정 범위 지정 */
+	/* inline은 크기를 맞춰줄 수 없으므로 block 사용 */
+	display: block;
+	float: left;
+}
+
+#lecture-search input{		
+	width: calc(100% - 86px);/* 222px; */
+	height:25px;
+	border:0px;
+	margin-right:20px;
 }
 
 
