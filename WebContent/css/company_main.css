@@ -7,7 +7,6 @@
 			height:0px;
 			visibility:hidden; /*눈에 보이는 것만 안보이도록 그 부분은 있음  */
 		}
-		
 .hidden{
 		   display: none; /* 아예 그부분이 삭제되도록함 */
 }
@@ -77,8 +76,8 @@
 		display : block;
 		float: left;
 		height: 25px;
-		line-height: 25px;
-		text-align: center;
+		/* line-height: 25px;
+		text-align: center; */
 	}
 	
 		#main-search input[type ="text"]{
@@ -109,10 +108,10 @@
 
 #body{
 
-	min-height:500px;
+	min-height:100px;
 	border-top:10px solid #c19b84;
 	margin-top:3px;/* 1픽셀 떨어트려놈 */	
-	/* background: red; */	
+	background: red;	
 }
 
 #company-main-menu{
@@ -133,11 +132,11 @@
 		
 }
 
-#company-main-menu > li:first-child
+/* #company-main-menu > li:first-child
 {
-	/* padding-left: 0px; */
+	padding-left: 0px;
 	background: none;
-}
+} */
 
 #company-main-menu > li > a{
 		font-family: "맑은 고딕", sans-serit;
@@ -145,7 +144,10 @@
 		color: #646464;
 		text-decoration:none;
 	}
-
+	
+	#company-main-menu > li > a:HOVER{
+		color : #ebac56;;
+	}
 
 /* ----------------footer------------------------------- */
 #footer{
