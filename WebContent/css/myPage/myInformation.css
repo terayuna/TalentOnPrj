@@ -180,14 +180,34 @@
 	
 }
 
-#simple-information{
+#log-information{
+	style:block;
+	width:500px;
 	align:center;
 	border-top:3px solid #8CBA34;
+	margin-top:10px;
+	text-align:center;
 }
 #information{
+	width:500px;
 	border-top:3px solid #8CBA34;
 }
 
+#information label{
+	display:inline-block;
+	border:1px solid #c0c0c0;
+	width:120px;
+	height:20px;
+	text-align:center;
+}
+
+#information input{
+	display:inline-block;
+	border:1px solid #c0c0c0;
+	width:300px;
+	float:right;
+	height:20px
+}
 
 #information fieldset > label{
 	/* #lecture-search fieldset > * : hidden내용도 출력되므로 특정 범위 지정 */
@@ -196,13 +216,16 @@
 	float: left;
 }
 
-#lecture-search input{		
-	width: calc(100% - 86px);/* 222px; */
-	height:25px;
-	border:0px;
-	margin-right:20px;
+#information input[type='radio']{
+	display:block;
+	
+	width:10px;
 }
-
+#information input[type='radio']{
+	display:block;
+	
+	width:10px;
+}
 
 
 
@@ -239,4 +262,3 @@
 	color: #646464;
 	text-decoration:none;
 }
-
