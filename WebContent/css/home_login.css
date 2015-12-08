@@ -19,6 +19,18 @@
 	height:inherit;
 	/* background: yellow; */
 }
+/* ------------------------- #body ------------------------------------------------------		 */
+
+#body{
+	position:relative;
+	min-height:500px;
+	border-top:10px solid #c19b84;
+	margin-top:3px;/* 1픽셀 떨어트려놈 */	
+	border-bottom: 10px;
+	/* background: yellow; */
+	
+	
+}
 
 /* ------------------------- #header ------------------------------------------------------ */
 #header{
@@ -104,58 +116,40 @@
 		
 		} 
 		
-/* ---------------- #body -------------------------------- */
-
-#body{
-
-	min-height:100px;
-	border-top:10px solid #c19b84;
-	margin-top:3px;/* 1픽셀 떨어트려놈 */	
-	/* background: red;	 */
-}
-
-#company-main-menu{
-	
-	position:absolute;
-	/* background: red; */
-	top:20px;
-	left:0px;
-	
-}
-
-#company-main-menu  li{
-		display:block;
-		float: left;
-		padding-left: 40px;
-		padding-right: 40px;
-		border-bottom: 1px  solid #c0c0c0;
 		
-}
-
-/* #company-main-menu > li:first-child
-{
-	padding-left: 0px;
-	background: none;
-} */
-
-#company-main-menu > li > a{
-		font-family: "맑은 고딕", sans-serit;
-		font-size: 15px;
-		color: #646464;
-		text-decoration:none;
-	}
-	
-	#company-main-menu > li > a:HOVER{
-		color : #ebac56;;
-	}
-
+		
 /* ----------------footer------------------------------- */
 #footer{
+	
+	position:relative;
 	height:100px;
 	background: #c19b84;
 }
 
 
+#company-menu{
+	padding-top:20px;
+	padding-left : 55px;
+	position:relative;
+	
+	
+}
+	#company-menu > ul >li{
+		float:left;
+		padding-left: 30px;
+		padding-right: 30px;
+		background:url('../images/bg-main-menu-vsp.png') no-repeat 4px center;
+	}
+	
+	#company-menu > ul >li:FIRST-CHILD{
+		background:none;
+	}
+	
+	#company-menu > ul > li a{
+		font-family: "맑은 고딕", sans-serit;
+		font-size: 15px;
+		color: #646464;
+		text-decoration:none;
+	}
 
-		
 		
