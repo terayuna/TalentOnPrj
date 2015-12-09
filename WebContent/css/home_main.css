@@ -46,7 +46,7 @@
 	#join-menu  li{
 		display:block;
 		float:left;
-		font-size: 10px;
+		font-size: 15px;
 		font-weight: bold;
 		padding-left: 15px;
 		font-family: "맑은 고딕", sans-serit;
@@ -228,7 +228,13 @@
 			top: 1535px;
 			right: 135px;
 		} */
-
+#visual{
+   position: relative;
+   height: 200px;
+   background: white;
+   top: 90px;
+   left: 0px;   
+}
 /* ----------------footer------------------------------- */
 #footer{
 	
