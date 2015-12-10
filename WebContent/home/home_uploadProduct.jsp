@@ -18,9 +18,9 @@
 		
 		<h2 class = "hidden">회원메뉴</h2>
 		<ul id ="join-menu" class="clearfix">
-			<li><a href = "../home/home_main.jsp">HOME</a></li>
-			<li><a href = "../home/home_main.jsp">UPLOAD</a></li>
-			<li><a href = "">LOGIN</a></li>
+			<li><a href = "../home/home_main.jsp">JOIN</a></li>
+			<li><a href = "">UPLOAD</a></li>
+			<li><a href = "../home/home_login.jsp">LOGIN</a></li>
 		</ul>
 		
 		<form id = "main-search">
@@ -34,6 +34,45 @@
 	</header>
 	
 	<div id = "body">
+			<div id = "content" class="page-content">
+			<div class="wrapper">
+				<header class="page-header">
+					<h2 class="primary-title">작품 등록</h2>
+				</header>
+				<div class="board-write">
+					<form>
+						<input type="hidden" name="returnUrl" value>
+						<input type="hidden" name="save_id" value>
+						<section class="board-write-field">
+							<table class="board-table">
+								<tbody>
+									<tr>
+										<td class="loginlabel">
+											<p>아이디</p>
+										</td>
+										<td>
+											<input type="text" name="member_id" value tabindex="1">
+										</td>
+									</tr>
+									<tr>
+										<td class="loginlabel">
+											<p>이메일</p>
+										</td>
+										<td>
+											<input type="password" name="member_pass" value id="pass"  tabindex="1">
+										</td>
+									</tr>	
+								</tbody>
+							</table>
+						</section>
+					</form>
+				</div>
+				<div class="board-btns">
+					<a href="" class = "btn btn-color">등록하기</a>
+					<a href="../home/home_main.jsp" class = "btn btn-gray">취소</a>
+				</div>
+			</div>
+		</div>
 	
 	
 	

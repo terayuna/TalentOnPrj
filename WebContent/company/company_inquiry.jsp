@@ -18,8 +18,8 @@
 		
 		<h2 class = "hidden">회원메뉴</h2>
 		<ul id ="join-menu" class="block_hlist">
-			<li><a href = "../home/home_main.jsp">HOME</a></li>
-			<li><a href = "">UPLOAD</a></li>
+			<li><a href = "../home/home_main.jsp">JOIN</a></li>
+			<li><a href = "../home/home_uploadProduct.jsp">UPLOAD</a></li>
 			<li><a href = "">LOGIN</a></li>
 		</ul>
 		<form id = "main-search">
@@ -37,7 +37,7 @@
 			<div id ="main" >
 				<h1 class = "hidden">회사메인메뉴</h1>
 					<ul id ="company-main-menu" class="clearfix">
-						<li><a href = "">회사소개</a></li>
+						<li><a href = "../company/company_main.jsp">회사소개</a></li>
 					   	<li><a href = "">웹사이트 이용안내</a></li>
 					    <li><a href = "">웹사이트 공유</a></li>
 					    <li><a href = "../company/company_inquiry.jsp">문의사항</a></li>

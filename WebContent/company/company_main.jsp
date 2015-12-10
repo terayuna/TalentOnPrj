@@ -11,15 +11,15 @@
 <body>
 		<header id ="header">
 		<div class = "content-container">
-		<h1 id = "logo"><a href="../home/home_main.html" >
+		<h1 id = "logo"><a href="../home/home_main.jsp" >
 			<img src="../images/logo6.PNG" alt ="TalentOn"/>
 			</a>
 		</h1>
 		
 		<h2 class = "hidden">회원메뉴</h2>
 		<ul id ="join-menu" class="clearfix">
-			<li><a href = "../home/home_main.jsp">HOME</a></li>
-			<li><a href = "../home/home_main.jsp">UPLOAD</a></li>
+			<li><a href = "../home/home_main.jsp">JOIN</a></li>
+			<li><a href = "../home/home_uploadProduct.jsp">UPLOAD</a></li>
 			<li><a href = "">LOGIN</a></li>
 		</ul>
 		
