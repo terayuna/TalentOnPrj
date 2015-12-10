@@ -5,8 +5,8 @@
 <head>
 <meta charset="EUC-KR">
 <title>Insert title here</title>
-<link href="../css/reset.css" type="text/css" rel="stylesheet" />
-<link href="../css/myPage/myInformation.css" type="text/css" rel="stylesheet" />
+<link href="../content/css/reset.css" type="text/css" rel="stylesheet" />
+<link href="css/myInformation.css" type="text/css" rel="stylesheet" />
 </head>
 <body>
 	<header id ="header">

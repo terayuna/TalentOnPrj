@@ -5,8 +5,8 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
-	<link href="../css/reset.css" type= "text/css" rel="stylesheet">
-	<link href="../css/company/company_inquiry.css" type= "text/css" rel="stylesheet">
+	<link href="../content/css/reset.css" type= "text/css" rel="stylesheet">
+	<link href="css/company_inquiry.css" type= "text/css" rel="stylesheet">
 </head>
 <body>
 	<header id ="header">
