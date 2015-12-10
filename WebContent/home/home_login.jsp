@@ -18,8 +18,8 @@
 		
 		<h2 class = "hidden">회원메뉴</h2>
 		<ul id ="join-menu" class="clearfix">
-			<li><a href = "../home/home_main.html">HOME</a></li>
-			<li><a href = "../home/home_main.html">UPLOAD</a></li>
+			<li><a href = "../home/home_main.html">JOIN</a></li>
+			<li><a href = "../home/home_uploadProduct.jsp">UPLOAD</a></li>
 			<li><a href = "">LOGIN</a></li>
 		</ul>
 		

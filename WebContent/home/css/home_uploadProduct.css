@@ -116,6 +116,109 @@
 	/* background: yellow; */
 		
 }
+
+
+.page-content .wrapper{
+	position:relative;
+}
+
+.wrapper{
+	width:1152px;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+}
+
+.page-header{
+	padding-top:100px;
+	padding-bottom:50px;
+	text-align:center;
+}
+
+.primary-title{
+	font-size:35px;
+	text-transform: uppercase;
+	color:#555;
+}
+
+.board-write{
+	position: relative;
+	width: 846px;
+	margin:0 auto;
+	border-top:2px solid #888;
+	padding-top:10px;
+}
+
+.board-write-field{
+	margin-top:25px;
+}
+
+.board-table{
+	width:100%;
+	margin-top:20px;
+	border-bottom:1px solid #eee;
+}
+
+.board-table td{
+	border-bottom: 0px solid #eee;
+	border-left: 0px solid #eee;
+	padding: 7px 30px;
+	vertical-align:middle;
+}
+
+.board-table td:first-child{
+	border-left: 0px;
+}
+
+.board-table .loginlabel{
+	width : 50px;
+	padding-left: 240px;
+}
+
+.board-btns{
+	text-align: center;
+	margin-top:60px;
+	padding-bottom: 100px;
+	
+}
+.btn {
+	border: 0;
+	display: inline-block;
+	box-sizing: content-box;
+	min-width: 50px;
+	height: 35px;
+	padding: 0 15px;
+	margin: 0;
+	background: #444;
+	color: #fff;
+	line-height: 35px;
+	font-weight: 700;
+	font-size: 16px;
+	text-align: center;
+	vertical-align: middle;
+	margin-right: 0px;
+	text-decoration:none;
+	font-family: "Nanum Gothic", "나눔고딕", "맑은고딕", "MalgunGothic", "Malgun Gothic", Dotum, "돋움", verdana, sans-serif;
+}
+
+.btn-gray {
+	background: #444;margin-left: 2px;
+}
+
+.btn-color {
+	background: #fe9901;  margin-left: 2px;
+}
+
+.btn-large {
+	height: 65px;
+	padding-left: 25px;
+	padding-right: 25px;
+	font-size: 20px;
+	line-height: 65px;
+}
+
+		
 		
 		
 		
