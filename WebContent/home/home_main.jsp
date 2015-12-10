@@ -17,11 +17,11 @@
 		
 		<h2 class = "hidden">회원메뉴</h2>
 			<ul id ="join-menu" class="clearfix">
-				<li><a href = "../home/home_main.jsp">JOIN</a></li>
-			   	<li><a href = "../home/home_uploadProduct.jsp">UPLOAD</a></li>
-			    <li><a href = "../home/home_login.jsp">LOGIN</a></li>
+				<li><a href = "join.jsp">JOIN</a></li>
+			   	<li><a href = "home_uploadProduct.jsp">UPLOAD</a></li>
+			    <li><a href = "home_login.jsp">LOGIN</a></li>
 			</ul>
-	
+
 		<form id = "main-search">
 			<fieldset>
 				<legend class = "hidden">전체검색필드</legend>

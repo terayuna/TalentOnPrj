@@ -7,7 +7,7 @@
 	<title>Insert title here</title>
 </head>
 	<link href="../content/css/reset.css" type= "text/css" rel="stylesheet">
-	<link href="css/home_login.css" type= "text/css" rel="stylesheet">
+	<link href="css/join.css" type= "text/css" rel="stylesheet">
 
 <body>
 	<header id ="header">
@@ -40,10 +40,10 @@
 					회원 가입 : 2015-11-04 14:54 최근로그인 : 2015-11-05 21:00
 				</div> -->
 				
-				<h1 id="subtitle">내 정보 변경</h1>
+				<h1 id="subtitle">회원 가입</h1>
 				<!-- thead:무조건 단일 사용/ tbody:중복가능,게시판의 공지사항부분과 글부분 나눌때 중복이 사용된다 -->
 				<form id="content-searchform" class="article-search-form" 
-					action="a.html" method="post">
+					action="home_main.jsp" method="post">
 					<table id="modify">
 						<tbody>
 							<tr>
@@ -96,7 +96,7 @@
 							<tr align="center" class="last">
 								<td colspan="2">
 									<input type="submit" value="수정" name="modify">
-									<input type="reset" value="취소" name="cancel">
+									<input type="submit" value="취소" name="cancel">
 								</td>
 							</tr>
 	
