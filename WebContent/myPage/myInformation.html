@@ -77,30 +77,88 @@
 			</aside>
 			
 			<main id="main">
-				<div id="log-information">
+				<!-- <div id="log-information">
 					회원 가입 : 2015-11-04 14:54 최근로그인 : 2015-11-05 21:00
-				</div>
+				</div> -->
 				
-				<form id="information">
+				<h1 id="subtitle">내 정보 변경</h1>
+				<!-- thead:무조건 단일 사용/ tbody:중복가능,게시판의 공지사항부분과 글부분 나눌때 중복이 사용된다 -->
+				<table id="modify">
+					<tbody>
+						<tr>
+							<td>아이디</td>
+							<td class="nomodify">cr2ative</td>
+						</tr>
+						<tr>
+							<td>이름</td>
+							<td class="nomodify">이주성</td>
+						</tr>
+						<tr>
+							<td>비밀번호</td>
+							<td><input type="password" name="password" maxlength="12"/></td>
+						</tr>
+						<tr>
+							<td>비밀번호 확인</td>
+							<td><input type="password" name="confirm-password" maxlength="12"/></td>
+						</tr>
+						<tr>
+							<td>이메일</td>
+							<td><input type="email" name="email"/></td>
+						</tr>
+						<tr>
+							<td>주소</td>
+							<td><input type="text" name="address"/></td>
+						</tr>
+						<tr>
+							<td>전화번호</td>
+							<td><input type="tel" name="phone"/></td>
+						</tr>
+						<tr>
+							<td>휴대전화</td>
+							<td><input type="tel" name="mobile"/></td>
+						</tr>
+						<tr>
+							<td>SNS</td>
+							<td><input type="text" name="sns"/></td>
+						</tr>
+						<tr>
+							<td>작가알림</td>
+							<td>
+								<label class="radio-label"><input type="radio" value="yes" name="agree" checked>YES</label>
+								<label class="radio-label"><input type="radio" value="no" name="agree">No</label>
+							</td>
+						</tr>
+						<tr>
+							<td>자기소개</td>
+							<td><input type="text"/></td>
+						</tr>
+	
+
+					</tbody>
+				</table>
+				<input type="button" value="수정하기" onclick="함수()">
+				<input type="button" value="취소하기" onclick="함수()">
+				
+				<!-- <form id="information">
 					<fieldset>
 						<legend class="hidden">필수 정보 입력 란</legend>
-						<label>아이디</label> <input type="text" /><p/>
-						<label>이름</label> <input type="text" /><p/>
-						<label>비밀번호</label> <input type="password" /><p/>
-						<label>비밀번호 확인</label> <input type="password" /><p/>
-						<label>이메일</label> <input type="email" /><p/>
-						<label>주소</label> <input type="text" /><p/>
-						<label>전화번호</label> <input type="tel" /><p/>
-						<label>휴대전화</label> <input type="tel" /><p/>
-						<label>SNS</label> <input type="text" /><p/>
+						<label>아이디</label> <input type="text" />
+						<label>이름</label> <input type="text" />
+						<label>비밀번호</label> <input type="password" />
+						<label>비밀번호 확인</label> <input type="password" />
+						<label>이메일</label> <input type="email" />
+						<label>주소</label> <input type="text" />
+						<label>전화번호</label> <input type="tel" />
+						<label>휴대전화</label> <input type="tel" />
+						<label>SNS</label> <input type="text" />
 						<label>작가알림</label>
-						<label><input type="radio" value="yes" name="agree" checked>YES</label>
-						<label><input type="radio" value="no" name="agree">No</label><p/>
-						<label>자기소개</label> <input type="text" /><p/>
+						<label class="radio-label"><input type="radio" value="yes" name="agree" checked>YES</label>
+						<label class="radio-label"><input type="radio" value="no" name="agree">No</label>
+						<label>자기소개</label> <input type="text" />
 						<input type="submit" value="수정" />
 						<input type="submit" value="취소" />
 				 	</fieldset>
-				 </form>
+				 </form> -->
 			</main>
 		</div>
 		

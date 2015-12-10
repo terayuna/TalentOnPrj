@@ -161,17 +161,17 @@
 }
 
 #main{
+	display:inline-block;
 	width:720px;
 	padding-left: 25px;
-	padding-top: 35px;
-	
+
 	min-height : inherit;
+	
 	padding-left: 1px;
-	padding-top: 1px;
-	display:inline-block;
+	padding-bottom:100px;
+
 	/* -ms-grid-row:1;
 	-ms-grid-column:2; */
-	
 	/* position : relative;
 	float : left;
 	margin-left : auto; 
@@ -180,15 +180,57 @@
 	
 }
 
-#log-information{
+#subtitle{
+	font-size:25px;
+	padding-bottom:10px;
+}
+
+#modify > tbody > tr > td{
+	border:1px solid #e5e5e5;
+	
+}
+
+.nomodify{
+	text-indent:5px;
+}
+
+
+#modify > tbody > tr > td:FIRST-CHILD{
+	text-align:center;
+	width:150px;
+	height:50px;
+	background:#f1f1f1;
+}
+
+#modify > tbody > tr > td:LAST-CHILD{
+	height:50px;
+	width:500px;
+	padding-left: 10px;
+}
+
+#modify > tbody > tr > td > input{
+	width:400px;
+	height:25px;
+	border:1px solid #e5e5e5;
+	text-indent:10px;
+}
+
+#main input[type='button']{
+	margin-left:140px;
+	margin-top:20px;
+	height:40px;
+	width:100px;
+}
+
+/* #log-information{
 	style:block;
 	width:500px;
 	align:center;
 	border-top:3px solid #8CBA34;
 	margin-top:10px;
 	text-align:center;
-}
-#information{
+} */
+/* #information{
 	width:500px;
 	border-top:3px solid #8CBA34;
 }
@@ -201,20 +243,29 @@
 	text-align:center;
 }
 
+#information .radio-label{
+	display:inline-block;
+	border:1px solid #c0c0c0;
+	width:50px;
+	height:20px;
+	text-align:center;
+}
+
 #information input{
 	display:inline-block;
 	border:1px solid #c0c0c0;
 	width:300px;
-	float:right;
+	float:left;
 	height:20px
 }
 
-#information fieldset > label{
-	/* #lecture-search fieldset > * : hidden내용도 출력되므로 특정 범위 지정 */
-	/* inline은 크기를 맞춰줄 수 없으므로 block 사용 */
-	display: block;
-	float: left;
+
+
+#information label{
+	float:left;
+	display:block;
 }
+
 
 #information input[type='radio']{
 	display:block;
@@ -225,7 +276,7 @@
 	display:block;
 	
 	width:10px;
-}
+} */
 
 
 
