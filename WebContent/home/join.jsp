@@ -95,8 +95,8 @@
 							</tr>
 							<tr align="center" class="last">
 								<td colspan="2">
-									<input type="submit" value="수정" name="modify">
-									<input type="submit" value="취소" name="cancel">
+									<input type="submit" value="가입하기" name="modify">
+									<input type="submit" value="취소하기" name="cancel">
 								</td>
 							</tr>
 	
