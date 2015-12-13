@@ -9,26 +9,35 @@
 	<link href="../home/css/home_main.css" type= "text/css" rel="stylesheet">
 </head>
 <body>
-		<header id ="header">
+	<header id ="header">
 		<div class = "content-container">
-		<h1 id = "logo">
-			<img src="../images/logo2.png" alt ="TalentOn"/>
-		</h1>
-		
-		<h2 class = "hidden">회원메뉴</h2>
-			<ul id ="join-menu" class="clearfix">
-				<li><a href = "join.jsp">JOIN</a></li>
-			   	<li><a href = "home_uploadProduct.jsp">UPLOAD</a></li>
-			    <li><a href = "home_login.jsp">LOGIN</a></li>
-			</ul>
-
-		<form id = "main-search">
-			<fieldset>
-				<legend class = "hidden">전체검색필드</legend>
-				<input type = "text"/>
-				<input type = "submit" value = "검색"/>
-			</fieldset>
-		</form>
+			<h1 id = "logo">
+				<img src="../images/logo2.png" alt ="TalentOn"/>
+			</h1>
+			
+			<h2 class = "hidden">회원메뉴</h2>
+				<ul id ="join-menu" class="clearfix">
+					<li><a href = "join.jsp">JOIN</a></li>
+				   	<li><a href = "home_uploadProduct.jsp">UPLOAD</a></li>
+				    <li><a href = "home_login.jsp">LOGIN</a></li>
+				</ul>
+	
+			<form id = "main-search">
+				<fieldset>
+					<legend class = "hidden">전체검색필드</legend>
+					<input type = "text"/>
+					<input type = "submit" value = "검색"/>
+				</fieldset>
+			</form>
+			
+			
+			<h2  class = "hidden">메인메뉴</h2>
+	 	   		<ul  id = "header-main-menu" >
+					<li><a href = "../company/company_main.jsp">브랜드</a></li>
+				   	<li><a href = "">작품보기</a></li>
+				    <li><a href = "../home/home_uploadProduct.jsp">작품등록</a></li>
+				    <li><a href = "../home/home_notice.jsp">공지사항</a></li>
+				</ul>
 		</div>
 	</header>
 	
@@ -36,13 +45,13 @@
     <div id = "body" class = "clearfix"> 
     	<div class = "content-container ">   
  	    	<div id = "main">  
-	 	   		<h1  class = "hidden">메인메뉴</h1>
+	 	   		<!-- <h1  class = "hidden">메인메뉴</h1>
 	 	   		<ul  id = "main-menu" >
 					<li><a href = "../company/company_main.jsp">브랜드</a></li>
 				   	<li><a href = "">작품보기</a></li>
 				    <li><a href = "../home/home_uploadProduct.jsp">작품등록</a></li>
-				    <li><a href = "">전체보기</a></li>
-				</ul>
+				    <li><a href = "../home/home_notice.jsp">공지사항</a></li>
+				</ul> -->
 				
 				<h1 class = "hidden">카테고리메뉴</h1>
 				<ul id = "category-menu" class = "clearfix">

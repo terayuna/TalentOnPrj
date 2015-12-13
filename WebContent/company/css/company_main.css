@@ -22,8 +22,9 @@
 
 /* ------------------------- #header ------------------------------------------------------ */
 #header{
-			height: 100px;
+			height: 160px;
 			background: #c19b84;
+			border-bottom: 3px  solid white;
 }
 
 #header > .content-container > *
@@ -103,6 +104,41 @@
 			opacity:0.7;
 		
 		} 
+#company-main-menu{
+	
+	position:relative;
+	top:130px;
+	left:5px;	
+	
+}
+
+#company-main-menu  li{
+		display:block;
+		float: left;
+		padding-left: 32px;
+		padding-right: 32px;
+		/* border-bottom: 1px  solid #c0c0c0; */
+		
+}
+
+#company-main-menu > li:first-child
+{
+	/* padding-left: 0px; */
+	background: none;
+}
+
+#company-main-menu > li > a{
+		font-family: "맑은 고딕", sans-serit;
+		font-size: 18px;
+		font-weight: bold;
+		color: #646464;
+		text-decoration:none;
+	}
+	
+#company-main-menu > li > a:HOVER{
+		color : #ebac56;;
+	}
+
 		
 /* ---------------- #body -------------------------------- */
 
@@ -110,44 +146,10 @@
 
 	min-height:100px;
 	border-top:10px solid #c19b84;
-	margin-top:3px;/* 1픽셀 떨어트려놈 */	
 	/* background: red;	 */
 }
 
-#company-main-menu{
-	
-	position:absolute;
-	/* background: red; */
-	top:20px;
-	left:0px;
-	
-}
 
-#company-main-menu  li{
-		display:block;
-		float: left;
-		padding-left: 40px;
-		padding-right: 40px;
-		border-bottom: 1px  solid #c0c0c0;
-		
-}
-
-/* #company-main-menu > li:first-child
-{
-	padding-left: 0px;
-	background: none;
-} */
-
-#company-main-menu > li > a{
-		font-family: "맑은 고딕", sans-serit;
-		font-size: 15px;
-		color: #646464;
-		text-decoration:none;
-	}
-	
-	#company-main-menu > li > a:HOVER{
-		color : #ebac56;;
-	}
 
 /* ----------------footer------------------------------- */
 #footer{
