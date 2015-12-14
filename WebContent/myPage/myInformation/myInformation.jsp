@@ -36,43 +36,12 @@
 		<div class="content-container clearfix">
 			<aside id="aside">
 				<nav>
-					<h1>내 정보</h1>
 					<ul>
-						<li><a href="">내 정보 변경</a>
-					</ul>
-				</nav>
-				
-				<nav>
-					<h1>경매/입찰/낙찰</h1>
-					<ul>
-						<li><a href="">내 작품 경매</a>
-						<li><a href="">입찰 진행 작품</a>
-						<li><a href="">재입찰</a>
-						<li><a href="">낙찰</a>
-					</ul>
-				</nav>
-				<nav>
-					<h1>구매/판매</h1>
-					<ul>
-						<li><a href="">결제해야 할 작품</a>
-						<li><a href="">배송 중인 작품</a>
-						<li><a href="">판매 중인 작품</a>
-					</ul>
-				</nav>
-				<nav>
-					<h1>작가즐겨찾기</h1>
-					<ul>
-						<li><a href="">작가 즐겨찾기</a>
-						
-					</ul>
-				</nav>
-				<nav>
-					<h1>쪽지</h1>
-					<ul>
-						<li><a href="">받은 쪽지함</a>
-						<li><a href="">안 읽은 쪽지함</a>
-						<li><a href="">보낸 쪽지함</a>
-						<li><a href="">쪽지 보내기</a>
+						<li><a href="">내 정보 변경</a></li>
+						<li><a href="">구매 관련</a></li>
+						<li><a href="">판매 관련</a></li>
+						<li><a href="">작가 즐겨찾기</a></li>
+						<li><a href="">쪽지함</a></li>
 					</ul>
 				</nav>
 			
@@ -85,7 +54,7 @@
 				
 				<h1 id="subtitle">내 정보 변경</h1>
 				<!-- thead:무조건 단일 사용/ tbody:중복가능,게시판의 공지사항부분과 글부분 나눌때 중복이 사용된다 -->
-				<form id="content-searchform" class="article-search-form"
+				<form id="modify-information" class="modify-information"
 	action="a.html" method="post">
 					<table id="modify">
 						<tbody>

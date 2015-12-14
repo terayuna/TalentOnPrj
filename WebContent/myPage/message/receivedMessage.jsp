@@ -6,7 +6,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
 <link href="../../content/css/reset.css" type="text/css" rel="stylesheet" />
-<link href="../css/auction/myAuction.css" type="text/css" rel="stylesheet" />
+<link href="../css/message/receivedMessage.css" type="text/css" rel="stylesheet" />
 </head>
 <body>
 	<header id ="header">
@@ -36,90 +36,54 @@
 		<div class="content-container clearfix">
 			<aside id="aside">
 				<nav>
-					<h1>내 정보</h1>
 					<ul>
-						<li><a href="">내 정보 변경</a>
-					</ul>
-				</nav>
-				
-				<nav>
-					<h1>경매/입찰/낙찰</h1>
-					<ul>
-						<li><a href="">내 작품 경매</a>
-						<li><a href="">입찰 진행 작품</a>
-						<li><a href="">재입찰</a>
-						<li><a href="">낙찰</a>
-					</ul>
-				</nav>
-				<nav>
-					<h1>구매/판매</h1>
-					<ul>
-						<li><a href="">결제해야 할 작품</a>
-						<li><a href="">배송 중인 작품</a>
-						<li><a href="">판매 중인 작품</a>
-					</ul>
-				</nav>
-				<nav>
-					<h1>작가즐겨찾기</h1>
-					<ul>
-						<li><a href="">작가 즐겨찾기</a>
-						
-					</ul>
-				</nav>
-				<nav>
-					<h1>쪽지</h1>
-					<ul>
-						<li><a href="">받은 쪽지함</a>
-						<li><a href="">안 읽은 쪽지함</a>
-						<li><a href="">보낸 쪽지함</a>
-						<li><a href="">쪽지 보내기</a>
+						<li><a href="">내 정보 변경</a></li>
+						<li><a href="">구매 관련</a></li>
+						<li><a href="">판매 관련</a></li>
+						<li><a href="">작가 즐겨찾기</a></li>
+						<li><a href="">쪽지함</a></li>
 					</ul>
 				</nav>
 			
 			</aside>
 			
 			<main id="main">
-				<div class="auction-menu">
+				<div class="message-menu">
 					<ul>
 						<li>
-							<a href ="" >내 작품 경매</a>
-							<a href ="" >0건</a>
+							<a href ="" >받은 쪽지함</a>
+							<a href ="" >2건</a>
 						</li>
 						
 						<li>
-							<a href ="" >입찰진행작품</a>
-							<a href ="" >0건</a>
+							<a href ="" >미열람 쪽지함</a>
+							<a href ="" >1건</a>
 						</li>
 						
 						<li>
-							<a href ="" >재입찰</a>
-							<a href ="" >0건</a>
+							<a href ="" >보낸 쪽지함</a>
+							<a href ="" >1건</a>
 						</li>
 						
-						<li>
-							<a href ="" >낙찰</a>
-							<a href ="" >0건</a>
-						</li>
 					</ul>
 				</div>
 				
-				<h1 id="subtitle">내 작품 경매</h2>
-				
-				<table id="auction-table">
+				<table id="message-table">
 					<thead>
 						<tr>
-							<th>작품 사진</th>
-							<th>게시일자</th>
-							<th>작품명</th>
-							<th>입찰가</th>
-							<th>남은시간</th>
+							<th>보낸 사람</th>
+							<th>내용</th>
+							<th>받은 시간</th>
+							<th>보관</th>
+							<th>삭제</th>
 						</tr>
 					</thead>
 					<tbody>
 						<tr>
-							<td><a href="">사진</a></td>
-							<td>2015-12-13 04:00</td>
+							<td><a href="">이주성</a></td>
+							<td><a href="">프로젝트 짜증나 ㅠㅠㅠ</a></td>
 							<td><a href="">대충 그린 그림</a></td>
+							<td><a href="">cr2ative</a>
 							<td>1,000,000원</a></td>
 							<td>01:02:11</a></td>
 						</tr>

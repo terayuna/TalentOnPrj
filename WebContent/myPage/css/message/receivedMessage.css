@@ -177,12 +177,12 @@
 }
 
 
-.auction-menu{
+.message-menu{
 	display:inline-block;
 	padding-top:15px;
 }
 
-.auction-menu ul > li{
+.message-menu ul > li{
    float:left;
    border:1px solid #e9e9e9;
    padding-left:20px;
@@ -190,7 +190,7 @@
    background:#fff0f0;
 }
 
-.auction-menu ul > li > a{
+.message-menu ul > li > a{
 	display:block;
 	font-family:맑은 고딕, sans-serif;
 	font-size: 20px;
@@ -199,34 +199,35 @@
 	color: #004040;
 }
 
-.auction-menu > ul > li:HOVER
+.message-menu > ul > li:HOVER
 {
 	color:#800000;
 }
 
-.auction-menu > ul > li > a
+.message-menu > ul > li > a
 {
 	color: #004040;
 	text-decoration:none;
 }
 
-#auction-table{
+#message-table{
 	display:inline-block;
 	table-layout: fixed;
 	padding-top:15px;
+	border-top:1px solid #e9e9e9;
 }
 
-#auction-table > thead > tr > th{
+#message-table > thead > tr > th{
 	background:#f4eaea;
 	font-size:25px;
 }
 
-#auction-table > tbody > tr > td{
+#message-table > tbody > tr > td{
 	font-size:15px;
 }
 
-#auction-table > thead > tr > th,
-#auction-table > tbody > tr > td{
+#message-table > thead > tr > th,
+#message-table > tbody > tr > td{
 	font-family:맑은 고딕, sans-serif;
 	font-weight:bold;
 	height: 50px;
@@ -238,8 +239,8 @@
 
 
 
-#auction-table > thead > tr > th:first-child
-#auction-table > tbody > tr > td:first-child{
+#message-table > thead > tr > th:first-child
+#message-table > tbody > tr > td:first-child{
 	background:red;
 }
 

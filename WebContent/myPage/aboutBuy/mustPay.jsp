@@ -6,7 +6,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
 <link href="../../content/css/reset.css" type="text/css" rel="stylesheet" />
-<link href="../css/auction/reBid.css" type="text/css" rel="stylesheet" />
+<link href="../css/aboutBuy/mustPay.css" type="text/css" rel="stylesheet" />
 </head>
 <body>
 	<header id ="header">
@@ -36,43 +36,12 @@
 		<div class="content-container clearfix">
 			<aside id="aside">
 				<nav>
-					<h1>내 정보</h1>
 					<ul>
-						<li><a href="">내 정보 변경</a>
-					</ul>
-				</nav>
-				
-				<nav>
-					<h1>경매/입찰/낙찰</h1>
-					<ul>
-						<li><a href="">내 작품 경매</a>
-						<li><a href="">입찰 진행 작품</a>
-						<li><a href="">재입찰</a>
-						<li><a href="">낙찰</a>
-					</ul>
-				</nav>
-				<nav>
-					<h1>구매/판매</h1>
-					<ul>
-						<li><a href="">결제해야 할 작품</a>
-						<li><a href="">배송 중인 작품</a>
-						<li><a href="">판매 중인 작품</a>
-					</ul>
-				</nav>
-				<nav>
-					<h1>작가즐겨찾기</h1>
-					<ul>
-						<li><a href="">작가 즐겨찾기</a>
-						
-					</ul>
-				</nav>
-				<nav>
-					<h1>쪽지</h1>
-					<ul>
-						<li><a href="">받은 쪽지함</a>
-						<li><a href="">안 읽은 쪽지함</a>
-						<li><a href="">보낸 쪽지함</a>
-						<li><a href="">쪽지 보내기</a>
+						<li><a href="">내 정보 변경</a></li>
+						<li><a href="">구매 관련</a></li>
+						<li><a href="">판매 관련</a></li>
+						<li><a href="">작가 즐겨찾기</a></li>
+						<li><a href="">쪽지함</a></li>
 					</ul>
 				</nav>
 			
@@ -81,11 +50,6 @@
 			<main id="main">
 				<div class="auction-menu">
 					<ul>
-						<li>
-							<a href ="" >내 작품 경매</a>
-							<a href ="" >0건</a>
-						</li>
-						
 						<li>
 							<a href ="" >입찰진행작품</a>
 							<a href ="" >0건</a>
@@ -100,30 +64,41 @@
 							<a href ="" >낙찰</a>
 							<a href ="" >0건</a>
 						</li>
+						
+						<li>
+							<a href ="" >배송중인 작품</a>
+							<a href ="" >0건</a>
+						</li>
+						
+						<li>
+							<a href ="">결제해야 할 작품</a>
+							<a href ="">0건</a>
+						</li>
 					</ul>
 				</div>
 				
-				<h1 id="subtitle">재입찰</h2>
+				<h1 id="subtitle">결제해야 할 작품</h1>
 				
 				<table id="auction-table">
 					<thead>
 						<tr>
 							<th>작가</th>
 							<th>작품 사진</th>
-							<th>게시일자</th>
 							<th>작품명</th>
-							<th>현재입찰가</th>
-							<th>남은시간</th>
+							<th>결제해야 할 금액</th>
+							<th></th>
 						</tr>
 					</thead>
 					<tbody>
 						<tr>
-							<td><a href="">작가</a></td>
+							<td><a href="">cr2ative</a></td>
 							<td><a href="">사진</a></td>
-							<td>2015-12-13 04:00</td>
 							<td><a href="">대충 그린 그림</a></td>
-							<td>1,000,000원</a></td>
-							<td>01:02:11</a></td>
+							<td>1,000,000원</td>
+							<td>
+								01:02:11
+								<input type="submit" value="결제" name="payment">
+							</td>
 						</tr>
 					</tbody>
 				</table>
