@@ -11,16 +11,16 @@
 <body>
 		<header id ="header">
 		<div class = "content-container">
-		<h1 id = "logo"><a href="../home/home_main.jsp" >
+		<h1 id = "logo"><a href="home_main.jsp" >
 			<img src="../images/logo6.PNG" alt ="TalentOn"/>
 			</a>
 		</h1>
 		
 		<h2 class = "hidden">회원메뉴</h2>
 		<ul id ="join-menu" class="clearfix">
-			<li><a href = "../home/home_main.jsp">JOIN</a></li>
+			<li><a href = "home_main.jsp">JOIN</a></li>
 			<li><a href = "">UPLOAD</a></li>
-			<li><a href = "../home/home_login.jsp">LOGIN</a></li>
+			<li><a href = "home_login.jsp">LOGIN</a></li>
 		</ul>
 		
 		<form id = "main-search">
@@ -130,7 +130,7 @@
 	    	<nav id ="company-menu">
 				<h1 class = "hidden">회사메뉴</h1>
 				<ul class="clearfix">
-					<li><a href = "">회사소개</a></li>
+					<li><a href = "../company/company_main.jsp">회사소개</a></li>
 				   	<li><a href = "">웹사이트 이용안내</a></li>
 				    <li><a href = "">웹사이트 공유</a></li>
 				    <li><a href = "../company/company_inquiry.jsp">문의사항</a></li>

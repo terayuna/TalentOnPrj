@@ -17,9 +17,9 @@
 		
 		<h2 class = "hidden">회원메뉴</h2>
 			<ul id ="join-menu" class="clearfix">
-				<li><a href = "../home/home_main.jsp">JOIN</a></li>
-			   	<li><a href = "../home/home_uploadProduct.jsp">UPLOAD</a></li>
-			    <li><a href = "../home/home_login.jsp">LOGIN</a></li>
+				<li><a href = "home_main.jsp">JOIN</a></li>
+			   	<li><a href = "home_uploadProduct.jsp">UPLOAD</a></li>
+			    <li><a href = "home_login.jsp">LOGIN</a></li>
 			</ul>
 	
 		<form id = "main-search">
@@ -40,7 +40,7 @@
 	 	   		<ul  id = "main-menu" >
 					<li><a href = "../company/company_main.jsp">브랜드</a></li>
 				   	<li><a href = "">작품보기</a></li>
-				    <li><a href = "../home/home_uploadProduct.jsp">작품등록</a></li>
+				    <li><a href = "home_uploadProduct.jsp">작품등록</a></li>
 				    <li><a href = "">전체보기</a></li>
 				</ul>
 				

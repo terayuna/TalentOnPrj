@@ -11,16 +11,16 @@
 <body>
 		<header id ="header">
 		<div class = "content-container">
-		<h1 id = "logo"><a href="../home/home_main.jsp" >
+		<h1 id = "logo"><a href="home_main.jsp" >
 			<img src="../images/logo6.PNG" alt ="TalentOn"/>
 			</a>
 		</h1>
 		
 		<h2 class = "hidden">회원메뉴</h2>
 		<ul id ="join-menu" class="clearfix">
-			<li><a href = "../home/home_main.jsp">JOIN</a></li>
-			<li><a href = "../home/home_uploadProduct.jsp">UPLOAD</a></li>
-			<li><a href = "../home/home_login.jsp">LOGIN</a></li>
+			<li><a href = "home_main.jsp">JOIN</a></li>
+			<li><a href = "home_uploadProduct.jsp">UPLOAD</a></li>
+			<li><a href = "home_login.jsp">LOGIN</a></li>
 		</ul>
 		
 		<form id = "main-search">
@@ -70,7 +70,7 @@
 				</div>
 				<div class="board-btns">
 					<a href="" class = "btn btn-color">확인</a>
-					<a href="../home/home_login.jsp" class = "btn btn-gray">취소</a>
+					<a href="home_login.jsp" class = "btn btn-gray">취소</a>
 				</div>
 			</div>
 		</div>

@@ -6,7 +6,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
 	<link href="../content/css/reset.css" type= "text/css" rel="stylesheet">
-	<link href="../home/css/home_login.css" type= "text/css" rel="stylesheet">
+	<link href="..//home/css/home_login.css" type= "text/css" rel="stylesheet">
 </head>
 <body>
 		<header id ="header">
@@ -18,8 +18,8 @@
 		
 		<h2 class = "hidden">회원메뉴</h2>
 		<ul id ="join-menu" class="clearfix">
-			<li><a href = "../home/home_main.html">JOIN</a></li>
-			<li><a href = "../home/home_uploadProduct.jsp">UPLOAD</a></li>
+			<li><a href = "home_main.html">JOIN</a></li>
+			<li><a href = "home_uploadProduct.jsp">UPLOAD</a></li>
 			<li><a href = "">LOGIN</a></li>
 		</ul>
 		
@@ -76,8 +76,8 @@
 				</div>
 				<div class="board-btns">
 					<a href="" class = "btn btn-color">회원가입</a>
-					<a href="../home/home_searchId.jsp" class = "btn btn-gray">아이디찾기</a>
-					<a href="../home/home_searchPwd.jsp" class = "btn btn-gray">비밀번호찾기</a>
+					<a href="home_searchId.jsp" class = "btn btn-gray">아이디찾기</a>
+					<a href="home_searchPwd.jsp" class = "btn btn-gray">비밀번호찾기</a>
 				</div>
 			</div>
 		</div>
