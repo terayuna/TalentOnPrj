@@ -3,22 +3,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="EUC-KR">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
-<link href="../content/css/reset.css" type="text/css" rel="stylesheet" />
-<link href="css/myInformation.css" type="text/css" rel="stylesheet" />
+<link href="../../content/css/reset.css" type="text/css" rel="stylesheet" />
+<link href="../css/myInformation/myInformation.css" type="text/css" rel="stylesheet" />
 </head>
 <body>
 	<header id ="header">
       <div class = "content-container">
       <h1 id = "logo"><a href="../home/home_main.html" >
-         <img src="../images/logo6.PNG" alt ="TalentOn"/>
+         <img src="../../images/logo6.PNG" alt ="TalentOn"/>
          </a>
       </h1>
       
       <h2 class = "hidden">회원메뉴</h2>
       <ul id ="join-menu" class="block_hlist">
-         <li><a href = "../home/home_main.html">HOME</a></li>
+         <li><a href = "">HOME</a></li>
          <li><a href = "">UPLOAD</a></li>
          <li><a href = "">LOGIN</a></li>
       </ul>
@@ -45,7 +45,7 @@
 				<nav>
 					<h1>경매/입찰/낙찰</h1>
 					<ul>
-						<li><a href="">진행 경매</a>
+						<li><a href="">내 작품 경매</a>
 						<li><a href="">입찰 진행 작품</a>
 						<li><a href="">재입찰</a>
 						<li><a href="">낙찰</a>

@@ -20,7 +20,7 @@
 		<ul id ="join-menu" class="block_hlist">
 			<li><a href = "../home/home_main.jsp">JOIN</a></li>
 			<li><a href = "../home/home_uploadProduct.jsp">UPLOAD</a></li>
-			<li><a href = "">LOGIN</a></li>
+			<li><a href = "../home/home_login.jsp">LOGIN</a></li>
 		</ul>
 		<form id = "main-search">
 			<fieldset>
@@ -29,45 +29,47 @@
 				<input type = "submit" value = "검색"/>
 			</fieldset>
 		</form>
-		</div>
-	</header>
-	
-	<div id ="body">
-		<div class="content-container clear">
-			<div id ="main" >
-				<h1 class = "hidden">회사메인메뉴</h1>
-					<ul id ="company-main-menu" class="clearfix">
+		
+		<h2  class = "hidden">회사메인메뉴</h2>
+			 	   	<ul id ="company-main-menu" class="clearfix">
 						<li><a href = "../company/company_main.jsp">회사소개</a></li>
 					   	<li><a href = "">웹사이트 이용안내</a></li>
 					    <li><a href = "">웹사이트 공유</a></li>
 					    <li><a href = "../company/company_inquiry.jsp">문의사항</a></li>
 					    <li><a href = "">관련법규</a></li>
-					    <li><a href = "">웹사이트 공유</a></li>
+					    <li><a href = "">연락처</a></li>
 				 </ul>
-			
-				<div id = "notice">
-				<h2>문의사항</h2>
-				
-				<div class="align-container">
-			    <h3 class = "hidden">공지사항 검색</h3>   
-			         
-			    <form id="notice-search">
-			    	<fieldset>
-			    		<legend class = "hidden">공지사항 검색 필드</legend>
-			    		<label class = "hidden">분류</label>
-			    		<select>
-			    			<option>분류선택</option>
-			    			<option>제목</option>
-			    			<option>작성자</option>
-			    		</select>
-			    		<label class = "hidden">검색어</label>
-			    		<input type = "text"/>
-			    		<input type = "submit" value = "검색"/>
-			    	</fieldset>
-			  	</form>
-			  	</div>
+		</div>
+	</header>
+	
+	<div id ="body">
+		<div id = "content" class="page-content">
+			<div class="wrapper">
+				<header class="page-header">
+					<h2 class="primary-title">문의사항</h2>
+					<h3 class="secondary-title" >문의사항을 입력하세요</h3>
+				</header>
+				<div class="board-write">
+					<div class="align-container">
+					    <h3 class = "hidden">문의사항 검색</h3>   
+					         
+					    <form id="notice-search">
+					    	<fieldset>
+					    		<legend class = "hidden">문의사항 검색 필드</legend>
+					    		<label class = "hidden">분류</label>
+					    		<select>
+					    			<option>분류선택</option>
+					    			<option>제목</option>
+					    			<option>작성자</option>
+					    		</select>
+					    		<label class = "hidden">검색어</label>
+					    		<input type = "text"/>
+					    		<input type = "submit" value = "검색"/>
+					    	</fieldset>
+					  	</form>
+				  	</div>
 			  	
-			  	<h3 class = "hidden">공지사항 목록</h3>   
+			  	<h3 class = "hidden">문의사항 목록</h3>   
 			  	<table id="notices">
 			  		<thead>
 			  			<tr>
@@ -235,6 +237,146 @@
 			    			<td>2010-10-31</td>   
 			    			<td>100</td>
 			    		</tr>
+			    		<tr>
+			    			<td>2</td>
+			    			<td>문의</td>			
+			    			<td>양서인</td>		 
+			    			<td>2010-10-31</td>   
+			    			<td>100</td>
+			    		</tr>
+			    		<tr>
+			    			<td>2</td>
+			    			<td>문의</td>			
+			    			<td>양서인</td>		 
+			    			<td>2010-10-31</td>   
+			    			<td>100</td>
+			    		</tr>
+			    		<tr>
+			    			<td>2</td>
+			    			<td>문의</td>			
+			    			<td>양서인</td>		 
+			    			<td>2010-10-31</td>   
+			    			<td>100</td>
+			    		</tr>
+			    		<tr>
+			    			<td>2</td>
+			    			<td>문의</td>			
+			    			<td>양서인</td>		 
+			    			<td>2010-10-31</td>   
+			    			<td>100</td>
+			    		</tr>
+			    		<tr>
+			    			<td>2</td>
+			    			<td>문의</td>			
+			    			<td>양서인</td>		 
+			    			<td>2010-10-31</td>   
+			    			<td>100</td>
+			    		</tr>
+						<tr>
+			    			<td>2</td>
+			    			<td>문의</td>			
+			    			<td>양서인</td>		 
+			    			<td>2010-10-31</td>   
+			    			<td>100</td>
+			    		</tr>
+			    		<tr>
+			    			<td>2</td>
+			    			<td>문의</td>			
+			    			<td>양서인</td>		 
+			    			<td>2010-10-31</td>   
+			    			<td>100</td>
+			    		</tr>
+			    		<tr>
+			    			<td>2</td>
+			    			<td>문의</td>			
+			    			<td>양서인</td>		 
+			    			<td>2010-10-31</td>   
+			    			<td>100</td>
+			    		</tr>
+			    		<tr>
+			    			<td>2</td>
+			    			<td>문의</td>			
+			    			<td>양서인</td>		 
+			    			<td>2010-10-31</td>   
+			    			<td>100</td>
+			    		</tr>
+			    		<tr>
+			    			<td>2</td>
+			    			<td>문의</td>			
+			    			<td>양서인</td>		 
+			    			<td>2010-10-31</td>   
+			    			<td>100</td>
+			    		</tr>
+			    		<tr>
+			    			<td>2</td>
+			    			<td>문의</td>			
+			    			<td>양서인</td>		 
+			    			<td>2010-10-31</td>   
+			    			<td>100</td>
+			    		</tr>
+			    		<tr>
+			    			<td>2</td>
+			    			<td>문의</td>			
+			    			<td>양서인</td>		 
+			    			<td>2010-10-31</td>   
+			    			<td>100</td>
+			    		</tr>
+			    		<tr>
+			    			<td>2</td>
+			    			<td>문의</td>			
+			    			<td>양서인</td>		 
+			    			<td>2010-10-31</td>   
+			    			<td>100</td>
+			    		</tr>
+			    		<tr>
+			    			<td>2</td>
+			    			<td>문의</td>			
+			    			<td>양서인</td>		 
+			    			<td>2010-10-31</td>   
+			    			<td>100</td>
+			    		</tr>
+			    		<tr>
+			    			<td>2</td>
+			    			<td>문의</td>			
+			    			<td>양서인</td>		 
+			    			<td>2010-10-31</td>   
+			    			<td>100</td>
+			    		</tr>
+			    		<tr>
+			    			<td>2</td>
+			    			<td>문의</td>			
+			    			<td>양서인</td>		 
+			    			<td>2010-10-31</td>   
+			    			<td>100</td>
+			    		</tr>
+			    		<tr>
+			    			<td>2</td>
+			    			<td>문의</td>			
+			    			<td>양서인</td>		 
+			    			<td>2010-10-31</td>   
+			    			<td>100</td>
+			    		</tr>
+			    		<tr>
+			    			<td>2</td>
+			    			<td>문의</td>			
+			    			<td>양서인</td>		 
+			    			<td>2010-10-31</td>   
+			    			<td>100</td>
+			    		</tr>
+			    		<tr>
+			    			<td>2</td>
+			    			<td>문의</td>			
+			    			<td>양서인</td>		 
+			    			<td>2010-10-31</td>   
+			    			<td>100</td>
+			    		</tr>
+			    		<tr>
+			    			<td>2</td>
+			    			<td>문의</td>			
+			    			<td>양서인</td>		 
+			    			<td>2010-10-31</td>   
+			    			<td>100</td>
+			    		</tr>
 			       </tbody>
 			    </table>
 			    
@@ -246,8 +388,9 @@
 			    <div class="align-container1">
 			    <h3 class = "hidden">페이지</h3>
 			    <p>1</p> 
-			    </div>		
+			    </div>
 			</div>
+			<a href="#header" class="btnTop">TOP</a>
 			</div>
 		</div>
 	</div>

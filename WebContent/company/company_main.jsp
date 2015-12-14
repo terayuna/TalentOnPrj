@@ -17,12 +17,11 @@
 		</h1>
 		
 		<h2 class = "hidden">회원메뉴</h2>
-		<ul id ="join-menu" class="clearfix">
+		<ul id ="join-menu" class="block_hlist">
 			<li><a href = "../home/home_main.jsp">JOIN</a></li>
 			<li><a href = "../home/home_uploadProduct.jsp">UPLOAD</a></li>
-			<li><a href = "">LOGIN</a></li>
+			<li><a href = "../home/home_login.jsp">LOGIN</a></li>
 		</ul>
-		
 		<form id = "main-search">
 			<fieldset>
 				<legend class = "hidden">전체검색필드</legend>
@@ -30,21 +29,22 @@
 				<input type = "submit" value = "검색"/>
 			</fieldset>
 		</form>
+		
+		<h2  class = "hidden">회사메인메뉴</h2>
+			 	   	<ul id ="company-main-menu" class="clearfix">
+						<li><a href = "../company/company_main.jsp">회사소개</a></li>
+					   	<li><a href = "">웹사이트 이용안내</a></li>
+					    <li><a href = "">웹사이트 공유</a></li>
+					    <li><a href = "../company/company_inquiry.jsp">문의사항</a></li>
+					    <li><a href = "">관련법규</a></li>
+					    <li><a href = "">연락처</a></li>
+				 </ul>
 		</div>
 	</header>
 	
 	<div id ="body">
 		<div class="content-container clear">
 			<div id ="main" >
-				<h1 class = "hidden">회사메인메뉴</h1>
-					<ul id ="company-main-menu" class="clearfix">
-						<li><a href = "">회사소개</a></li>
-					   	<li><a href = "">웹사이트 이용안내</a></li>
-					    <li><a href = "">웹사이트 공유</a></li>
-					    <li><a href = "../company/company_inquiry.jsp">문의사항</a></li>
-					    <li><a href = "">관련법규</a></li>
-					    <li><a href = "">웹사이트 공유</a></li>
-				 </ul>
 				
 			</div>
 		</div>

@@ -244,7 +244,7 @@
 		float:left;
 		padding-left: 30px;
 		padding-right: 30px;
-		background:url('../images/bg-main-menu-vsp.png') no-repeat 4px center;
+		background:url('../../images/bg-main-menu-vsp.png') no-repeat 4px center;
 	}
 	
 	#company-menu > ul >li:FIRST-CHILD{

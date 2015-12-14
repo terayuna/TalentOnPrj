@@ -17,7 +17,7 @@
 	margin-left:auto;
 	margin-right:auto;
 	height:inherit;
-	/* background: yellow; */
+	background: yellow;
 }
 
 
@@ -142,8 +142,6 @@
 	/* background: yellow; */
 		
 }
-
-
 .page-content .wrapper{
 	position:relative;
 }
@@ -154,6 +152,7 @@
 	margin-right: auto;
 	margin-bottom: 0px;
 	margin-left: auto;
+	background: red;
 }
 
 .page-header{
