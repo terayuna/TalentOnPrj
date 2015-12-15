@@ -18,9 +18,9 @@
 		
 		<h2 class = "hidden">회원메뉴</h2>
 		<ul id ="join-menu" class="clearfix">
-			<li><a href = "../home/home_main.jsp">JOIN</a></li>
-			<li><a href = "../home/home_uploadProduct.jsp">UPLOAD</a></li>
-			<li><a href = "../home/home_login.jsp">LOGIN</a></li>
+			<li><a href = "home_main.jsp">JOIN</a></li>
+			<li><a href = "home_uploadProduct.jsp">UPLOAD</a></li>
+			<li><a href = "home_login.jsp">LOGIN</a></li>
 		</ul>
 		
 		<form id = "main-search">
@@ -62,7 +62,7 @@
 				</div>
 				<div class="board-btns">
 					<a href="" class = "btn btn-color">확인</a>
-					<a href="../home/home_login.jsp" class = "btn btn-gray">취소</a>
+					<a href="home_login.jsp" class = "btn btn-gray">취소</a>
 				</div>
 			</div>
 		</div>
@@ -80,7 +80,7 @@
 				    <li><a href = "">웹사이트 공유</a></li>
 				    <li><a href = "../company/company_inquiry.jsp">문의사항</a></li>
 				    <li><a href = "">관련법규</a></li>
-				    <li><a href = "">웹사이트 공유</a></li> 
+				    <li><a href = "">연락처</a></li> 
 				</ul>
 			</nav>
 		</section> 

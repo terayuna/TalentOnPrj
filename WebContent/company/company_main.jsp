@@ -37,7 +37,7 @@
 					    <li><a href = "">웹사이트 공유</a></li>
 					    <li><a href = "../company/company_inquiry.jsp">문의사항</a></li>
 					    <li><a href = "">관련법규</a></li>
-					    <li><a href = "">웹사이트 공유</a></li>
+					    <li><a href = "">연락처</a></li>
 				 </ul>
 		</div>
 	</header>

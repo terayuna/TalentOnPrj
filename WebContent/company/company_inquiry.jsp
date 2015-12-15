@@ -37,7 +37,7 @@
 					    <li><a href = "">웹사이트 공유</a></li>
 					    <li><a href = "../company/company_inquiry.jsp">문의사항</a></li>
 					    <li><a href = "">관련법규</a></li>
-					    <li><a href = "">웹사이트 공유</a></li>
+					    <li><a href = "">연락처</a></li>
 				 </ul>
 		</div>
 	</header>
@@ -237,6 +237,146 @@
 			    			<td>2010-10-31</td>   
 			    			<td>100</td>
 			    		</tr>
+			    		<tr>
+			    			<td>2</td>
+			    			<td>문의</td>			
+			    			<td>양서인</td>		 
+			    			<td>2010-10-31</td>   
+			    			<td>100</td>
+			    		</tr>
+			    		<tr>
+			    			<td>2</td>
+			    			<td>문의</td>			
+			    			<td>양서인</td>		 
+			    			<td>2010-10-31</td>   
+			    			<td>100</td>
+			    		</tr>
+			    		<tr>
+			    			<td>2</td>
+			    			<td>문의</td>			
+			    			<td>양서인</td>		 
+			    			<td>2010-10-31</td>   
+			    			<td>100</td>
+			    		</tr>
+			    		<tr>
+			    			<td>2</td>
+			    			<td>문의</td>			
+			    			<td>양서인</td>		 
+			    			<td>2010-10-31</td>   
+			    			<td>100</td>
+			    		</tr>
+			    		<tr>
+			    			<td>2</td>
+			    			<td>문의</td>			
+			    			<td>양서인</td>		 
+			    			<td>2010-10-31</td>   
+			    			<td>100</td>
+			    		</tr>
+						<tr>
+			    			<td>2</td>
+			    			<td>문의</td>			
+			    			<td>양서인</td>		 
+			    			<td>2010-10-31</td>   
+			    			<td>100</td>
+			    		</tr>
+			    		<tr>
+			    			<td>2</td>
+			    			<td>문의</td>			
+			    			<td>양서인</td>		 
+			    			<td>2010-10-31</td>   
+			    			<td>100</td>
+			    		</tr>
+			    		<tr>
+			    			<td>2</td>
+			    			<td>문의</td>			
+			    			<td>양서인</td>		 
+			    			<td>2010-10-31</td>   
+			    			<td>100</td>
+			    		</tr>
+			    		<tr>
+			    			<td>2</td>
+			    			<td>문의</td>			
+			    			<td>양서인</td>		 
+			    			<td>2010-10-31</td>   
+			    			<td>100</td>
+			    		</tr>
+			    		<tr>
+			    			<td>2</td>
+			    			<td>문의</td>			
+			    			<td>양서인</td>		 
+			    			<td>2010-10-31</td>   
+			    			<td>100</td>
+			    		</tr>
+			    		<tr>
+			    			<td>2</td>
+			    			<td>문의</td>			
+			    			<td>양서인</td>		 
+			    			<td>2010-10-31</td>   
+			    			<td>100</td>
+			    		</tr>
+			    		<tr>
+			    			<td>2</td>
+			    			<td>문의</td>			
+			    			<td>양서인</td>		 
+			    			<td>2010-10-31</td>   
+			    			<td>100</td>
+			    		</tr>
+			    		<tr>
+			    			<td>2</td>
+			    			<td>문의</td>			
+			    			<td>양서인</td>		 
+			    			<td>2010-10-31</td>   
+			    			<td>100</td>
+			    		</tr>
+			    		<tr>
+			    			<td>2</td>
+			    			<td>문의</td>			
+			    			<td>양서인</td>		 
+			    			<td>2010-10-31</td>   
+			    			<td>100</td>
+			    		</tr>
+			    		<tr>
+			    			<td>2</td>
+			    			<td>문의</td>			
+			    			<td>양서인</td>		 
+			    			<td>2010-10-31</td>   
+			    			<td>100</td>
+			    		</tr>
+			    		<tr>
+			    			<td>2</td>
+			    			<td>문의</td>			
+			    			<td>양서인</td>		 
+			    			<td>2010-10-31</td>   
+			    			<td>100</td>
+			    		</tr>
+			    		<tr>
+			    			<td>2</td>
+			    			<td>문의</td>			
+			    			<td>양서인</td>		 
+			    			<td>2010-10-31</td>   
+			    			<td>100</td>
+			    		</tr>
+			    		<tr>
+			    			<td>2</td>
+			    			<td>문의</td>			
+			    			<td>양서인</td>		 
+			    			<td>2010-10-31</td>   
+			    			<td>100</td>
+			    		</tr>
+			    		<tr>
+			    			<td>2</td>
+			    			<td>문의</td>			
+			    			<td>양서인</td>		 
+			    			<td>2010-10-31</td>   
+			    			<td>100</td>
+			    		</tr>
+			    		<tr>
+			    			<td>2</td>
+			    			<td>문의</td>			
+			    			<td>양서인</td>		 
+			    			<td>2010-10-31</td>   
+			    			<td>100</td>
+			    		</tr>
 			       </tbody>
 			    </table>
 			    
@@ -248,8 +388,9 @@
 			    <div class="align-container1">
 			    <h3 class = "hidden">페이지</h3>
 			    <p>1</p> 
-			    </div>		
+			    </div>
 			</div>
+			<a href="#header" class="btnTop">TOP</a>
 			</div>
 		</div>
 	</div>

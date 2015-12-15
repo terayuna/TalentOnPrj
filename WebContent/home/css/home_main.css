@@ -237,6 +237,21 @@
    top: 90px;
    left: 0px;   
 }
+.btnTop {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 49px;
+    height: 49px;
+    display: block;
+    text-indent: -9999em;
+    background: url('../../images/btn-top.JPG') no-repeat 1px center;
+}
+a {
+    cursor: pointer;
+    overflow: hidden;
+    color: #666;
+}
 /* ----------------footer------------------------------- */
 #footer{
 	
@@ -257,7 +272,7 @@
 		float:left;
 		padding-left: 30px;
 		padding-right: 30px;
-		background:url('../images/bg-main-menu-vsp.png') no-repeat 4px center;
+		background:url('../../images/bg-main-menu-vsp.png') no-repeat 4px center;
 	}
 	
 	#company-menu > ul >li:FIRST-CHILD{

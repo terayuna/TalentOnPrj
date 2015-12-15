@@ -313,6 +313,22 @@
 		overflow : hidden;
 		text-overflow: ellipsis;
 	}
+	
+.btnTop {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 49px;
+    height: 49px;
+    display: block;
+    text-indent: -9999em;
+    background: url('../../images/btn-top.JPG') no-repeat 1px center;
+}
+a {
+    cursor: pointer;
+    overflow: hidden;
+    color: #666;
+}
 
 /* ----------------footer------------------------------- */
 #footer{

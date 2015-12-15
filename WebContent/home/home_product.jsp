@@ -6,10 +6,10 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
 	<link href="../content/css/reset.css" type= "text/css" rel="stylesheet">
-	<link href="../home/css/home_uploadProduct.css" type= "text/css" rel="stylesheet">
+	<link href="../home/css/home_product.css" type= "text/css" rel="stylesheet">
 </head>
 <body>
-		<header id ="header">
+	<header id ="header">
 		<div class = "content-container">
 		<h1 id = "logo"><a href="home_main.jsp" >
 			<img src="../images/logo6.PNG" alt ="TalentOn"/>
@@ -34,18 +34,18 @@
 			<h2  class = "hidden">메인메뉴</h2>
 		 	   	<ul  id = "header-main-menu" >
 					<li><a href = "../company/company_main.jsp">브랜드</a></li>
-					<li><a href = "home_product.jsp">작품보기</a></li>
-					<li><a href = "home_uploadProduct.jsp">작품등록</a></li>
-					<li><a href = "home_notice.jsp">공지사항</a></li>
+					<li><a href = "">작품보기</a></li>
+					<li><a href = "../home/home_uploadProduct.jsp">작품등록</a></li>
+					<li><a href = "../home/home_notice.jsp">공지사항</a></li>
 				</ul>
-
+		</div>
 	</header>
 	
 	<div id = "body">
 			<div id = "content" class="page-content">
 			<div class="wrapper">
 				<header class="page-header">
-					<h2 class="primary-title">작품 등록</h2>
+					<h2 class="primary-title">작품 보기</h2>
 					<h3 class="secondary-title" >작품을 등록하세요.</h3>
 				</header>
 				<div class="board-write">
@@ -166,6 +166,7 @@
 										<input type="text" id="datetimepicker" name="bid_price" value class="middle hasDatepicker" readonly>
 									</td>
 								</tr>
+								
 							</tbody>
 						</table>
 					</section>

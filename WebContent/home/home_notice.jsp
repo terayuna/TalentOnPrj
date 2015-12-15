@@ -33,9 +33,9 @@
 			<h2  class = "hidden">메인메뉴</h2>
 			 	   	<ul  id = "header-main-menu" >
 						<li><a href = "../company/company_main.jsp">브랜드</a></li>
-						<li><a href = "">작품보기</a></li>
-						<li><a href = "../home/home_uploadProduct.jsp">작품등록</a></li>
-						<li><a href = "../home/home_notice.jsp">공지사항</a></li>
+						<li><a href = "home_product.jsp">작품보기</a></li>
+						<li><a href = "home_uploadProduct.jsp">작품등록</a></li>
+						<li><a href = "home_notice.jsp">공지사항</a></li>
 					</ul>
 		</div>
 		
@@ -161,7 +161,7 @@
 				    <li><a href = "">웹사이트 공유</a></li>
 				    <li><a href = "../company/company_inquiry.jsp">문의사항</a></li>
 				    <li><a href = "">관련법규</a></li>
-				    <li><a href = "">웹사이트 공유</a></li> 
+				    <li><a href = "">연락처</a></li> 
 				</ul>
 			</nav>
 		</section> 
