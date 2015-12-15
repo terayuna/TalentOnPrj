@@ -64,7 +64,6 @@
 							<a href ="" >보낸 쪽지함</a>
 							<a href ="" >1건</a>
 						</li>
-						
 					</ul>
 				</div>
 				
@@ -80,8 +79,8 @@
 					</thead>
 					<tbody>
 						<tr>
-							<td><a href="">이주성</a></td>
-							<td><a href="">프로젝트 짜증나 ㅠㅠㅠ</a></td>
+							<td><a href="">cr2ative</a></td>
+							<td><a href="">가나다라마바사아자차카타파하</a></td>
 							<td><a href="">대충 그린 그림</a></td>
 							<td><a href="">cr2ative</a>
 							<td>1,000,000원</a></td>
