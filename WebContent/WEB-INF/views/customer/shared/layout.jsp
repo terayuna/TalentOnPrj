@@ -4,15 +4,13 @@
 <%@ taglib prefix="c"  uri="http://java.sun.com/jsp/jstl/core"%>
 
 <c:set var="ctx" value="${pageContext.request.contextPath}"/>
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<title>Insert title here</title>
-		<link href="${ctx}/content/main/css/main.css" type="text/css" rel="stylesheet" />  
-		<link href="${ctx}/content/main/css/<tiles:getAsString name="css"/>" type="text/css" rel="stylesheet" />  
+			<link href="${ctx}/content/customer/css/home_notice.css" type="text/css" rel="stylesheet" /> 
+			<link href="${ctx}/content/customer/css/<tiles:getAsString name="css"/>" type="text/css" rel="stylesheet" />  	
 	</head>
 <body>
 	<header id ="header">
@@ -36,6 +34,6 @@
 		</section> 
 		</div>
  	</footer>
- 	
+
 </body>
 </html>

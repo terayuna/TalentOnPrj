@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="kr.talenton.web.dao.NoticeDao">
+	<select id="getNotices" resultType="kr.talenton.web.vo.Notice">
+		SELECT * FROM(
+		 SELECT 
+		  ROW_NUMBER() OVER(ORDER BY REGDATE DESC) NUM, 
+		  NOTICEVIEW.* FROM NOTICEVIEW
+		 WHERE ${param2} LIKE '%${param3}%'
+		)A 
+        WHERE NUM BETWEEN 1+(#{param1}-1)*10  AND  #{param1}*10
+	</select>
+	
+	<select id="getNotice" resultType="kr.talenton.web.vo.Notice">
+		SELECT * FROM NOTICES WHERE CODE = #{code}
+	</select>
+	
+	<select id="getPrevNotice" resultType="kr.talenton.web.vo.Notice">
+		select top 1 * from notices  
+		where RegDate &lt; (select REGDATE from notices where code=#{code}) 
+		order by REGDATE DESC;
+	</select>
+	
+	<select id="getNextNotice" resultType="kr.talenton.web.vo.Notice">
+		select top 1 * from notices  
+		where RegDate &gt; (select REGDATE from notices where code=#{code}) 
+		order by REGDATE ASC;
+	</select>
+	
+	<select id="getLastCode" resultType="String">
+		SELECT ISNULL(MAX(CAST(CODE AS INT)),0) CODE FROM NOTICES
+	</select>
+	
+	<insert id="insert" parameterType="kr.talenton.webprj.vo.Notice">
+		<selectKey keyProperty = "code" order = "BEFORE" resultType="String">
+			SELECT MAX(CAST(CODE AS INT)) CODE FROM NOTICES
+		</selectKey>
+		
+		INSERT INTO Notices(code, title, content, writer) VALUES(#{code}+1, #{title}, #{content}, #{writer} )
+	</insert>
+	
+	<delete id="delete" parameterType="String">
+		DELETE notices WHERE CODE = #{code} 
+	</delete>
+	
+	
+</mapper>

@@ -1,41 +1,12 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@ taglib prefix="tiles" uri="http://tiles.apache.org/tags-tiles" %>
-<%@ taglib prefix="c"  uri="http://java.sun.com/jsp/jstl/core"%>
-
-<c:set var="ctx" value="${pageContext.request.contextPath}"/>
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-
 <html>
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<title>Insert title here</title>
-		<link href="${ctx}/content/main/css/main.css" type="text/css" rel="stylesheet" />  
-		<link href="${ctx}/content/main/css/<tiles:getAsString name="css"/>" type="text/css" rel="stylesheet" />  
-	</head>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+</head>
 <body>
-	<header id ="header">
-		<div class = "content-container">
-				<tiles:insertAttribute name="header"/>
-		</div>
-	</header>
-	
-    <div id = "body" class = "clearfix"> 
-    	<div class = "content-container ">   
- 	    	<div id = "main">  
-				<tiles:insertAttribute name="content"/>
- 	   		</div>
- 	 	 </div> 
- 	</div>
- 	
- 	<footer id ="footer">
- 		<div class = "content-container">
-    	<section>
-	    	<tiles:insertAttribute name="footer"/>
-		</section> 
-		</div>
- 	</footer>
- 	
+
 </body>
 </html>
