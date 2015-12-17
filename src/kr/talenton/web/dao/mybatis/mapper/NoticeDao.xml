@@ -8,7 +8,7 @@
 		SELECT * FROM(
 		 SELECT 
 		  ROW_NUMBER() OVER(ORDER BY REGDATE DESC) NUM, 
-		  NOTICEVIEW.* FROM NOTICEVIEW
+		  NOTICES.* FROM NOTICES
 		 WHERE ${param2} LIKE '%${param3}%'
 		)A 
         WHERE NUM BETWEEN 1+(#{param1}-1)*10  AND  #{param1}*10
@@ -34,7 +34,7 @@
 		SELECT ISNULL(MAX(CAST(CODE AS INT)),0) CODE FROM NOTICES
 	</select>
 	
-	<insert id="insert" parameterType="kr.talenton.webprj.vo.Notice">
+	<insert id="insert" parameterType="kr.talenton.web.vo.Notice">
 		<selectKey keyProperty = "code" order = "BEFORE" resultType="String">
 			SELECT MAX(CAST(CODE AS INT)) CODE FROM NOTICES
 		</selectKey>

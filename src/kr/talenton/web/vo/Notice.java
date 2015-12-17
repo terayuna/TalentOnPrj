@@ -9,9 +9,7 @@ public class Notice {
 	private String writer;
 	private String content;
 	private Date regDate;
-	private int hit;
-	private String writerName;
-	private int cmtCount;
+
 	
 	public String getCode() {
 		return code;
@@ -42,23 +40,5 @@ public class Notice {
 	}
 	public void setRegDate(Date regDate) {
 		this.regDate = regDate;
-	}
-	public int getHit() {
-		return hit;
-	}
-	public void setHit(int hit) {
-		this.hit = hit;
-	}
-	public String getWriterName() {
-		return writerName;
-	}
-	public void setWriterName(String writerName) {
-		this.writerName = writerName;
-	}
-	public int getCmtCount() {
-		return cmtCount;
-	}
-	public void setCmtCount(int cmtCount) {
-		this.cmtCount = cmtCount;
 	}
 }

@@ -9,7 +9,7 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<title>Insert title here</title>
-			<link href="${ctx}/content/customer/css/home_notice.css" type="text/css" rel="stylesheet" /> 
+			<link href="${ctx}/content/customer/css/notice.css" type="text/css" rel="stylesheet" /> 
 			<link href="${ctx}/content/customer/css/<tiles:getAsString name="css"/>" type="text/css" rel="stylesheet" />  	
 	</head>
 <body>
@@ -19,13 +19,13 @@
 		</div>
 	</header>
 	
-    <div id = "body" class = "clearfix"> 
-    	<div class = "content-container ">   
- 	    	<div id = "main">  
+    <div id ="body">
+		<div id = "content" class="page-content">
+			<div class="wrapper">
 				<tiles:insertAttribute name="content"/>
- 	   		</div>
- 	 	 </div> 
- 	</div>
+			</div>
+		</div>
+	</div>
  	
  	<footer id ="footer">
  		<div class = "content-container">

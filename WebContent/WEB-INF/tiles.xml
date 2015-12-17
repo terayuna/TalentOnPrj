@@ -5,9 +5,9 @@
        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
 <tiles-definitions>
 	
-	<definition name="main/*" template="/WEB-INF/views/main/shared/layout.jsp">
+	<definition name="home/*" template="/WEB-INF/views/home/shared/layout.jsp">
   		<put-attribute name="header" value="/WEB-INF/views/shared/header.jsp" />
-		<put-attribute name="content" value="/WEB-INF/views/main/{1}.jsp" />
+		<put-attribute name="content" value="/WEB-INF/views/home/{1}.jsp" />
 		<put-attribute name="footer" value="/WEB-INF/views/shared/footer.jsp" />
   </definition>
 
