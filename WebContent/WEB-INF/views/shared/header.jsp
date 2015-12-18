@@ -2,14 +2,18 @@
     pageEncoding="UTF-8"%>
 <%@ taglib prefix="c"  uri="http://java.sun.com/jsp/jstl/core" %>
 				<h1 id = "logo">
-					<img src="../images/logo2.png" alt ="TalentOn"/>
+					<img src="../../content/images/logo2.png" alt ="TalentOn"/>
 				</h1>
 				
 				<h2 class = "hidden">회원메뉴</h2>
 					<ul id ="join-menu" class="clearfix">
-						<li><a href = "home_main.jsp">JOIN</a></li>
+						<li><a href = "/TalentOnProject/joinus/login">JOIN</a></li>
 					   	<li><a href = "home_uploadProduct.jsp">UPLOAD</a></li>
-					    <li><a href = "home_login.jsp">LOGIN</a></li>
+					    <li>
+					    	<c:if test="${pageContext.request.userPrincipal == null}">
+					    	<a href = "/TalentOnProject/joinus/login">LOGIN</a>
+					    	</c:if>
+					    </li>
 					</ul>
 					<form id = "main-search">
 						<fieldset>
