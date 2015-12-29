@@ -1,0 +1,165 @@
+@import url(../../css/reset.css);
+@import url(../../css/layout.css);
+
+
+.clearfix:after{
+			content:".";
+			clear : both;
+			display:block;
+			height:0px;
+			visibility:hidden; /*눈에 보이는 것만 안보이도록 그 부분은 있음  */
+		}
+.hidden{
+		   display: none; /* 아예 그부분이 삭제되도록함 */
+}
+
+.content-container{
+	position: relative;
+	width:993px;
+	margin-left:auto;
+	margin-right:auto;
+	height:inherit;
+	/* background: yellow; */
+}
+
+/* ------------------------- #header ------------------------------------------------------ */
+#header{
+			height: 160px;
+			background: #c19b84;
+			border-bottom: 3px  solid white;
+}
+
+#header > .content-container > *
+{
+	position: absolute;
+}
+
+#logo{
+	
+	left:0px;
+	top: 10px;
+}	
+
+#join-menu{
+	right:0px;
+	top:55px;
+}
+
+#join-menu li{
+	display:block;
+	float: left;
+	font-size: 15px;
+	font-weight: bold;
+	padding-left: 24px;
+	background:url('../images/bg-main-menu-vsp.png') no-repeat  13px  center;
+}
+	#join-menu > li:FIRST-CHILD{
+		padding-left: 0px;
+		background:none;
+	}
+	
+	#join-menu  li a{
+		text-decoration:none;
+		color: #646464;
+	}
+		#join-menu  li a:HOVER{
+			color : white;
+		}
+		
+#main-search{
+	
+	left:368px;
+	top:50px;
+	width: 320px;
+	height:25px;
+	border: 1px solid #845f4a;
+	
+}
+	#main-search  input{
+		display : block;
+		float: left;
+		height: 25px;
+		/* line-height: 25px;
+		text-align: center; */
+	}
+	
+		#main-search input[type ="text"]{
+			/* display: block; */
+			width: calc(100% - 40px);/* 222px; */
+			/* height: 25px; */
+			border : 5px; 
+			text-align: left;
+			font-weight: bold;
+			/* float: left; */
+			opacity:0.2;
+			
+		}
+		#main-search input[type ="submit"] {
+			
+			cursor:pointer;
+			border : 0px; 
+			width: 40px;
+			border-left: 1px solid #845f4a;
+			float: right;
+			font-family: 돋움;
+			font-size: 15px;
+			opacity:0.7;
+		
+		} 
+#company-main-menu{
+	
+	position:relative;
+	top:130px;
+	left:5px;	
+	
+}
+
+#company-main-menu  li{
+		display:block;
+		float: left;
+		padding-left: 32px;
+		padding-right: 32px;
+		/* border-bottom: 1px  solid #c0c0c0; */
+		
+}
+
+#company-main-menu > li:first-child
+{
+	/* padding-left: 0px; */
+	background: none;
+}
+
+#company-main-menu > li > a{
+		font-family: "맑은 고딕", sans-serit;
+		font-size: 18px;
+		font-weight: bold;
+		color: #646464;
+		text-decoration:none;
+	}
+	
+#company-main-menu > li > a:HOVER{
+		color : #ebac56;;
+	}
+
+		
+/* ---------------- #body -------------------------------- */
+
+#body{
+
+	min-height:100px;
+	border-top:10px solid #c19b84;
+	/* background: red;	 */
+}
+
+
+
+/* ----------------footer------------------------------- */
+#footer{
+	height:100px;
+	background: #c19b84;
+}
+
+
+
+		
+		

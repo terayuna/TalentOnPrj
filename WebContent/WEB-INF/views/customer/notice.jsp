@@ -31,67 +31,27 @@
 				  	<table id="notices">
 				  		<thead>
 				  			<tr>
-				    			<th>번호</th>
-				    			<th>제목</th>
-				    			<th>작성자</th>
-				    			<th>작성일</th>
-				    			<th>조회수</th>
-				    		</tr>
+								<th class="seq">번호</th>
+								<th class="title">제목</th>
+								<th class="writer">작성자</th>
+								<th class="regdate">작성일</th>
+								<th class="hit">조회수</th>
+							</tr>
 				       </thead>
-				    	<tbody>
-				    		<tr>
-				    			<td>1</td>
-				    			<td>공지사항</td>			
-				    			<td>관리자</td>		 
-				    			<td>2010-10-30</td>   
-				    			<td>2</td>
-				    		</tr>
-				    		<tr>
-				    			<td>1</td>
-				    			<td>공지사항</td>			
-				    			<td>관리자</td>		 
-				    			<td>2010-10-30</td>   
-				    			<td>2</td>
-				    		</tr>
-				    		
-				    		<tr>
-				    			<td>1</td>
-				    			<td>공지사항</td>			
-				    			<td>관리자</td>		 
-				    			<td>2010-10-30</td>   
-				    			<td>2</td>
-				    		</tr>
-				    		<tr>
-				    			<td>1</td>
-				    			<td>공지사항</td>			
-				    			<td>관리자</td>		 
-				    			<td>2010-10-30</td>   
-				    			<td>2</td>
-				    		</tr>
-				    		<tr>
-				    			<td>1</td>
-				    			<td>공지사항</td>			
-				    			<td>관리자</td>		 
-				    			<td>2010-10-30</td>   
-				    			<td>2</td>
-				    		</tr>
-				    		<tr>
-				    			<td>1</td>
-				    			<td>공지사항</td>			
-				    			<td>관리자</td>		 
-				    			<td>2010-10-30</td>   
-				    			<td>2</td>
-				    		</tr>
-				    		<tr>
-				    			<td>1</td>
-				    			<td>공지사항</td>			
-				    			<td>관리자</td>		 
-				    			<td>2010-10-30</td>   
-				    			<td>2</td>
-				    		</tr>
-				    		
+				       <tbody>
+				    	<c:forEach var="n" items="${list}" >
+							<%-- <tr>
+								<td class="seq">${n.code}</td>
+								<td class="title"><a href="noticeDetail?c=${n.code}">${n.title}</a></td> <!--n.getTitle(); ->n.title이라고 간략히 씀  -->
+								<td class="writer">${n.writer}</td>
+								<td class="regdate"><fmt:formatDate pattern="yyyy-MM-dd" value="${n.regDate}" /></td>
+								<td class="hit">${n.hit}</td>
+							</tr> --%>
+						</c:forEach>
 				       </tbody>
 				    </table>
+				    
+				    <a id ="btn-write" class="btn-write button" href="noticeReg">글쓰기</a>
 				    
 				    <div class="align-container" >
 					    <h3 class = "hidden">목록의 현재 페이지</h3>

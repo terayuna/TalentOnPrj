@@ -16,6 +16,7 @@ public class TalentonAuthFailHandler implements AuthenticationFailureHandler{
 			throws IOException, ServletException {
 		
 		System.out.println("인증실패");
+		response.sendRedirect("/TalentOnProject/joinus/login");
 		//response.sendRedirect("/JSPPrj/joinus/login");
 		
 	}

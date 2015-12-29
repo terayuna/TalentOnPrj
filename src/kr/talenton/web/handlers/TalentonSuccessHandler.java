@@ -14,8 +14,8 @@ public class TalentonSuccessHandler implements AuthenticationSuccessHandler {
 	@Override
 	public void onAuthenticationSuccess(HttpServletRequest request, HttpServletResponse response, Authentication authentication)
 			throws IOException, ServletException {
-		System.out.println("인증 성공");
-		//response.sendRedirect("/JSPPrj/customer/notice");
+		System.out.println("인증성공");
+		response.sendRedirect("/TalentOnProject/home/index");
 		
 	}
 

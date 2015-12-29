@@ -1,0 +1,33 @@
+.block_hlist:after{
+			content:".";
+			clear : both;
+			display:block;
+			height:0px;
+			visibility:hidden; /*눈에 보이는 것만 안보이도록 그 부분은 있음  */
+		}
+		
+.block_hlist li{
+	display:block;
+	float: left;
+}
+
+.block_hlist > li:first-child
+{
+	padding-left: 0px !important;
+	background: none !important;
+}
+
+
+
+.hidden{
+		   display: none; /* 아예 그부분이 삭제되도록함 */
+}
+
+.content-container{
+	position: relative;
+	width:993px;
+	margin-left:auto;
+	margin-right:auto;
+	height:inherit;
+	/* background: yellow; */
+}

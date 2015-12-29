@@ -25,7 +25,6 @@ public class TestProgram {
 		member.setBirthday("1990-04-15");
 		member.setEmail("mansoo@naver.com");
 		member.setId("minsook");
-		member.setMobile("010-1111-1111");
 		member.setName("±è¹Î¼ö");
 		member.setNotification_status("Yes");
 		member.setPassword("1111");

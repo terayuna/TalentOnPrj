@@ -8,7 +8,6 @@ public class Member {
 	private String image;
 	private String address;
 	private String phone;
-	private String mobile;
 	private String birthday;
 	private String self_introduction;
 	private String date;
@@ -56,12 +55,7 @@ public class Member {
 	public void setPhone(String phone) {
 		this.phone = phone;
 	}
-	public String getMobile() {
-		return mobile;
-	}
-	public void setMobile(String mobile) {
-		this.mobile = mobile;
-	}
+	
 	public String getBirthday() {
 		return birthday;
 	}

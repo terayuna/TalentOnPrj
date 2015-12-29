@@ -1,138 +1,88 @@
-@CHARSET "UTF-8";
-
-.clearfix:after{
-			content:".";
-			clear : both;
-			display:block;
-			height:0px;
-			visibility:hidden; /*눈에 보이는 것만 안보이도록 그 부분은 있음  */
-		}
-.hidden{
-		   display: none; /* 아예 그부분이 삭제되도록함 */
-}
-
-.content-container{
-	position: relative;
-	width:993px;
-	margin-left:auto;
-	margin-right:auto;
-	height:inherit;
-	/* background: yellow; */
-}
+@import url(../../css/reset.css);
+@import url(../../css/layout.css);
+@import url(../../css/base.css);
 
 
 /* ------------------------- #header ------------------------------------------------------ */
 #header{
-			height: 160px;
-			background: #c19b84;
-			border-bottom: 3px  solid white;
+         height: 160px;
+         background: #c19b84;
+         border-bottom:3px solid white;
 }
 
 #header > .content-container > *
 {
-	position: absolute;
+   position: absolute;
 }
 
 #logo{
-	
-	left:0px;
-	top: 10px;
-}	
+   
+   left:0px;
+   top: 10px;
+}   
 
 #join-menu{
-	right:0px;
-	top:55px;
+   right:0px;
+   top:55px;
 }
 
 #join-menu li{
-	display:block;
-	float: left;
-	font-size: 15px;
-	font-weight: bold;
-	padding-left: 24px;
-	background:url('../images/bg-main-menu-vsp.png') no-repeat  13px  center;
+   font-size: 15px;
+   font-weight: bold;
+   padding-left: 24px;
+   background:url('../../images/bg-main-menu-vsp.png') no-repeat  13px  center;
 }
-	#join-menu > li:FIRST-CHILD{
-		padding-left: 0px;
-		background:none;
-	}
-	
-	#join-menu  li a{
-		text-decoration:none;
-		color: #646464;
-	}
-		#join-menu  li a:HOVER{
-			color : white;
-		}
-		
+   #join-menu > ul >li:FIRST-CHILD{
+      padding-left: 0px;
+      background:none;
+   }
+   
+   #join-menu li a{
+      text-decoration:none;
+      color: #646464;
+   }
+      #join-menu li a:HOVER{
+         color : white;
+      }
+      
 #main-search{
-	
-	left:368px;
-	top:50px;
-	width: 320px;
-	height:25px;
-	border: 1px solid #845f4a;
-	
+   left:368px;
+   top:50px;
+   width: 320px;
+   height:25px;
+   border: 1px solid #845f4a;
 }
-	#main-search  input{
-		display : block;
-		float: left;
-		height: 25px;
-		/* line-height: 25px;
-		text-align: center; */
-	}
-	
-		#main-search input[type ="text"]{
-			/* display: block; */
-			width: calc(100% - 40px);/* 222px; */
-			/* height: 25px; */
-			border : 5px; 
-			text-align: left;
-			font-weight: bold;
-			/* float: left; */
-			opacity:0.2;
-			
-		}
-		#main-search input[type ="submit"] {
-			
-			cursor:pointer;
-			border : 0px; 
-			width: 40px;
-			border-left: 1px solid #845f4a;
-			float: right;
-			font-family: 돋움;
-			font-size: 15px;
-			opacity:0.7;
-		
-		} 
-#header-main-menu {
-	
-	position:relative;
-	top:130px;
-	left:60px;	
 
+#main-search  input{
+	display : block;
+	float: left;
+	height: 25px;
+	line-height: 25px;
+	text-align: center;
 }
-	#header-main-menu li{
-		
-		position:relative;
-		float:left;
-		padding-left: 75px;
-		padding-right: 75px;
-		/* border-bottom: 1px  solid #c0c0c0; */
-	}
-		
-	#header-main-menu   li  a{
-		
-		font-family: "맑은 고딕", sans-serit;
-		font-size: 20px;
-		font-weight: bold;
-		color: #646464;
-		text-decoration:none;
-	}
-		#header-main-menu  li a:HOVER{
-		
-			color : #ebac56;;
-		}
+   
+#main-search input[type ="text"]{
+	/* display: block; */
+	width: calc(100% - 40px);/* 222px; */
+	/* height: 25px; */
+	border : 5px; 
+	text-align: left;
+	font-weight: bold;
+	/* float: left; */
+	opacity:0.2;
+}
+
+#main-search input[type ="submit"] {
+	cursor:pointer;
+	border : 0px;
+	width: 40px;
+	border-left: 1px solid #845f4a;
+	float: right;
+	font-family: ����;
+	font-size: 15px;
+	opacity:0.7;
+} 
+
 /* ------------------------- #body ------------------------------------------------------		 */
 
 #body{
@@ -142,8 +92,6 @@
 	/* background: yellow; */
 		
 }
-
-
 .page-content .wrapper{
 	position:relative;
 }
@@ -154,6 +102,7 @@
 	margin-right: auto;
 	margin-bottom: 0px;
 	margin-left: auto;
+	/* background: red; */
 }
 
 .page-header{
@@ -162,16 +111,19 @@
 	text-align:center;
 }
 
+
 .primary-title{
 	font-size:35px;
 	text-transform: uppercase;
 	color:#555;
+	text-align: center;
 }
 
 .secondary-title{
 	margin:6px 0;
 	font-size:14px;
 	color:#999;
+	text-align: center;
 }
 
 .board-write{
@@ -232,7 +184,7 @@
 	vertical-align: middle;
 	margin-right: 0px;
 	text-decoration:none;
-	font-family: "Nanum Gothic", "나눔고딕", "맑은고딕", "MalgunGothic", "Malgun Gothic", Dotum, "돋움", verdana, sans-serif;
+	font-family: "Nanum Gothic", "��������", "��������", "MalgunGothic", "Malgun Gothic", Dotum, "����", verdana, sans-serif;
 }
 
 .btn-gray {
@@ -629,42 +581,20 @@ td.title a:hover{
 	width:31px;
 	cursor: pointer;
 }
-		
-		
-		
-		
-/* ----------------footer------------------------------- */
-#footer{
+
+.board-btns{
+	text-align: center;
+	margin-top:20px;
+	padding-bottom: 100px;
 	
-	position:relative;
-	height:100px;
-	background: #c19b84;
 }
 
-
-#company-menu{
-	padding-top:20px;
-	padding-left : 55px;
-	position:relative;
-	
-	
+.btn-gray {
+	background: #444;
+	margin-left: 4px;
 }
-	#company-menu > ul >li{
-		float:left;
-		padding-left: 30px;
-		padding-right: 30px;
-		background:url('../../images/bg-main-menu-vsp.png') no-repeat 4px center;
-	}
-	
-	#company-menu > ul >li:FIRST-CHILD{
-		background:none;
-	}
-	
-	#company-menu > ul > li a{
-		font-family: "맑은 고딕", sans-serit;
-		font-size: 15px;
-		color: #646464;
-		text-decoration:none;
-	}
 
+.btn-color {
+	background: #fe9901;
+}
 		

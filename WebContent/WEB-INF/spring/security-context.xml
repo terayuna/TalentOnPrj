@@ -15,28 +15,27 @@
   
    <http>
    	  <form-login login-page="/joinus/login" 
-   	  		default-target-url="/home/home" 
+   	  		default-target-url="/home/index" 
    	  		authentication-failure-url="/joinus/login?error=1"
    	  		authentication-failure-handler-ref="failHandler"
    	  		authentication-success-handler-ref="successHandler"/>
-   	  		
-   	  <logout logout-success-url="/customer/notice"/>
-      <intercept-url pattern="/customer/noticeReg" access="ROLE_ADMIN"/>
+   	  <logout logout-success-url="/home/index"/>
+      <!-- <intercept-url pattern="/customer/noticeReg" access="ROLE_ADMIN"/> -->
    </http>
    <authentication-manager>
       <authentication-provider>
-      	<!-- <jdbc-user-service data-source-ref="dataSource"
+      	<jdbc-user-service data-source-ref="dataSource"
 				users-by-username-query
-				  ="SELECT mid userid, pwd password, 1 enable FROM Members WHERE mid=?" 
+				  ="SELECT id,password,1 enable FROM MEMBERS WHERE id=?" 
 				authorities-by-username-query
-				  ="SELECT mid userid, 'ROLE_ADMIN' authorities FROM Members WHERE mid=?"  	
-      	/> -->
+				  ="SELECT id,'ROLE_ADMIN' authorities FROM Members WHERE id=?"  	
+      	/>
       	
-         <user-service><!--  그냥 여기서 사용자 등록해버림 -->
+        <!--  <user-service> 그냥 여기서 사용자 등록해버림
             <user name="dragon" password="1111" authorities="ROLE_TEACHER"/>
             <user name="newlec" password="1111" authorities="ROLE_TEACHER,ROLE_ADMIN"/> 
             
-         </user-service>
+         </user-service> -->
          
       </authentication-provider>
    </authentication-manager>

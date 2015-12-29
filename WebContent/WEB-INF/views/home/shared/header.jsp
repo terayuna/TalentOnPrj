@@ -5,7 +5,7 @@
 <c:set var="ctx" value="${pageContext.request.contextPath}"/>
 				<h1 id = "logo">
 					<a href="${ctx}/home/index">
-						<img src="${ctx}/content/images/logo6.PNG" alt ="TalentOn"/> 
+						<img src="${ctx}/content/images/logo2.png" alt ="TalentOn"/> 
 					</a>
 				</h1>
 				
@@ -16,6 +16,7 @@
 							<c:forEach var="auth" items ="${auths}">
 								${auth.authority}
 							</c:forEach> 권한 표시 --%>
+						
 					   	<li><a href = "${ctx}/upload/uploadProduct">UPLOAD</a></li>
 					   	<li>
 						   	<c:if test="${pageContext.request.userPrincipal==null }">
