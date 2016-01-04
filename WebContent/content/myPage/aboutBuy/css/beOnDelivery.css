@@ -1,0 +1,290 @@
+@CHARSET "UTF-8";
+
+.clearfix:after{
+         content:".";
+         clear : both;
+         display:block;
+         height:0px;
+         visibility:hidden; /*눈에 보이는 것만 안보이도록 그 부분은 있음  */
+}
+
+
+
+.block_hlist:after{
+         content:".";
+         clear : both;
+         display:block;
+         height:0px;
+         visibility:hidden; /*눈에 보이는 것만 안보이도록 그 부분은 있음  */
+      }
+      
+.block_hlist li{
+   display:block;
+   float: left;
+}
+
+.block_hlist > li:first-child
+{
+   padding-left: 0px !important;
+   background: none !important;
+}
+
+.hidden{
+         display: none; /* 아예 그부분이 삭제되도록함 */
+}
+
+.content-container{
+	display:flex;
+	position: relative;
+	width:993px;
+	margin-left:auto;
+	margin-right:auto;
+	height:inherit;
+}
+
+/* ------------------------- #header ------------------------------------------------------ */
+#header{
+         height: 100px;
+         background: #c19b84;
+}
+
+#header > .content-container > *
+{
+   position: absolute;
+}
+
+#logo{
+   
+   left:0px;
+   top: 10px;
+}   
+
+#join-menu{
+   right:0px;
+   top:55px;
+}
+
+#join-menu li{
+   font-size: 15px;
+   font-weight: bold;
+   padding-left: 24px;
+   background:url('../images/bg-main-menu-vsp.png') no-repeat  13px  center;
+}
+   #join-menu > ul >li:FIRST-CHILD{
+      padding-left: 0px;
+      background:none;
+   }
+   
+   #join-menu li a{
+      text-decoration:none;
+      color: #646464;
+   }
+      #join-menu li a:HOVER{
+         color : white;
+      }
+      
+#main-search{
+   
+   left:368px;
+   top:50px;
+   width: 320px;
+   height:25px;
+   border: 1px solid #845f4a;
+   
+}
+#main-search  input{
+   display : block;
+   float: left;
+   height: 25px;
+   line-height: 25px;
+   text-align: center;
+}
+
+   #main-search input[type ="text"]{
+      /* display: block; */
+      width: calc(100% - 40px);/* 222px; */
+      /* height: 25px; */
+      border : 5px; 
+      text-align: left;
+      font-weight: bold;
+      /* float: left; */
+      opacity:0.2;
+      
+   }
+   #main-search input[type ="submit"] {
+      
+      cursor:pointer;
+      border : 0px; 
+      width: 40px;
+      border-left: 1px solid #845f4a;
+      float: right;
+      font-family: 돋움;
+      font-size: 15px;
+      opacity:0.7;
+   
+      } 
+      
+/* -------------------------body-------------------------- */
+#body
+{
+	min-height:500px;
+	/* border-top:6px solid #8CBA34; */
+	margin-top:10px;
+}
+
+#aside{
+	top:110px;
+	left:10px;
+	display:inline-block;
+	width:200px;
+	min-height : inherit;
+}
+
+
+#aside > nav > ul > li > a
+{
+	padding-left:10px;
+	font-family:맑은 고딕, sans-serif;
+	font-size:15px;
+	font-weight:bold;
+	color: #004040;
+	text-decoration:none; /* 밑줄없애기 */			
+}
+
+#aside > nav > ul > li > a:HOVER
+{
+	/* HOVER : 마우스 올렸을 때 */
+	text-decoration: underline;
+	color:#800000;
+}
+
+#main{
+	display:inline-block;
+	width:793px;
+	padding-left: 25px;
+	min-height : inherit;
+	
+	padding-left: 1px;
+	padding-bottom:100px;
+}
+
+#subtitle{
+	font-size:25px;
+	padding-top:30px;
+	padding-bottom:10px;
+	border-bottom: 1px solid #e9e9e9;
+}
+
+
+.auction-menu{
+	display:inline-block;
+	padding-top:15px;
+}
+
+.auction-menu ul > li{
+   float:left;
+   border:1px solid #e9e9e9;
+   padding-left:20px;
+   padding-right:20px;
+   background:#fff0f0;
+}
+
+.auction-menu ul > li > a{
+	display:block;
+	font-family:맑은 고딕, sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+	text-align:center;
+	color: #004040;
+}
+
+.auction-menu > ul > li:HOVER
+{
+	color:#800000;
+}
+
+.auction-menu > ul > li > a
+{
+	color: #004040;
+	text-decoration:none;
+}
+
+#auction-table{
+	display:inline-block;
+	table-layout: fixed;
+	padding-top:15px;
+}
+
+#auction-table > thead > tr > th{
+	background:#f4eaea;
+	font-size:25px;
+}
+
+#auction-table > tbody > tr > td{
+	font-size:15px;
+}
+
+#auction-table > tbody > tr > td > a{
+	text-decoration:none;
+}
+
+#auction-table > thead > tr > th,
+#auction-table > tbody > tr > td{
+	font-family:맑은 고딕, sans-serif;
+	font-weight:bold;
+	height: 50px;
+	width:155px;
+	text-align: center;
+	border: 1px solid #e9e9e9;
+}
+
+
+
+
+#auction-table > thead > tr > th:first-child
+#auction-table > tbody > tr > td:first-child{
+	background:red;
+}
+
+#auction-table > tbody > tr > td > input[type ="submit"]{
+	display:inline-block;
+}
+
+
+
+/* footer------------------------------------------ */
+
+
+#footer
+{
+	height:100px;
+	background: #c19b84;
+}
+
+#company-menu
+{
+	padding-top:20px;
+	padding-left : 55px;
+	position:absolute;
+	
+}
+#company-menu > ul >li
+{
+	float:left;
+	padding-left: 30px;
+	padding-right: 30px;
+	background:url('../images/bg-main-menu-vsp.png') no-repeat 4px center;
+}
+	
+#company-menu > ul >li:FIRST-CHILD
+{
+	background:none;
+}
+
+#company-menu > ul > li a
+{
+	font-family: "맑은 고딕", sans-serit;
+	font-size: 15px;
+	color: #646464;
+	text-decoration:none;
+}

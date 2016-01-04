@@ -3,37 +3,32 @@
 <!DOCTYPE tiles-definitions PUBLIC
        "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
-<tiles-definitions>
-	
-	
-	<definition name="company/*" template="/WEB-INF/views/company/shared/layout.jsp">
-  		<put-attribute name="css" value="{1}.css"></put-attribute>
-  	 	<put-attribute name="header" value="/WEB-INF/views/shared/header.jsp" />
- 		<put-attribute name="content" value="/WEB-INF/views/company/{1}.jsp" />
-		<put-attribute name="footer" value="/WEB-INF/views/company/shared/footer.jsp" />
-	</definition>
 
-	<definition name="joinus/*" template="/WEB-INF/views/joinus/shared/layout.jsp">
-		<put-attribute name="css" value="{1}.css"></put-attribute>
+<tiles-definitions>
+
+  	<definition name="myPage/*/*" template="/WEB-INF/views/myPage/shared/layout.jsp">
+		<put-attribute name="css" value="{2}.css"></put-attribute>
   		<put-attribute name="header" value="/WEB-INF/views/shared/header.jsp" />
-		<put-attribute name="content" value="/WEB-INF/views/joinus/{1}.jsp" />
+  		<put-attribute name="aside" value="/WEB-INF/views/myPage/shared/aside.jsp" />
+		<put-attribute name="content" value="/WEB-INF/views/myPage/{1}/{2}.jsp" />
 		<put-attribute name="footer" value="/WEB-INF/views/shared/footer.jsp" />
 	</definition>
+	
 	
 	
 	<definition name="home/*" template="/WEB-INF/views/home/shared/layout.jsp">
-  		<put-attribute name="css" value="{1}.css"></put-attribute>
-  	 	<put-attribute name="header" value="/WEB-INF/views/home/shared/header.jsp" />
- 		<put-attribute name="content" value="/WEB-INF/views/home/{1}.jsp" />
+		<put-attribute name="css" value="{1}.css"></put-attribute>
+  		<put-attribute name="header" value="/WEB-INF/views/home/shared/header.jsp" />
+		<put-attribute name="content" value="/WEB-INF/views/home/{1}.jsp" />
 		<put-attribute name="footer" value="/WEB-INF/views/shared/footer.jsp" />
 	</definition>
+	
+	
 	
 	<definition name="*/*" template="/WEB-INF/views/{1}/shared/layout.jsp">
   		<put-attribute name="css" value="{2}.css"></put-attribute>
   		<put-attribute name="header" value="/WEB-INF/views/shared/header.jsp" />
-  		<put-attribute name="aside" value="/WEB-INF/views/{1}/shared/aside.jsp"/>
 		<put-attribute name="content" value="/WEB-INF/views/{1}/{2}.jsp" />
 		<put-attribute name="footer" value="/WEB-INF/views/shared/footer.jsp" />
 	</definition>
-  
 </tiles-definitions>

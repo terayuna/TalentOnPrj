@@ -11,23 +11,20 @@
 				
 				<h2 class = "hidden">회원메뉴</h2>
 					<ul id ="join-menu" class="clearfix">
-						<li><a href = "${ctx}/joinus/join">JOIN</a></li>
-							<%-- <security:authentication property ="authorities" var="auths"/>
-							<c:forEach var="auth" items ="${auths}">
-								${auth.authority}
-							</c:forEach> 권한 표시 --%>
-						
-					   	<li><a href = "${ctx}/upload/uploadProduct">UPLOAD</a></li>
-					   	<li>
-						   	<c:if test="${pageContext.request.userPrincipal==null }">
-						    	<li><a href = "${ctx}/joinus/login">LOGIN</a></li>
-						    </c:if>
-							<c:if test="${pageContext.request.userPrincipal!=null }">
+						<c:if test="${pageContext.request.userPrincipal==null }">
+					    	<li><a href = "${ctx}/joinus/join">JOIN</a></li>
+					    	<li><a href = "${ctx}/joinus/login">LOGIN</a></li>
+				    	</c:if>
+						<c:if test="${pageContext.request.userPrincipal!=null }">
+							<li><a href = "${ctx}/myPage/myInformation/modifyInformation">MYPAGE</a></li>
+							<li><a href = "${ctx}/upload/uploadProduct">UPLOAD</a></li>
+							<li>
 								<c:url var="logout" value="/j_spring_security_logout"/>
 								<a href="${logout}">
 								<security:authentication property ="name"/>LOGOUT</a>
-							</c:if>
-						</li>
+							</li>
+							
+						</c:if>
 					</ul>
 					<form id = "main-search">
 						<fieldset>

@@ -3,10 +3,12 @@
 <%@ taglib prefix="c"  uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%@ taglib prefix="security"  uri="http://www.springframework.org/security/tags" %>
-				<header class="page-header">
-					<h2 class="primary-title">공지사항</h2>
-					<h3 class="secondary-title" >공지사항을  확인하세요</h3>
-				</header>
+				
+				<div class="content-header">
+					<h1 class="primary-title">공지사항</h1>
+					<h2 class="secondary-title" >공지사항을  확인하세요</h2>
+				</div>
+				
 				<div class="board-write">
 					<div class="align-container">
 					    <h3 class = "hidden">공지사항 검색</h3>   
@@ -31,27 +33,25 @@
 				  	<table id="notices">
 				  		<thead>
 				  			<tr>
-								<th class="seq">번호</th>
-								<th class="title">제목</th>
-								<th class="writer">작성자</th>
-								<th class="regdate">작성일</th>
-								<th class="hit">조회수</th>
-							</tr>
-				       </thead>
-				       <tbody>
-				    	<c:forEach var="n" items="${list}" >
-							<%-- <tr>
-								<td class="seq">${n.code}</td>
-								<td class="title"><a href="noticeDetail?c=${n.code}">${n.title}</a></td> <!--n.getTitle(); ->n.title이라고 간략히 씀  -->
-								<td class="writer">${n.writer}</td>
-								<td class="regdate"><fmt:formatDate pattern="yyyy-MM-dd" value="${n.regDate}" /></td>
-								<td class="hit">${n.hit}</td>
-							</tr> --%>
-						</c:forEach>
+				    			<th class="code">번호</th>
+				    			<th class="title">제목</th>
+				    			<th class="writer">작성자</th>
+				    			<th class="regdate">작성일</th>
+				    			<th class="hit">조회수</th>
+				    		</tr>
+				    	</thead>
+				    	<tbody>
+				    		<c:forEach var="n" items="${list}">
+				    			<tr>
+				    				<td class="code">${n.code}</td>
+				    				<td class="title"><a href="noticeDetail?c=${n.code}">${n.title}</a></td>
+				    				<td class="writer">${n.writer}</td>
+				    				<td class="regdate"><fmt:formatDate pattern="yyyy-MM-dd" value="${n.regDate}"/></td>
+				    				<td class="hit">조회수</td>
+				    			</tr>
+				    		</c:forEach>
 				       </tbody>
 				    </table>
-				    
-				    <a id ="btn-write" class="btn-write button" href="noticeReg">글쓰기</a>
 				    
 				    <div class="align-container" >
 					    <h3 class = "hidden">목록의 현재 페이지</h3>

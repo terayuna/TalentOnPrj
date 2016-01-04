@@ -105,7 +105,7 @@
 	/* background: red; */
 }
 
-.page-header{
+.content-header{
 	padding-top:50px;
 	padding-bottom:50px;
 	text-align:center;
@@ -161,12 +161,6 @@
 	padding-left: 240px;
 }
 
-.board-btns{
-	text-align: center;
-	margin-top:60px;
-	padding-bottom: 100px;
-	
-}
 .btn {
 	border: 0;
 	display: inline-block;
@@ -582,9 +576,9 @@ td.title a:hover{
 	cursor: pointer;
 }
 
-.board-btns{
+.article-control{
 	text-align: center;
-	margin-top:20px;
+	margin-top:60px;
 	padding-bottom: 100px;
 	
 }
