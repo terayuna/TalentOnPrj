@@ -13,7 +13,7 @@
 			<legend class="hidden">로그인 폼</legend>
 			<ul id="loginBox" class="clearfix">
 				<li class="small-margin">
-					<label for="id">아이디</label>
+					<label for="id">&nbsp;&nbsp;&nbsp;아이디</label>
 					<input name="j_username" class="text" />
 				</li>
 				<li class="small-margin">
