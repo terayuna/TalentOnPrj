@@ -170,6 +170,11 @@
 	
 }
 
+#category-menu img:hover{
+		/* transform : translate(10px); */
+		 opacity: 0.4;  
+}
+
 #category-menu li{
 	position:relative;
 	float:left;

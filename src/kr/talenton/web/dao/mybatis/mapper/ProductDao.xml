@@ -8,27 +8,29 @@
 		SELECT * FROM(
 		 SELECT 
 		  ROW_NUMBER() OVER(ORDER BY REGDATE DESC) NUM, 
-		 PRODUCT.* FROM PRODUCT
+		 PRODUCTS.* FROM PRODUCTS
 		 WHERE ${param2} LIKE '%${param3}%'
 		)A 
         WHERE NUM BETWEEN 1+(#{param1}-1)*10  AND  #{param1}*10
 	</select>
 	
-	<update id="update" >
-		UPDATE PRODUCT SET TITLE = #{title}, INTRODUCTION = #{introduction}, CATEGORY = #{category},  UPLOAD_ID = #{upload_id},  UPLOAD_TYPE = #{upload_type},  UPLOAD_PRICE = #{upload_price}, UPLOAD_END_DATE = #{upload_end_date}, UPLOAD_DATE = #{upload_date}, PURCHASE_ID =#{purchase_id}, PURCHASE_DATE =#{purchase_date}
+	<update id="update">
+		UPDATE PRODUCTS SET TITLE = #{title}, INTRODUCTION = #{introduction}, CATEGORY = #{category},  UPLOAD_ID = #{upload_id},  UPLOAD_TYPE = #{upload_type},  UPLOAD_PRICE = #{upload_price}, UPLOAD_END_DATE = #{upload_end_date}, UPLOAD_DATE = #{upload_date}, PURCHASE_ID =#{purchase_id}, PURCHASE_DATE =#{purchase_date}
 		,PAY_DATE =#{pay_date} ,PAY_AMOUNT =#{pay_amount}, PAY_TYPE =#{pay_type}
 		WHERE CODE = #{code}
 	</update>
 	
 	<delete id="delete">
-		DELETE PRODUCT WHERE CODE = #{code}
+		DELETE PRODUCTS WHERE CODE = #{code}
 	</delete>
 	
-	<insert id = "insert">
-		INSERT INTO PRODUCT (CODE, TITLE, INTRODUCTION , CATEGORY ,  UPLOAD_ID ,  UPLOAD_TYPE ,  UPLOAD_PRICE, UPLOAD_END_DATE, UPLOAD_DATE, PURCHASE_ID, PURCHASE_DATE
+	<insert id = "insert" parameterType="kr.talenton.web.vo.Product">
+		INSERT INTO PRODUCTS (TITLE, INTRODUCTION , CATEGORY ,  UPLOAD_ID ,  UPLOAD_TYPE ,  UPLOAD_PRICE, UPLOAD_END_DATE, UPLOAD_DATE, PURCHASE_ID, PURCHASE_DATE
 		,PAY_DATE ,PAY_AMOUNT, PAY_TYPE) 
-		Values(#{code}, #{title}, #{introduction}, #{category}, #{upload_id}, #{upload_type}, #{upload_price}, #{upload_end_date}, #{upload_date}, #{purchase_id}, #{purchase_date},#{pay_date} ,#{pay_amount}, #{pay_type})
+		Values(#{title}, #{introduction}, #{category}, #{upload_id}, #{upload_type}, #{upload_price}, #{upload_end_date}, #{upload_date},
+		 #{purchase_id}, #{purchase_date},#{pay_date} ,#{pay_amount}, #{pay_type})
 	</insert>
 
+	
 	
 </mapper>

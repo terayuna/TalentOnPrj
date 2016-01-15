@@ -20,7 +20,7 @@
    	  		authentication-failure-handler-ref="failHandler"
    	  		authentication-success-handler-ref="successHandler"/>
    	  <logout logout-success-url="/home/index"/>
-      <!-- <intercept-url pattern="/customer/noticeReg" access="ROLE_ADMIN"/> -->
+      <intercept-url pattern="/upload/uploadProduct" access="ROLE_USER"/>
    </http>
    <authentication-manager>
       <authentication-provider>
@@ -28,7 +28,7 @@
 				users-by-username-query
 				  ="SELECT id,password,1 enable FROM MEMBERS WHERE id=?" 
 				authorities-by-username-query
-				  ="SELECT id,'ROLE_ADMIN' authorities FROM Members WHERE id=?"  	
+				  ="SELECT id,'ROLE_USER' authorities FROM Members WHERE id=?"  	
       	/>
       	
         <!--  <user-service> 그냥 여기서 사용자 등록해버림

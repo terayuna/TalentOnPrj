@@ -30,7 +30,7 @@ public class JoinusController {
 	public String join(Member m) throws SQLException{
 		
 		memberDao.insert(m);
-		return "redirect:/customer/notice"; //메인 화면으로 수정할 것
+		return "redirect:/home/index"; //메인 화면으로 수정할 것
 	}
 
 	@RequestMapping(value = "login", method=RequestMethod.GET)

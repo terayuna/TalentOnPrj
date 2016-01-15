@@ -1,0 +1,309 @@
+@import url(../../css/reset.css);
+
+.hidden{
+
+	display: none; /* ¾Æ¿¹ ±×ºÎºÐÀÌ »èÁ¦µÇµµ·ÏÇÔ */
+}
+
+.content-container{
+
+	position: relative;
+	width:993px;
+	margin-left:auto;
+	margin-right:auto;
+	height:inherit;
+	display: flex;
+	flex-flow: row;
+	/*  background: yellow;   */
+}
+
+.clearfix:after{
+
+	content:".";
+	clear : both;
+	display:block;
+	height:0px;
+	visibility:hidden; /*´«¿¡ º¸ÀÌ´Â °Í¸¸ ¾Èº¸ÀÌµµ·Ï ±× ºÎºÐÀº ÀÖÀ½  */
+}
+
+/* ------------------------- #header ------------------------------------------------------ */
+
+#header{
+
+    height: 160px;
+    background: #c19b84;
+    border-bottom:3px solid white;
+}
+
+#header > .content-container > *
+{
+   position: absolute;
+}
+
+#logo{
+
+   left:0px;
+   top: 10px;
+}   
+
+#join-menu{
+
+   right:0px;
+   top:55px;
+}
+
+	#join-menu li{
+	
+	   font-size: 15px;
+	   font-weight: bold;
+	   padding-left: 24px;
+	   background:url('../../images/bg-main-menu-vsp.png') no-repeat  13px  center;
+	}
+
+	   #join-menu > ul >li:FIRST-CHILD{
+	
+	      padding-left: 0px;
+	      background:none;
+	   }
+
+   #join-menu li a{
+
+      text-decoration:none;
+      color: #646464;
+   }
+
+   #join-menu li a:HOVER{
+
+      color : white;
+   }
+
+#main-search{
+
+   left:368px;
+   top:50px;
+   width: 320px;
+   height:25px;
+   border: 1px solid #845f4a;
+}
+
+	#main-search  input{
+	
+		display : block;
+		float: left;	
+		height: 25px;	
+		line-height: 25px;
+		text-align: center;
+	}
+
+	#main-search input[type ="text"]{
+	
+		/* display: block; */
+		width: calc(100% - 40px);/* 222px; */
+		/* height: 25px; */	
+		border : 5px; 	
+		text-align: left;	
+		font-weight: bold;	
+		/* float: left; */	
+		opacity:0.2;	
+	}
+
+	#main-search input[type ="submit"] {
+	
+		cursor:pointer;
+		border : 0px;
+		width: 40px;
+		border-left: 1px solid #845f4a;
+		float: right;
+		font-family: µ¸¿ò;
+		font-size: 15px;
+		opacity:0.7;
+	} 
+
+#header-main-menu {
+
+	position:relative;
+	top:130px;
+	left:60px;	
+}
+
+	#header-main-menu li{
+
+		position:relative;
+		float:left;
+		padding-left: 75px;
+		padding-right: 75px;
+		/* border-bottom: 1px  solid #c0c0c0; */
+	}
+
+	#header-main-menu li a{
+
+		font-family: "¸¼Àº °íµñ", sans-serit;
+		font-size: 20px;
+		font-weight: bold;
+		color: #646464;
+		text-decoration:none;
+	}
+
+	#header-main-menu  li a:HOVER{
+
+		color : #ebac56;;
+	}
+
+/* ------------------------- #body ------------------------------------------------------		 */
+
+#body{
+	/* background : pink; */
+	/* position:relative; */
+	min-height: 300px;
+	border-top:10px solid #c19b84;
+	/* display: flex;
+	flex-flow: row; */
+
+}
+
+#body .content-container{
+	display: flex;
+	min-height: inherit;
+	
+}
+
+#aside{
+
+	background: beige;
+	width: 200px;
+}
+
+#main{
+
+	/* background: red; */ 
+	width: 760px;
+	flex: 1; 
+}
+
+#tab{
+	float: right;
+}
+	
+	#menu-title{
+	
+		font-family: "¸¼Àº °íµñ", sans-serit;
+		font-size: 25px;
+		font-weight: bold;
+		position:relative; 
+		top:20px;
+		left:10px;	
+		/* background: #ebac56; */
+		border-bottom: 3px solid #ebac56;
+	}
+
+	#category-menu{
+
+		position:relative; 
+		top:50px;
+		left:30px;	
+	}	
+
+		#category-menu  li  a{
+	
+			font-family: "¸¼Àº °íµñ", sans-serit;
+			font-size: 20px;
+			font-weight: bold;
+			color: #646464;
+			text-decoration:none;
+			position:relative; 
+
+		}
+	
+		#category-menu  li a:HOVER{
+		
+			color : #ebac56;
+		}
+
+	#product-list{
+
+		position:relative; 
+		top: 80px;
+		left: 30px;
+		/* display: flex;
+		flex-flow: row; */
+		/* background : red; */
+	}
+
+	  #product-list li{
+	
+	  		position:relative; 
+	  		float : left;
+	  		width: 230px;
+	  		min-height: 300px;
+	  	    margin: 10px 10px 10px 10px; 
+	  	    border: 1px solid #c0c0c0;
+	  }
+	
+	  #product-list li img{
+	
+	  	height: 240px;
+	    width: 230px;
+	  }
+	
+	  #product-list  li  a{
+	
+			font-family: "¸¼Àº °íµñ", sans-serit;
+			font-size: 15px;
+			/* font-weight: bold; */
+			color: #000000;
+			text-decoration:none;
+			position:relative; 
+		}
+	
+		#product-list  li  p{
+	
+			position:relative; 
+			left: 15px;
+		}
+
+/* ----------------visual------------------------------- */
+
+#visual .content-container{
+
+   position: relative;
+   height: 100px;
+   background: #ffffff;
+   margin-top: 50px;
+   top: 50px;
+   left: 0px;   
+}
+
+/* ----------------footer------------------------------- */
+
+#footer{
+	position:relative;
+	height:100px;
+	background: #c19b84;
+}
+
+#company-menu{
+
+	padding-top:20px;
+	padding-left : 55px;
+	position:relative;
+}
+
+	#company-menu > ul >li{
+
+		float:left;
+		padding-left: 30px;
+		padding-right: 30px;
+		background:url('../../images/bg-main-menu-vsp.png') no-repeat 4px center;
+	}
+
+	#company-menu > ul >li:FIRST-CHILD{
+		background:none;
+	}
+
+	#company-menu > ul > li a{
+
+		font-family: "¸¼Àº °íµñ", sans-serit;
+		font-size: 15px;
+		color: #646464;
+		text-decoration:none;
+	}

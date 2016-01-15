@@ -17,10 +17,9 @@
     <context:component-scan base-package="kr.talenton.web.controllers"/>
     <!-- services -->
     
-    <bean name="noticeDao" class="kr.talenton.web.dao.mybatis.MyBatisNoticeDao"/>
-    
-     <bean name="memberDao" class="kr.talenton.web.dao.mybatis.MyBatisMemberDao"/>
-   
+	<bean name="noticeDao" class="kr.talenton.web.dao.mybatis.MyBatisNoticeDao"/>
+	<bean name="memberDao" class="kr.talenton.web.dao.mybatis.MyBatisMemberDao"/>
+    <bean name="productDao" class="kr.talenton.web.dao.mybatis.MyBatisProductDao"/>
    
    <bean class="org.springframework.web.servlet.view.tiles3.TilesConfigurer">
    		<property name="definitions" value="/WEB-INF/tiles.xml"/>

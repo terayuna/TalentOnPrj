@@ -5,16 +5,16 @@
 <c:set var="ctx" value="${pageContext.request.contextPath}"/>
 				<h1 class = "hidden">카테고리메뉴</h1>
 				<ul id = "category-menu" class = "clearfix">
-					<li><a href = ""><img src ="${ctx}/content/home/images/candle.png" alt ="공예"></a></li>
-				   	<li><a href = ""><img src ="${ctx}/content/home/images/furniture.png" alt ="가구"></a></li>
-				    <li><a href = ""><img src ="${ctx}/content/home/images/jungkart.png" alt ="정크아트"></a></li>
-				    <li><a href = ""><img src ="${ctx}/content/home/images/art.png" alt ="미술"></a></li>
-				    <li><a href = ""><img src ="${ctx}/content/home/images/photo.png" alt ="사진"></a></li>
-				    <li><a href = ""><img src ="${ctx}/content/home/images/art1.png" alt ="미술2"></a></li>
-				    <li><a href = ""><img src ="${ctx}/content/home/images/cup.png" alt ="컵"></a></li>
-				    <li><a href = ""><img src ="${ctx}/content/home/images/art2.png" alt ="공예"></a></li>
-				    <li><a href = ""><img src ="${ctx}/content/home/images/case.png" alt ="케이스"></a></li>
-				    <li><a href = ""><img src ="${ctx}/content/home/images/art3.png" alt ="공예"></a></li>
+					<li><a href = "${ctx}/product/displayProduct"><img src ="${ctx}/content/home/images/candle.png" alt ="공예"></a></li>
+				   	<li><a href = "${ctx}/product/displayProduct"><img src ="${ctx}/content/home/images/furniture.png" alt ="가구"></a></li>
+				    <li><a href = "${ctx}/product/displayProduct"><img src ="${ctx}/content/home/images/jungkart.png" alt ="정크아트"></a></li>
+				    <li><a href = "${ctx}/product/displayProduct"><img src ="${ctx}/content/home/images/art.png" alt ="미술"></a></li>
+				    <li><a href = "${ctx}/product/displayProduct"><img src ="${ctx}/content/home/images/photo.png" alt ="사진"></a></li>
+				    <li><a href = "${ctx}/product/displayProduct"><img src ="${ctx}/content/home/images/art1.png" alt ="미술2"></a></li>
+				    <li><a href = "${ctx}/product/displayProduct"><img src ="${ctx}/content/home/images/cup.png" alt ="컵"></a></li>
+				    <li><a href = "${ctx}/product/displayProduct"><img src ="${ctx}/content/home/images/art2.png" alt ="공예"></a></li>
+				    <li><a href = "${ctx}/product/displayProduct"><img src ="${ctx}/content/home/images/case.png" alt ="케이스"></a></li>
+				    <li><a href = "${ctx}/product/displayProduct"><img src ="${ctx}/content/home/images/art3.png" alt ="공예"></a></li>
 				</ul>
 				<div id = "rank-visual">
                 	<div class = "content-container">  

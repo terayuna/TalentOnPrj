@@ -42,7 +42,7 @@
 					<h2  class = "hidden">메인메뉴</h2>
 			 	   		<ul  id = "header-main-menu" >
 							<li><a href = "${ctx}/company/brand">브랜드</a></li>
-						   	<li><a href = "">작품보기</a></li>
+						   	<li><a href = "${ctx}/product/displayProduct">작품보기</a></li>
 						    <li><a href = "${ctx}/upload/uploadProduct">작품등록</a></li>
 						    <li><a href = "${ctx}/customer/notice">공지사항</a></li>
 						</ul>

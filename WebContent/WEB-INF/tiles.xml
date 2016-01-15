@@ -5,7 +5,7 @@
        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
 
 <tiles-definitions>
-
+	
   	<definition name="myPage/*/*" template="/WEB-INF/views/myPage/shared/layout.jsp">
 		<put-attribute name="css" value="{2}.css"></put-attribute>
   		<put-attribute name="header" value="/WEB-INF/views/shared/header.jsp" />

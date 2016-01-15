@@ -3,7 +3,7 @@ package kr.talenton.web.vo;
 import java.util.Date;
 
 public class Product {
-	private int code ;
+	private int code;
 	private String title;
 	private String introduction;
 	private int upload_price;
