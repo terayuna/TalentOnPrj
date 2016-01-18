@@ -24,9 +24,9 @@ public class UploadController {
 	
 	@RequestMapping(value="uploadProduct", method=RequestMethod.POST)
 	public String uploadProduct(Product p,Principal principal){
-		
-		p.setUpload_id(principal.getName());
 		System.out.println("테스트시작");
+		p.setUpload_id(principal.getName());
+		
 		System.out.println(p.getCategory());
 		System.out.println(p.getIntroduction());
 		productDao.insert(p);
