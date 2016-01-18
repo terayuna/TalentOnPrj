@@ -1,12 +1,64 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<%@ taglib prefix="c"  uri="http://java.sun.com/jsp/jstl/core" %>
-
-<c:set var="ctx" value="${pageContext.request.contextPath}"/>
+	pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 
 <script>
+
+window.onload = function(){
+	   
+	   //-------------ajax post method
+	   var btnWrite = document.querySelector("#btn-phase");
+	   btnWrite.onclick = function(){
+			/* alert("dfa"); */	
+			
+			var dig = document.createElement("div");
+			dig.style.width = "100%";
+	        dig.style.height = "100%";
+	        dig.style.position="fixed";
+	        dig.style.top = "0px";
+			
+			
+		   	var screen = document.createElement("div");
+	         
+	         screen.style.backgroundColor = "#000";
+	         screen.style.opacity = "0.5";
+	         screen.style.width = "inherit";
+	         screen.style.height = "inherit";
+	         
+	         var container = document.createElement("div");
+	  
+	         container.style.backgroundColor = "pink";
+	         container.style.width = "600px";
+	         container.style.height = "400px";
+	         container.style.position  = "fixed";
+	         container.style.top = "200px";
+	         container.style.left = "580px";
+	         
+	  	         
+	         dig.appendChild(screen);
+	         dig.appendChild(container);
+	         document.body.appendChild(dig);
+	         
+	         //------------ajax add form----------------------------------------------------------------------------
+	         
+	         var request = new XMLHttpRequest();
+		     request.onreadystatechange = function(){
+		          if(request.readyState==4)
+		          {
+		        	  
+		        	  container.innerHTML = request.responseText;
+		          }
+		       };  
+		      
+		      request.open("GET", "bidWindow", true); //요청방식, 사용자가 요청할 URL, 동기-비동기 결정
+		      request.send(null);
+		      
+		      
+	         return false;
 	
+	   }
+	   
+};
 
 </script>
 
@@ -29,7 +81,7 @@
 					</ul>
 			</div>
 			<main id="main">
-				<h1>카테고리> 미술</h1>
+				<h1>HOME > 카테고리 > 미술</h1>
 					<section>
 						<h1 id="product_title">상상 속의 풍경화 </h1>
 						<section>
@@ -51,15 +103,15 @@
 						</section>
 						<section id="product_info">
 							<h1 class="hidden">작품 정보</h1>
-							<ul>
+							<ul>										
 								<li>최저가 50,000원~</li>
-								<li>경매종료까지 남은 시간</li>
-								<li><a href="">회원 프로필 사진</a></li>
+								<li>경매종료까지 남은 시간</li>		
+								<li><a href="">회원 프로필 사진</a></li>						
 								<li><a href="#" class="whiteButton">추천하기</a></li>
-								<li><a href="#" class="redButton">입찰하기</a></li>
+								<li><a href="#" id="btn-phase" class="redButton">입찰하기</a></li>
 								<li><a href="">SNS공유 아이콘</a></li>
-								<li><a href="">회원 아이디</a></li>
-								<li><a href="#" class="whiteButton">목록으로 돌아가기</a></li>
+								<li><a href="">회원아이디</a></li>
+								<li><a href="#" class="whiteButton">목록 보기</a></li>
 								<li>최고입찰가 55,000원(현재기준)</li>
 								<li><a href="#" class="whiteButton">즐겨찾기</a></li>
 								<li><a href="">더보기</a></li>																	
@@ -82,6 +134,7 @@
 								
 						</section>
 						<div id="comment_list">
+							  <h1> 전체 댓글(10) </h1>
 							  <ul>
 								    <li>
 								      <img src="${ctx}/content/product/images/default1.jpg" alt="회원 이미지1" />
@@ -112,12 +165,3 @@
 						
 					</section>
 			</main>
-
-
-
-
-
-
-
-
-	
