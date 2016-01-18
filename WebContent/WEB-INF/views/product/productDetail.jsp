@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-
+<c:set var="ctx" value="${pageContext.request.contextPath}"/>
 <script>
 
 window.onload = function(){
@@ -50,7 +50,7 @@ window.onload = function(){
 		          }
 		       };  
 		      
-		      request.open("GET", "bidWindow", true); //요청방식, 사용자가 요청할 URL, 동기-비동기 결정
+		      request.open("GET", "../bidWindow/bidWindow", true); //요청방식, 사용자가 요청할 URL, 동기-비동기 결정
 		      request.send(null);
 		      
 		      
