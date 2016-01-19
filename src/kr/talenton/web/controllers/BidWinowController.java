@@ -5,17 +5,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
-@RequestMapping("/product/")
-public class ProductController {
+@RequestMapping("/bidWindow/")
+public class BidWinowController {
 
-	@RequestMapping("displayProduct")
-	public void displayProduct(){
-		
-	}
-	
-	@RequestMapping("productDetail")
-	public void productDetail(){
-		
+	@RequestMapping(value="bidWindow", method=RequestMethod.GET)
+	public String bidWindow()
+	{
+		return "bidWindow/bidWindow";
 	}
 	
 }
