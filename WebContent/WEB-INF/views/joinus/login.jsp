@@ -30,8 +30,8 @@
 
 <div class="board-btns">
 	<a href="" class = "btn btn-color">회원가입</a>
-	<a href="home_searchId.jsp" class = "btn btn-gray">아이디찾기</a>
-	<a href="home_searchPwd.jsp" class = "btn btn-gray">비밀번호찾기</a>
+	<a href="searchId" class = "btn btn-gray">아이디찾기</a>
+	<a href="searchPwd" class = "btn btn-gray">비밀번호찾기</a>
 </div>
 	
 	
