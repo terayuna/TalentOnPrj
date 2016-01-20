@@ -8,24 +8,14 @@
 		SELECT * FROM(
 		 SELECT 
 		  ROW_NUMBER() OVER(ORDER BY REGDATE DESC) NUM, 
-		 UPLOAD_TYPE.* FROM  UPLOAD_TYPE
+		 UPLOAD_TYPES.* FROM  UPLOAD_TYPES
 		 WHERE ${param2} LIKE '%${param3}%'
 		)A 
         WHERE NUM BETWEEN 1+(#{param1}-1)*10  AND  #{param1}*10
 	</select>
 	
-	<update id="update" >
-		UPDATE  UPLOAD_TYPE SET NAME = #{name}
-		WHERE NAME = #{name}
-	</update>
-	
-	<delete id="delete">
-		DELETE  UPLOAD_TYPE WHERE NAME = #{name}
-	</delete>
-	
 	<insert id = "insert">
-		INSERT INTO  UPLOAD_TYPE (NAME) 
-		Values(#{name})
+		INSERT INTO UPLOAD_TYPES(NAME) Values(#{upload_type})
 	</insert>
 
 	

@@ -16,5 +16,6 @@ public interface MemberDao {
 	public int update(Member member) throws SQLException;
 	public int delete(String id) throws SQLException; //실제로는 업데이트 (아이디 :탈퇴회원 1)
 	public int insert(Member member) throws SQLException;
-
+	public String searchId(String member_email);
+	public String searchPwd(String member_id, String member_email);
 }

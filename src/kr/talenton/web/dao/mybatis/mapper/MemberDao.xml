@@ -13,6 +13,7 @@
 	
 	</select>
 	
+	
 	<update id="update" >
 		UPDATE MEMBERS SET NAME = #{name}, EMAIL = #{email}, PASSWORD = #{password},
 		IMAGE = #{image}, ADDRESS = #{address}, PHONE = #{phone}, MOBILE = #{mobile}
@@ -29,5 +30,13 @@
 		INSERT INTO MEMBERS (ID, PASSWORD, NAME, PHONE, EMAIL)
 		 Values(#{id},#{password},#{name},#{phone},#{email})
 	</insert>
-		
+	
+	<select id = "searchId" resultType="String">
+		SELECT ID FROM MEMBERS WHERE EMAIL = #{param1}
+	</select>
+	
+	<select id = "searchPwd" resultType="String">
+		SELECT PASSWORD FROM MEMBERS WHERE ID = #{param1} AND EMAIL = #{param2}
+	</select>
+
 </mapper>

@@ -48,8 +48,6 @@ window.onload = function(){
 	
 }
 
-
-
    
 </script>
 		
@@ -86,14 +84,14 @@ window.onload = function(){
 			<dl class ="purchase-form-row">
 				<dt class = "upload-form-title">판매 가격</dt>
 				<dd class = "upload-form-data">
-					<input type="text" name="upload_price"/>
+					<input type="text" name="upload_price" value="0"/>
 				</dd>
 			</dl>
 			
 			<dl class ="bid-form-row">
 				<dt class = "upload-form-title">경매 시작가</dt>
 				<dd class = "upload-form-data">
-					<input type="text" name="pay_amount"/>
+					<input type="text" name="pay_amount" value="0"/>
 				</dd>
 			</dl>
 			
@@ -196,7 +194,7 @@ window.onload = function(){
 		<p class="article-control">
 			<input class = "btn btn-color" type="submit" value="등록하기"/>
 			<a href="../home/index" class = "btn btn-gray">취소하기</a>
-		</p>				
+		</p>
 </form>
 					
 				
