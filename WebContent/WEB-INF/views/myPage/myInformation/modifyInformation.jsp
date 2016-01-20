@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 
 <div class="content-header">
 	<h1 class="primary-title">내 정보 변경</h1>
@@ -27,7 +27,7 @@
 		<dl class="modify-form-row">
 			<dt class="modify-form-title">비밀번호</dt>
 			<dd class="modify-form-data">
-				<input type="password" name="password"/>
+				<input type="password" name="password" value=""/>
 			</dd>
 		</dl>
 		

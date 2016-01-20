@@ -18,7 +18,7 @@ public class MyPageController {
 	
 	@RequestMapping("modifyInformation")
 	public String modifyInformation(Model model) throws SQLException{
-		List<Member> list = memberDao.getMembers();
+		List<Member> list = memberDao.getMembers();//¸â¹ö Çü½ÄÀ¸·Î ¹Þ¾ÆºÁ Member member~
 		
 		model.addAttribute("member",list);
 		
