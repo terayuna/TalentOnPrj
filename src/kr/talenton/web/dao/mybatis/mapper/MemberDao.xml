@@ -13,6 +13,7 @@
 	
 	</select>
 	
+	
 	<update id="update" >
 		UPDATE MEMBERS SET NAME = #{name}, EMAIL = #{email}, PASSWORD = #{password},
 		IMAGE = #{image}, ADDRESS = #{address}, PHONE = #{phone}, MOBILE = #{mobile}
