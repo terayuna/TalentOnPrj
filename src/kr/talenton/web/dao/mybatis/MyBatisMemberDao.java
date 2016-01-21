@@ -96,6 +96,7 @@ public class MyBatisMemberDao implements MemberDao{
 	}
 
 	@Override
+
 	public Member getMember(String id) {
 		// TODO Auto-generated method stub
 		MemberDao dao = sqlSession.getMapper(MemberDao.class);
@@ -105,5 +106,11 @@ public class MyBatisMemberDao implements MemberDao{
 		//session.close();
 		
 		return member;
+	}
+
+	public String idCheck(String uid) {
+		MemberDao dao = sqlSession.getMapper(MemberDao.class);
+		String chkId = dao.idCheck(uid);
+		return chkId;
 	}
 }

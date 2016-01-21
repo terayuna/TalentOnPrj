@@ -27,7 +27,7 @@
 
 #menu-title{
 
-	font-family: "¸¼Àº °íµñ", sans-serit;
+	font-family: "¸¼Àº °íµñ", sans-serif;
 	font-size: 25px;
 	font-weight: bold;
 	position:relative; 
@@ -45,7 +45,7 @@
 
 	#category-menu  li  a{
 
-		font-family: "¸¼Àº °íµñ", sans-serit;
+		font-family: "¸¼Àº °íµñ", sans-serif;
 		font-size: 20px;
 		font-weight: bold;
 		color: #646464;
@@ -78,7 +78,7 @@
 	font-size: 30px;
 	font-weight:bold;
 	color: #000000;
-	padding:0px;
+	padding:10px;
 }
 
 #product_list{
@@ -189,11 +189,43 @@
 	top:1px;
 }
 
-#product_info>ul>li{
+#product_info{
+	
+	float: left;
+	width: 770px;
+	border: solid 1px #c0c0c0;
+}
 
+#product_info>div{
+	width: inherit;
+	float: left;
+	border: solid 1px black;
+	
+}
+
+#product_info>div>div{
+
+	float: left;
 	font-size:15px;
-	color: black;	
-	padding: 10px;
+	color: black;
+	float: left;	
+	margin-right: 15px;
+	margin-left: 15px;
+	margin-top: 15px;
+	padding-right: 10px;
+	padding-left: 10px;	
+	width: inherit;
+}
+
+#product_info>div>div>div {
+	float: left;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+
+#product_info>div>div>a{
+	text-decoration: none;
 }
 
 #member_text textarea {
@@ -201,18 +233,23 @@
 	border: 1px solid grey;
 	padding: 8px;
 	height: 300px;
-	width: 500px;	
+	width: 752px;	
+	overflow: hidden;
 	
 }
 
 #comment_form input, #comment_form textarea {
+	float: left;
 	border: 1px solid grey;
 	padding: 8px 10px;	
 	outline: 0;
 }
 
 #comment_form textarea {
-	width: 500px;
+	
+	width: 645px;
+	height: 100px;
+	overflow: hidden;
 }
 
 #comment_form input[type="submit"] {
@@ -233,6 +270,11 @@
 }
 
 #comment_list * {margin: 0; padding: 0;}
+
+#comment_list>h1{
+	font: 15px ÇÑÄÄ ¹ÙÅÁ, Arial, sans-serif;
+	clear: left;
+}
  
 #comment_list div {
   margin: 20px;
