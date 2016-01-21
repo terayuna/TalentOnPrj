@@ -94,4 +94,16 @@ public class MyBatisMemberDao implements MemberDao{
 		String pwd = dao.searchPwd(member_id, member_email);
 		return pwd;
 	}
+
+	@Override
+	public Member getMember(String id) {
+		// TODO Auto-generated method stub
+		MemberDao dao = sqlSession.getMapper(MemberDao.class);
+		Member member = dao.getMember(id);
+		
+		//session.commit();		
+		//session.close();
+		
+		return member;
+	}
 }

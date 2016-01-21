@@ -13,6 +13,8 @@ public interface MemberDao {
 	public List<Member> getMembers(int page) throws SQLException;
 	public List<Member> getMembers(int page,String field, String query) throws SQLException;
 
+	public Member getMember(String id);
+	
 	public int update(Member member) throws SQLException;
 	public int delete(String id) throws SQLException; //실제로는 업데이트 (아이디 :탈퇴회원 1)
 	public int insert(Member member) throws SQLException;

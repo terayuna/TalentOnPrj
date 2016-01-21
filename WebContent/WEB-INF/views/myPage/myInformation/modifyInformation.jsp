@@ -13,14 +13,14 @@
 		<dl class="modify-form-row">
 			<dt class="modify-form-title">아이디</dt>
 			<dd class="modify-form-data">
-				<input type="text" name="id" value="아이디"/>
+				<input type="text" name="id" value="${member.id}"/>
 			</dd>
 		</dl>
 		 
 		<dl class="modify-form-row">
 			<dt class="modify-form-title">이름</dt>
 			<dd class="modify-form-data">
-				<input type="text" name="name"/>
+				<input type="text" name="name" value="${member.id}"/>
 			</dd>
 		</dl>
 		
@@ -41,7 +41,7 @@
 		<dl class="modify-form-row">
 			<dt class="modify-form-title">이메일</dt>
 			<dd class="modify-form-data">
-				<input type="email" name="email"/>
+				<input type="email" name="email" value="${member.email}"/>
 			</dd>
 		</dl>
 	</div>
@@ -51,14 +51,14 @@
 		<dl class="modify-form-row">
 			<dt class="modify-form-title">주소</dt>
 			<dd class="modify-form-data">
-				<input type="text" name="address" value="주소"/>
+				<input type="text" name="address" value="${member.address}"/>
 			</dd>
 		</dl>
 		
 		<dl class="modify-form-row">
 			<dt class="modify-form-title">휴대 전화</dt>
 			<dd class="modify-form-data">
-				<input type="text" name="phone" pattern="\d{3}\-\d{4}\-\d{4}" required/><span>   	[-를 포함해주세요 ex) 010-1234-5678]</span>
+				<input type="text" name="phone" pattern="\d{3}\-\d{4}\-\d{4}" value="${member.phone}"/><span>   	[-를 포함해주세요 ex) 010-1234-5678]</span>
 			</dd>
 		</dl>
 		

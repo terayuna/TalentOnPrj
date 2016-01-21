@@ -13,6 +13,9 @@
 	
 	</select>
 	
+	<select id="getMember" resultType="kr.talenton.web.vo.Member">
+		SELECT * FROM MEMBERS WHERE ID = #{param1}
+	</select>
 	
 	<update id="update" >
 		UPDATE MEMBERS SET NAME = #{name}, EMAIL = #{email}, PASSWORD = #{password},
@@ -23,7 +26,7 @@
 	</update>
 	
 	<delete id="delete">
-		DELETE MEMBERS WHERE ID = #{id};
+		DELETE MEMBERS WHERE ID = #{id}
 	</delete>
 	
 	<insert id = "insert">
