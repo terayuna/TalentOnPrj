@@ -1,5 +1,6 @@
 package kr.talenton.web.controllers;
 
+import java.io.PrintWriter;
 import java.sql.SQLException;
 
 import javax.servlet.http.HttpSession;
@@ -64,6 +65,13 @@ public class JoinusController {
 		return "joinus/searchPwd";
 	}
 	
+	@RequestMapping(value="idCheck", method=RequestMethod.POST)
+	public void idCheck(String uid, PrintWriter out){
+		String chkId="";
+		chkId = memberDao.idCheck(uid);
+		out.write((chkId!=null)? "no":"ok");
+	}
+	
 	@RequestMapping(value="join", method=RequestMethod.GET)
 	public String join(HttpSession session){
 		
@@ -87,5 +95,6 @@ public class JoinusController {
 		
 		return "joinus/upload";
 	}
+	
 	
 }

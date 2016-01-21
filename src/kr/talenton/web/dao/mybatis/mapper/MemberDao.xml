@@ -37,5 +37,9 @@
 	<select id = "searchPwd" resultType="String">
 		SELECT PASSWORD FROM MEMBERS WHERE ID = #{param1} AND EMAIL = #{param2}
 	</select>
+	
+	<select id = "idCheck" resultType="String">
+		SELECT ID FROM MEMBERS WHERE ID = #{param1}
+	</select>
 
 </mapper>
