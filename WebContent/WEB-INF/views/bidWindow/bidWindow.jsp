@@ -4,7 +4,12 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
+
+<link href="reset.css" type="text/css" rel="stylesheet"> 
+
+
 <%-- <c:set var="ctx" value="${pageContext.request.contextPath}"/> --%>
+
 
 <link href="${pageContext.request.contextPath}/content/bidWindow/css/bidWindow.css" type="text/css" rel="stylesheet" />  
 
