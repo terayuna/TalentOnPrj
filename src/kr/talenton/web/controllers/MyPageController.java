@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 
 import kr.talenton.web.dao.MemberDao;
 import kr.talenton.web.vo.Member;
@@ -24,7 +25,15 @@ public class MyPageController {
 		
 		Member member = memberDao.getMember(principal.getName());
 		model.addAttribute("member",member);
-		
 	}
+	
+	@RequestMapping(value="modifyInformation", method=RequestMethod.POST)
+	public String modifyInformation(Member member) throws SQLException{
+		
+		memberDao.update(member);
+		
+		return "redirect:/home/index";
+	}
+	
 	
 }

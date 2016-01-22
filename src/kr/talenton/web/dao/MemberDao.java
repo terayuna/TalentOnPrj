@@ -22,5 +22,5 @@ public interface MemberDao {
 	public String searchPwd(String member_id, String member_email);
 
 	public String idCheck(String uid);
+	
 }
-
