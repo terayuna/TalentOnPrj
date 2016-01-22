@@ -13,17 +13,21 @@
 	
 	</select>
 	
+	<select id="getMember" resultType="kr.talenton.web.vo.Member">
+		SELECT * FROM MEMBERS WHERE ID = #{param1}
+	</select>
 	
-	<update id="update" >
-		UPDATE MEMBERS SET NAME = #{name}, EMAIL = #{email}, PASSWORD = #{password},
-		IMAGE = #{image}, ADDRESS = #{address}, PHONE = #{phone}, MOBILE = #{mobile}
-		BIRTHDAY = #{birthday}, SELF_INTRODUCTION = #{self_introduction}, DATE = #{date},
-		NOTIFICATION_STATUS = #{notification_status} WHERE MEMBER_ID = #{member_id} AND PRODUCT_CODE = #{product_code};
+	<update id="update">
+		UPDATE MEMBERS SET EMAIL = #{email},
+		IMAGE = #{image}, ADDRESS = #{address}, PHONE = #{phone},
+		SELF_INTRODUCTION = #{self_introduction}, DATE = #{date},
+		NOTIFICATION_STATUS = #{notification_status} WHERE ID = #{id}
+		<!--  AND PRODUCT_CODE = #{product_code}; -->
 	
 	</update>
 	
 	<delete id="delete">
-		DELETE MEMBERS WHERE ID = #{id};
+		DELETE MEMBERS WHERE ID = #{id}
 	</delete>
 	
 	<insert id = "insert">
@@ -37,6 +41,10 @@
 	
 	<select id = "searchPwd" resultType="String">
 		SELECT PASSWORD FROM MEMBERS WHERE ID = #{param1} AND EMAIL = #{param2}
+	</select>
+	
+	<select id = "idCheck" resultType="String">
+		SELECT ID FROM MEMBERS WHERE ID = #{param1}
 	</select>
 
 </mapper>
