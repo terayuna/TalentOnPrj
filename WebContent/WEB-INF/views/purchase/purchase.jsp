@@ -100,7 +100,7 @@
 					<label for="type2">휴대폰결제</label>
 			</dd> 
 		</dl>
-		 
+		
 		
 		<p class="btnInTable">
 			<input id="submit" class="btn btn-color" type="submit" value="결제하기" />
