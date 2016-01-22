@@ -78,5 +78,27 @@ public class MyBatisMemberDao implements MemberDao{
 		
 		return aft;
 	}
-	
+
+	@Override
+	public String searchId(String member_email) {
+		// TODO Auto-generated method stub
+		MemberDao dao = sqlSession.getMapper(MemberDao.class);
+		String id = dao.searchId(member_email);
+		return id;
+	}
+
+	@Override
+	public String searchPwd(String member_id, String member_email) {
+		// TODO Auto-generated method stub
+		MemberDao dao = sqlSession.getMapper(MemberDao.class);
+		String pwd = dao.searchPwd(member_id, member_email);
+		return pwd;
+	}
+
+	@Override
+	public String idCheck(String uid) {
+		MemberDao dao = sqlSession.getMapper(MemberDao.class);
+		String chkId = dao.idCheck(uid);
+		return chkId;
+	}
 }

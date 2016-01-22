@@ -103,20 +103,123 @@ window.onload = function(){
 						</section>
 						<section id="product_info">
 							<h1 class="hidden">작품 정보</h1>
-							<ul>										
-								<li>최저가 50,000원~</li>
-								<li>경매종료까지 남은 시간</li>		
-								<li><a href="">회원 프로필 사진</a></li>						
-								<li><a href="#" class="whiteButton">추천하기</a></li>
-								<li><a href="#" id="btn-phase" class="redButton">입찰하기</a></li>
-								<li><a href="">SNS공유 아이콘</a></li>
-								<li><a href="">회원아이디</a></li>
-								<li><a href="#" class="whiteButton">목록 보기</a></li>
-								<li>최고입찰가 55,000원(현재기준)</li>
-								<li><a href="#" class="whiteButton">즐겨찾기</a></li>
-								<li><a href="">더보기</a></li>																	
-								<li><a href="">관련 작품보기</a></li>								
-							</ul>
+							<div>
+								<div>								
+									<div>최저가 50,000원~</div>
+									<div>경매종료까지 남은 시간</div>		
+									<div><a href="">회원 프로필 사진</a></div>						
+									<div><a href="#" class="whiteButton">추천하기</a></div>									
+								</div>
+								<div>								
+									<div><a href="#" id="btn-phase" class="redButton">입찰하기</a></div>
+									<div><!-- <a href="">SNS공유 아이콘</a> -->
+									
+									<ul class="share-group ytg-box">
+          <li>
+    <button title="Twitter에 공유합니다. 새 창에서 열립니다." class="yt-uix-tooltip share-service-button share-twitter-icon" aria-labelledby="yt-uix-tooltip398-arialabel" onclick="yt.window.popup(&quot;http:\/\/twitter.com\/intent\/tweet?url=https%3A\/\/youtu.be\/YQHsXMglC9A\u0026text=Adele%20-%20Hello\u0026via=YouTube\u0026related=YouTube,YouTubeTrends,YTCreators&quot;, {'height': 420,'width': 550,'scrollbars': true});yt.net.ping.send(&quot;\/sharing_services?vertical=1\u0026id=31\u0026share_source=watch\u0026feature=share\u0026v=YQHsXMglC9A\u0026name=TWITTER\u0026relative_url=%2Fwatch%3Fv%3DYQHsXMglC9A%26feature%3Dshare&quot;);return false;" data-tooltip-text="Twitter에 공유합니다. 새 창에서 열립니다." data-service-name="TWITTER" data-toolttip-text="Twitter에 공유합니다. 새 창에서 열립니다.">
+      <span class="share-service-icon share-service-icon-twitter yt-sprite"></span>
+      <span class="share-service-checkmark yt-sprite"></span>
+    </button>
+  </li>
+
+          <li>
+    <button title="Facebook에 공유합니다. 새 창에서 열립니다." class="yt-uix-tooltip share-service-button share-facebook-icon" aria-labelledby="yt-uix-tooltip393-arialabel" onclick="yt.window.popup(&quot;http:\/\/www.facebook.com\/dialog\/share?app_id=87741124305\u0026href=https%3A\/\/www.youtube.com\/watch%3Fv%3DYQHsXMglC9A%26feature%3Dshare\u0026display=popup\u0026redirect_uri=https:\/\/www.youtube.com\/facebook_redirect&quot;, {'height': 560,'width': 530,'scrollbars': true});yt.net.ping.send(&quot;\/sharing_services?vertical=1\u0026id=10\u0026share_source=watch\u0026feature=share\u0026v=YQHsXMglC9A\u0026name=FACEBOOK\u0026relative_url=%2Fwatch%3Fv%3DYQHsXMglC9A%26feature%3Dshare&quot;);return false;" data-tooltip-text="Facebook에 공유합니다. 새 창에서 열립니다." data-service-name="FACEBOOK" data-toolttip-text="Facebook에 공유합니다. 새 창에서 열립니다.">
+      <span class="share-service-icon share-service-icon-facebook yt-sprite"></span>
+      <span class="share-service-checkmark yt-sprite"></span>
+    </button>
+  </li>
+
+          <li>
+    <button title="Google+에 공유합니다. 새 창에서 열립니다." class="yt-uix-tooltip share-service-button share-googleplus-icon" aria-labelledby="yt-uix-tooltip394-arialabel" onclick="yt.window.popup(&quot;https:\/\/plus.google.com\/share?url=https%3A\/\/www.youtube.com\/watch%3Fv%3DYQHsXMglC9A%26feature%3Dshare\u0026source=yt\u0026hl=ko\u0026soc-platform=1\u0026soc-app=130&quot;, {'height': 620,'width': 620,'scrollbars': true});yt.net.ping.send(&quot;\/sharing_services?vertical=1\u0026id=43\u0026share_source=watch\u0026feature=share\u0026v=YQHsXMglC9A\u0026name=GOOGLEPLUS\u0026relative_url=%2Fwatch%3Fv%3DYQHsXMglC9A%26feature%3Dshare&quot;);return false;" data-tooltip-text="Google+에 공유합니다. 새 창에서 열립니다." data-service-name="GOOGLEPLUS" data-toolttip-text="Google+에 공유합니다. 새 창에서 열립니다.">
+      <span class="share-service-icon share-service-icon-googleplus yt-sprite"></span>
+      <span class="share-service-checkmark yt-sprite"></span>
+    </button>
+  </li>
+
+          <li>
+    <button title="Blogger에 공유합니다. 새 창에서 열립니다." class="yt-uix-tooltip share-service-button share-blogger-icon" aria-labelledby="yt-uix-tooltip395-arialabel" onclick="yt.window.popup(&quot;http:\/\/www.blogger.com\/blog-this.g?n=Adele%20-%20Hello\u0026source=youtube\u0026b=%3Ciframe%20width%3D%22480%22%20height%3D%22270%22%20src%3D%22https%3A\/\/www.youtube.com\/embed\/YQHsXMglC9A%22%20frameborder%3D%220%22%20allowfullscreen%3E%3C\/iframe%3E\u0026eurl=https%3A\/\/i.ytimg.com\/vi\/YQHsXMglC9A\/maxresdefault.jpg&quot;, {'height': 468,'width': 768,'scrollbars': true});yt.net.ping.send(&quot;\/sharing_services?vertical=1\u0026id=34\u0026share_source=watch\u0026feature=share\u0026v=YQHsXMglC9A\u0026name=BLOGGER\u0026relative_url=%2Fwatch%3Fv%3DYQHsXMglC9A%26feature%3Dshare&quot;);return false;" data-tooltip-text="Blogger에 공유합니다. 새 창에서 열립니다." data-service-name="BLOGGER" data-toolttip-text="Blogger에 공유합니다. 새 창에서 열립니다.">
+      <span class="share-service-icon share-service-icon-blogger yt-sprite"></span>
+      <span class="share-service-checkmark yt-sprite"></span>
+    </button>
+  </li>
+
+          <li>
+    <button title="Tumblr에 공유합니다. 새 창에서 열립니다." class="yt-uix-tooltip share-service-button share-tumblr-icon" aria-labelledby="yt-uix-tooltip397-arialabel" onclick="yt.window.popup(&quot;http:\/\/www.tumblr.com\/share\/video?embed=https%3A\/\/www.youtube.com\/watch%3Fv%3DYQHsXMglC9A%26feature%3Dshare\u0026caption=Adele%20-%20Hello&quot;, {'height': 650,'width': 1024,'scrollbars': true});yt.net.ping.send(&quot;\/sharing_services?vertical=1\u0026id=40\u0026share_source=watch\u0026feature=share\u0026v=YQHsXMglC9A\u0026name=TUMBLR\u0026relative_url=%2Fwatch%3Fv%3DYQHsXMglC9A%26feature%3Dshare&quot;);return false;" data-tooltip-text="Tumblr에 공유합니다. 새 창에서 열립니다." data-service-name="TUMBLR" data-toolttip-text="Tumblr에 공유합니다. 새 창에서 열립니다.">
+      <span class="share-service-icon share-service-icon-tumblr yt-sprite"></span>
+      <span class="share-service-checkmark yt-sprite"></span>
+    </button>
+  </li>
+
+          <li>
+    <button title="Cyworld에 공유합니다. 새 창에서 열립니다." class="yt-uix-tooltip share-service-button share-cyworld-icon" aria-labelledby="yt-uix-tooltip396-arialabel" onclick="yt.window.popup(&quot; http:\/\/api.cyworld.com\/openscrap\/video\/v1\/?vu=https%3A\/\/www.youtube.com\/watch%3Fv%3DYQHsXMglC9A%26feature%3Dshare&quot;, {'height': 410,'width': 450,'scrollbars': true});yt.net.ping.send(&quot;\/sharing_services?vertical=1\u0026id=32\u0026share_source=watch\u0026feature=share\u0026v=YQHsXMglC9A\u0026name=CYWORLD\u0026relative_url=%2Fwatch%3Fv%3DYQHsXMglC9A%26feature%3Dshare&quot;);return false;" data-tooltip-text="Cyworld에 공유합니다. 새 창에서 열립니다." data-service-name="CYWORLD" data-toolttip-text="Cyworld에 공유합니다. 새 창에서 열립니다.">
+      <span class="share-service-icon share-service-icon-cyworld yt-sprite"></span>
+      <span class="share-service-checkmark yt-sprite"></span>
+    </button>
+  </li>
+
+          <li>
+    <button title="reddit에 공유합니다. 새 창에서 열립니다." class="yt-uix-tooltip share-service-button share-reddit-icon" onclick="yt.window.popup(&quot;http:\/\/reddit.com\/submit?url=https%3A\/\/www.youtube.com\/watch%3Fv%3DYQHsXMglC9A%26feature%3Dshare\u0026title=Adele%20-%20Hello&quot;, {'height': 650,'width': 1024,'scrollbars': true});yt.net.ping.send(&quot;\/sharing_services?vertical=1\u0026id=4\u0026share_source=watch\u0026feature=share\u0026v=YQHsXMglC9A\u0026name=REDDIT\u0026relative_url=%2Fwatch%3Fv%3DYQHsXMglC9A%26feature%3Dshare&quot;);return false;" data-service-name="REDDIT" data-toolttip-text="reddit에 공유합니다. 새 창에서 열립니다.">
+      <span class="share-service-icon share-service-icon-reddit yt-sprite"></span>
+      <span class="share-service-checkmark yt-sprite"></span>
+    </button>
+  </li>
+
+          <li>
+    <button title="Ameba에 공유합니다. 새 창에서 열립니다." class="yt-uix-tooltip share-service-button share-ameba-icon" onclick="yt.window.popup(&quot;http:\/\/blog.ameba.jp\/ucs\/entry\/srventryinsertinput.do?entry_text=%3Ciframe%20width%3D%22480%22%20height%3D%22270%22%20src%3D%22https%3A\/\/www.youtube.com\/embed\/YQHsXMglC9A%22%20frameborder%3D%220%22%20allowfullscreen%3E%3C\/iframe%3E\u0026editor_flg=1&quot;, {'height': 650,'width': 1024,'scrollbars': true});yt.net.ping.send(&quot;\/sharing_services?vertical=1\u0026id=9\u0026share_source=watch\u0026feature=share\u0026v=YQHsXMglC9A\u0026name=AMEBA\u0026relative_url=%2Fwatch%3Fv%3DYQHsXMglC9A%26feature%3Dshare&quot;);return false;" data-service-name="AMEBA" data-toolttip-text="Ameba에 공유합니다. 새 창에서 열립니다.">
+      <span class="share-service-icon share-service-icon-ameba yt-sprite"></span>
+      <span class="share-service-checkmark yt-sprite"></span>
+    </button>
+  </li>
+
+          <li>
+    <button title="카카오스토리에 공유합니다. 새 창에서 열립니다." class="yt-uix-tooltip share-service-button share-kakao-icon" onclick="yt.window.popup(&quot;https:\/\/story.kakao.com\/share?url=https%3A\/\/www.youtube.com\/watch%3Fv%3DYQHsXMglC9A%26feature%3Dshare&quot;, {'height': 530,'width': 480,'scrollbars': true});yt.net.ping.send(&quot;\/sharing_services?vertical=1\u0026id=52\u0026share_source=watch\u0026feature=share\u0026v=YQHsXMglC9A\u0026name=KAKAO\u0026relative_url=%2Fwatch%3Fv%3DYQHsXMglC9A%26feature%3Dshare&quot;);return false;" data-service-name="KAKAO" data-toolttip-text="카카오스토리에 공유합니다. 새 창에서 열립니다.">
+      <span class="share-service-icon share-service-icon-kakao yt-sprite"></span>
+      <span class="share-service-checkmark yt-sprite"></span>
+    </button>
+  </li>
+
+          <li>
+    <button title="Naver에 공유합니다. 새 창에서 열립니다." class="yt-uix-tooltip share-service-button share-naver-icon" onclick="yt.window.popup(&quot; http:\/\/blog.naver.com\/LinkShare.nhn?url=https%3A\/\/www.youtube.com\/watch%3Fv%3DYQHsXMglC9A%26feature%3Dshare&quot;, {'height': 500,'width': 560,'scrollbars': true});yt.net.ping.send(&quot;\/sharing_services?vertical=1\u0026id=81\u0026share_source=watch\u0026feature=share\u0026v=YQHsXMglC9A\u0026name=NAVER\u0026relative_url=%2Fwatch%3Fv%3DYQHsXMglC9A%26feature%3Dshare&quot;);return false;" data-service-name="NAVER" data-toolttip-text="Naver에 공유합니다. 새 창에서 열립니다.">
+      <span class="share-service-icon share-service-icon-naver yt-sprite"></span>
+      <span class="share-service-checkmark yt-sprite"></span>
+    </button>
+  </li>
+
+          <li>
+    <button title="Одноклассники에 공유합니다. 새 창에서 열립니다." class="yt-uix-tooltip share-service-button share-odnoklassniki-icon" onclick="yt.window.popup(&quot;http:\/\/www.odnoklassniki.ru\/dk?st.cmd=addShare\u0026st.noresize=on\u0026st._surl=https%3A\/\/www.youtube.com\/watch%3Fv%3DYQHsXMglC9A%26feature%3Dshare&quot;, {'height': 650,'width': 1024,'scrollbars': true});yt.net.ping.send(&quot;\/sharing_services?vertical=1\u0026id=39\u0026share_source=watch\u0026feature=share\u0026v=YQHsXMglC9A\u0026name=ODNOKLASSNIKI\u0026relative_url=%2Fwatch%3Fv%3DYQHsXMglC9A%26feature%3Dshare&quot;);return false;" data-service-name="ODNOKLASSNIKI" data-toolttip-text="Одноклассники에 공유합니다. 새 창에서 열립니다.">
+      <span class="share-service-icon share-service-icon-odnoklassniki yt-sprite"></span>
+      <span class="share-service-checkmark yt-sprite"></span>
+    </button>
+  </li>
+
+          <li>
+    <button title="ВКонтакте에 공유합니다. 새 창에서 열립니다." class="yt-uix-tooltip share-service-button share-vkontakte-icon" onclick="yt.window.popup(&quot;http:\/\/vkontakte.ru\/share.php?url=https%3A\/\/www.youtube.com\/watch%3Fv%3DYQHsXMglC9A%26feature%3Dshare&quot;, {'height': 650,'width': 1024,'scrollbars': true});yt.net.ping.send(&quot;\/sharing_services?vertical=1\u0026id=36\u0026share_source=watch\u0026feature=share\u0026v=YQHsXMglC9A\u0026name=VKONTAKTE\u0026relative_url=%2Fwatch%3Fv%3DYQHsXMglC9A%26feature%3Dshare&quot;);return false;" data-service-name="VKONTAKTE" data-toolttip-text="ВКонтакте에 공유합니다. 새 창에서 열립니다.">
+      <span class="share-service-icon share-service-icon-vkontakte yt-sprite"></span>
+      <span class="share-service-checkmark yt-sprite"></span>
+    </button>
+  </li>
+
+          <li>
+    <button title="Pinterest에 공유합니다. 새 창에서 열립니다." class="yt-uix-tooltip share-service-button share-pinterest-icon" onclick="yt.window.popup(&quot;http:\/\/pinterest.com\/pin\/create\/button\/?url=https%3A\/\/www.youtube.com\/watch%3Fv%3DYQHsXMglC9A%26feature%3Dshare\u0026description=Adele%20-%20Hello\u0026is_video=true\u0026media=https%3A\/\/i.ytimg.com\/vi\/YQHsXMglC9A\/maxresdefault.jpg&quot;, {'height': 650,'width': 1024,'scrollbars': true});yt.net.ping.send(&quot;\/sharing_services?vertical=1\u0026id=45\u0026share_source=watch\u0026feature=share\u0026v=YQHsXMglC9A\u0026name=PINTEREST\u0026relative_url=%2Fwatch%3Fv%3DYQHsXMglC9A%26feature%3Dshare&quot;);return false;" data-service-name="PINTEREST" data-toolttip-text="Pinterest에 공유합니다. 새 창에서 열립니다.">
+      <span class="share-service-icon share-service-icon-pinterest yt-sprite"></span>
+      <span class="share-service-checkmark yt-sprite"></span>
+    </button>
+  </li>
+
+    </ul>
+									
+									</div>
+									<div><a href="">회원아이디</a></div>
+									<div><a href="#" class="whiteButton">목록 보기</a></div>								
+								</div>
+								<div>								
+									<div>최고입찰가 55,000원(현재기준)</div>
+									<div><a href= "#" class="whiteButton">즐겨찾기</a></div>
+									<div><a href="">더보기</a></div>																	
+									<div><a href="">관련 작품보기</a></div>								
+								</div>			
+															
+							</div>
 							<div id="member_text">
 								<textarea id="txtContent" class="txtContent" name="content">회원이 업로드한 작품설명
 								</textarea>		

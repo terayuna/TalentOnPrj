@@ -9,25 +9,23 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<title>Insert title here</title>
-
-			<link href="${ctx}/content/product/css/productDetail.css" type="text/css" rel="stylesheet" /> 
-			<link href="${ctx}/content/product/css/displayProduct.css" type="text/css" rel="stylesheet" />  
-			<link href="${ctx}/content/product/css/purchase.css" type="text/css" rel="stylesheet" />  
-			<link href="${ctx}/content/product/css/<tiles:getAsString name="css"/>" type="text/css" rel="stylesheet" />
+  
+			<link href="${ctx}/content/purchase/css/purchase.css" type="text/css" rel="stylesheet" />  
+			<link href="${ctx}/content/purchase/css/<tiles:getAsString name="css"/>" type="text/css" rel="stylesheet" />
 
 	</head>
 <body>
-	<!-- 상단 -->
 	<header id ="header">
 		<div class = "content-container">
 			<tiles:insertAttribute name="header"/>
 		</div>
 	</header>
 	
-	<!-- 본문 -->
-	<div id="body">
-		<div class="content-container">
-			<tiles:insertAttribute name="content"/>
+    <div id ="body">
+		<div id = "content" class="page-content">
+			<div class="wrapper">
+				<tiles:insertAttribute name="content"/>
+			</div>
 		</div>
 	</div>
 	
@@ -35,15 +33,14 @@
             <div class = "content-container">  
             </div>
     </div>
-
-	<!-- 하단 -->
-	<footer id = "footer">
-		<div class = "content-container">
+ 	
+ 	<footer id ="footer">
+ 		<div class = "content-container">
     	<section>
 	    	<tiles:insertAttribute name="footer"/>
 		</section> 
 		</div>
-	</footer>
+ 	</footer>
 
 
 

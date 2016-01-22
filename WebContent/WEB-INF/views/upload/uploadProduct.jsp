@@ -48,8 +48,6 @@ window.onload = function(){
 	
 }
 
-
-
    
 </script>
 		
@@ -196,7 +194,7 @@ window.onload = function(){
 		<p class="article-control">
 			<input class = "btn btn-color" type="submit" value="등록하기"/>
 			<a href="../home/index" class = "btn btn-gray">취소하기</a>
-		</p>				
+		</p>
 </form>
 					
 				

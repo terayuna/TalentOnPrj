@@ -5,7 +5,7 @@
 <c:set var="ctx" value="${pageContext.request.contextPath}"/>
 				<h1 class = "hidden">카테고리메뉴</h1>
 				<ul id = "category-menu" class = "clearfix">
-					<li><a href = "${ctx}/product/displayProduct"><img src ="${ctx}/content/home/images/candle.png" alt ="공예"></a></li>
+					<li><a href = "${ctx}/purchase/purchase"><img src ="${ctx}/content/home/images/candle.png" alt ="공예"></a></li>
 				   	<li><a href = "${ctx}/product/displayProduct"><img src ="${ctx}/content/home/images/furniture.png" alt ="가구"></a></li>
 				    <li><a href = "${ctx}/product/displayProduct"><img src ="${ctx}/content/home/images/jungkart.png" alt ="정크아트"></a></li>
 				    <li><a href = "${ctx}/product/displayProduct"><img src ="${ctx}/content/home/images/art.png" alt ="미술"></a></li>
@@ -18,8 +18,12 @@
 				</ul>
 				<div id = "rank-visual">
                 	<div class = "content-container">  
+                	
+                		
                 		<h3 id ="rank-title">
-                			☆이달의 랭킹☆
+	                		<img id="rank-img" alt="" src="${ctx}/content/home/images/rankicon.gif">
+	                			이달의 랭킹
+	                		<img id="rank-img" alt="" src="${ctx}/content/home/images/rankicon.gif">
                 		</h3>	
                 		
                 		<ul class="rank-list">
