@@ -96,6 +96,18 @@ public class MyBatisMemberDao implements MemberDao{
 	}
 
 	@Override
+
+	public Member getMember(String id) {
+		// TODO Auto-generated method stub
+		MemberDao dao = sqlSession.getMapper(MemberDao.class);
+		Member member = dao.getMember(id);
+		
+		//session.commit();		
+		//session.close();
+		
+		return member;
+	}
+
 	public String idCheck(String uid) {
 		MemberDao dao = sqlSession.getMapper(MemberDao.class);
 		String chkId = dao.idCheck(uid);
