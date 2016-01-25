@@ -1,6 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 
+<c:set var="ctx" value="${pageContext.request.contextPath}"/>
 
 <script>
 
@@ -59,7 +61,11 @@ window.onload = function(){
 <form action="uploadProduct" class="article-upload" method="post">
 
 		<fieldset class="board-write-table">
-			<legend class="field-title">작품정보 입력하기</legend>
+			
+			<div class="menu" >
+				<img id="img" alt="" src="${ctx}/content/purchase/images/saram.JPG"> 
+				<h1 id="subtitle">작품정보 입력하기</h1>
+			</div>	
 			
 			<dl class="upload-form-row">
 				<dt class="upload-form-title">작품명</dt>

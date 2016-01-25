@@ -2,6 +2,7 @@
     pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 
+<c:set var="ctx" value="${pageContext.request.contextPath}"/>
 <script>
 
 window.onload = function(){
@@ -59,7 +60,10 @@ window.onload = function(){
 
 <form id ="modify-information" action="" method="post">
 	<div id="essential-information">
-		<h1 id="subtitle">필수 정보</h1>
+		<div class="menu" >
+			<img id="img" alt="" src="${ctx}/content/purchase/images/saram.JPG"> 
+			<h1 id="subtitle">필수 정보</h1>
+		</div>	
 		<dl class="modify-form-row">
 			<dt class="modify-form-title">아이디</dt>
 			<dd class="modify-form-data">
@@ -90,7 +94,10 @@ window.onload = function(){
 		</dl>
 	</div>
 	<div id="additory-information">
-		<h1 id="subtitle">부가 정보</h1>
+		<div class="menu" >
+			<img id="img" alt="" src="${ctx}/content/purchase/images/saram.JPG"> 
+			<h1 id="subtitle">부가 정보</h1>
+		</div>
 		
 		<dl class="modify-form-row">
 			<dt class="modify-form-title">주소</dt>
@@ -134,7 +141,7 @@ window.onload = function(){
 	</div>
 	
 	<p class="article-control">
-		<input class="btn btn-color" type="submit" value="가입하기"/>
+		<input class="btn btn-color" type="submit" value="변경하기"/>
 		<a class ="btn btn-gray" href="../../home/index">취소하기</a>
 	</p>
 </form>
