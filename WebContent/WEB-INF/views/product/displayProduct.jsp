@@ -47,7 +47,7 @@
 			
 			<ul id ="product-list">
 
-				<c:forEach var="i" begin="1" end="9">
+				<c:forEach var="i" begin="1" end="9" >
 				<li>
 					<a href = "${ctx}/product/productDetail">
 						<img alt="" src="${ctx}/content/home/images/art1.png">

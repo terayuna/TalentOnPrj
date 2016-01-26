@@ -177,10 +177,20 @@
 }
 .purchase-form-row{
 	display:none;
+	min-height: 33px;
+	line-height: 33px;
+	border-bottom: 1px solid #E9E9E9;
+	clear: both;
+	margin-left:100px;
 }
 
 .bid-form-row{
 	display:none;
+	min-height: 33px;
+	line-height: 33px;
+	border-bottom: 1px solid #E9E9E9;
+	clear: both;
+	margin-left:100px;
 }
 
 .article-control{

@@ -21,8 +21,5 @@
 					<!-- content 부분 -->
 					<tiles:insertAttribute name="content"/>
 				</div>
-			
 			</div>
-	
-
 </html>

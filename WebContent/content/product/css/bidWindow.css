@@ -15,7 +15,9 @@ body{
 	/* top: 5px; */
 	width: 450px;
 	margin-left:50px;
-	background: #f9f9f9;
+	/* background: #f9f9f9; */
+	display: flex;
+	flex-flow: column;
 }
 
 #popup-bid>div>img{

@@ -4,7 +4,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
-
+<c:set var="ctx" value="${pageContext.request.contextPath}"/>
 <link href="reset.css" type="text/css" rel="stylesheet"> 
 
 
@@ -14,9 +14,9 @@
 <link href="${pageContext.request.contextPath}/content/bidWindow/css/bidWindow.css" type="text/css" rel="stylesheet" />  
 
 
-<div class="popup popup-bid" id="popup-bid">
-	<div>
-		<!-- <img src="content/bid/images/test1.png" alt="작품이미지" /> -->
+<div class="popup-bid" id="popup-bid">
+	<div >
+		 <img id="product-img" src="${ctx}/content/home/images/art1.png" alt="작품이미지" /> 
 	</div>
 	<div class="popup-wrapper">
 		<div class="info-box">
@@ -33,14 +33,14 @@
 					입찰 가격
 					<textarea class="amount" id="ipchal_price_span"
 						placeholder="현재 최고 입찰가 31,000원">
-							</textarea>
+					</textarea>
 				</p>
 			</div>
 		</div>
 	</div>
-	<div class="confirm">
-		<a class="btn-bid" onclick="ipchal_submit();" href="#">지금 입찰</a> <a
-			class="btn-bid" onclick="ipchal_submit();" href="#">취소</a>
+	<div id="confirm" class="confirm">
+		<a class="btn-bid" onclick="ipchal_submit();" href="#">지금 입찰</a> 
+		<a class="btn-bid" onclick="ipchal_submit();" href="${ctx}/product/productDetail">취소</a>
 	</div>
 </div>
 

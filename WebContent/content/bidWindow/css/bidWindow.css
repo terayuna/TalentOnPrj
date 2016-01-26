@@ -14,8 +14,9 @@ body{
 .popup-bid {
 	/* top: 5px; */
 	width: 450px;
-	margin-left:50px;
-	background: #f9f9f9;
+	margin-left:10px;
+	/*  background: #f9f9f9;  */
+	
 }
 
 #popup-bid>div>img{
@@ -29,11 +30,20 @@ body{
 	float: left;
 	width: 300px;
 	margin-top: 10px;
+	
 }
 .popup-bid .info-box {
 	width: 350px;
 
 }
+
+#product-img{
+	
+	height: 100px;
+   	width: 100px;
+    
+}
+
 .popup-bid .info-box > div {
 	
 	top: 0px;
@@ -121,8 +131,9 @@ body{
 		
 
 .popup-bid .confirm {
-	padding-bottom: 40px;
+	padding-bottom: 0px;
 	text-align: center;
 }
+
 
 

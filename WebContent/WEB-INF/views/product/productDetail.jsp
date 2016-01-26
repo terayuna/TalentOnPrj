@@ -7,7 +7,7 @@
 window.onload = function(){
 	   
 	   //-------------ajax post method
-	   var btnWrite = document.querySelector("#btn-phase");
+	   var btnWrite = document.querySelector("#btn-phase-bid");
 	   btnWrite.onclick = function(){
 			/* alert("dfa"); */	
 			
@@ -27,9 +27,9 @@ window.onload = function(){
 	         
 	         var container = document.createElement("div");
 	  
-	         container.style.backgroundColor = "pink";
-	         container.style.width = "600px";
-	         container.style.height = "400px";
+	         container.style.backgroundColor = "white";
+	         container.style.width = "500px";
+	         container.style.height = "200px";
 	         container.style.position  = "fixed";
 	         container.style.top = "200px";
 	         container.style.left = "580px";
@@ -111,7 +111,11 @@ window.onload = function(){
 									<div><a href="#" class="whiteButton">추천하기</a></div>									
 								</div>
 								<div>								
-									<div><a href="#" id="btn-phase" class="redButton">입찰하기</a></div>
+									<div><a href="#" id="btn-phase-display" class="redButton">전시중</a></div>
+									<!-- <div><a href="#" id="btn-phase" class="redButton">입찰하기</a></div>  -->
+									<div><a href="${ctx}/purchase/purchase" id="btn-phase-purchase" class="redButton">구매하기</a></div>
+									<div><a href="#" id="btn-phase-bid" class="redButton">입찰하기</a></div> 
+									
 									<div><a href="">SNS공유 아이콘</a>			
 															
 									</div>
@@ -140,6 +144,7 @@ window.onload = function(){
 								<div>
 									<input type="submit" name="submit" value="댓글 쓰기">
 								</div>
+								
 								
 						</section>
 						<div id="comment_list">
